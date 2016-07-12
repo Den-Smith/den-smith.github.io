@@ -16,7 +16,12 @@ $(function(){
     });
 
     new WOW({
-        offset: 200
+        offset: 150,
+        mobile: false
     }).init();
+});
 
+$(window).load(function() {
+    $(".loader_inner").fadeOut();
+    $(".loader").delay(400).fadeOut("slow");
 });

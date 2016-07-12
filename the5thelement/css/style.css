@@ -38,7 +38,7 @@ h2{
 /*-----------------HEADER------------------*/
 
 #header{
-    background: url("../img/1.jpg") center no-repeat;
+    /*background: url("../img/2.jpg") center no-repeat;*/
     background-size: cover;
     height: 100vh;
     min-height: 500px;
@@ -69,14 +69,16 @@ h2{
     font-family: Montserrat, sans-serif;
     font-size: 31px;
     font-weight: 700;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #df9803;
     text-transform: uppercase;
 }
 
 #header p{
     font-family: Ubuntu, sans-serif;
     font-size: 20px;
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: #df9803;
 }
 
 .btn{
@@ -103,6 +105,39 @@ h2{
     background-color: #474c52;
     color: #ffffff;
 }
+
+/*-----------------pre-loader-----------------*/
+.loader {
+    background: none repeat scroll 0 0 #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.loader_inner {
+    background-image: url("../img/preloader.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 64px;
+    width: 64px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+
+
+
+
+
+
 
 /*-----------------speakers-----------------*/
 
