@@ -1,5 +1,11 @@
 // ---------
+
+
 $(document).ready(function() {
+
+    $(".loader_inner").fadeOut();
+    $(".loader").delay(400).fadeOut("slow");
+
     $('.carousel').carousel({
         interval: 0
     });
@@ -50,11 +56,12 @@ $(document).ready(function() {
         }]
     });
 
-
-
-});
-
 new WOW({
     offset: 50,
     mobile: false
 }).init();
+
+
+});
+
+
