@@ -7,7 +7,7 @@ $(document).ready(function() {
     $(".loader").delay(400).fadeOut("slow");
 
     $('.carousel').carousel({
-        interval: 0
+        interval: 5000
     });
 
     // swipe for bootstap carousel
