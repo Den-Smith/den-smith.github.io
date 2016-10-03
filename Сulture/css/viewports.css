@@ -59,6 +59,12 @@
 	.full_article .promo_article_wrap a{
 		margin-left: 70px;
 	}
+	.logo_border{
+		height: 127px;
+	}
+	.main_nav ul li{
+		margin: 21px 15px;
+	}
 }
 
 @media only screen and (max-width : 1199px){
@@ -70,8 +76,8 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.logo_wrap img{
-		width: 90%;
-		padding: 0;
+		width: 99%;
+		padding: 6px;
 	}
 	.request_wrap img{
 		padding-top: 0;
@@ -86,7 +92,7 @@
 	}
 	.sotial{
 		width: 86px;
-		margin-right: 5px;
+		margin-right: 0;
 	}
 	.sotial a{
 		margin: 0px 5px;
@@ -174,9 +180,24 @@
 	.full_article .promo_article_wrap a{
 		padding-bottom: 70px;
 	}
-	.like{
-		display: none;
+	.like_wrap{
+		left: -5px;
 	}
+	.like{
+		width: 40px;
+		height: 40px;
+	}
+	.like i{
+		width: 20px;
+		font-size: 20px;
+		padding-top: 12px;
+	}
+	.like p{
+		font-size: 8px;
+	}
+/*	.content{
+		margin-top: 30px;
+	}*/
 }
 
 @media only screen and (max-width : 991px){
@@ -195,9 +216,20 @@
 }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 780px) {
+	.like_wrap{
+		left: 20px;
+	}
+	.like{
+		top: initial;
+		bottom: 20px;
+	}
+}
+
 @media only screen and (max-width : 768px) {
 	.slogan_wrap{
 		height: 36px;
+		padding: 0 15px !important;
 	}
 	.popular_articles_item h4{
 		text-align: center;
@@ -245,8 +277,12 @@
 		width: 100%;
 		max-width: 100%;
 	}
+	.request_wrap a{
+		margin: 0;
+		margin-top: 17px;
+	}
 	.request_wrap p{
-		margin-bottom: 7px;
+		display: none;
 	}
 	.news_wrap .news_item{
 		width: 100%;
@@ -259,14 +295,14 @@
 		border: none;
 		padding: 0;
 	}
-	.judges_personal_data img {
-		width: 30%;
-	}
 	.judges_item_content{
 		display: block;
 		width: 100%;
 		text-align: center;
 		padding: 30px 0;
+	}
+	.sotial{
+		width: 83px;
 	}
 }
 
@@ -296,7 +332,6 @@
 }
 
 @media only screen and (max-width : 590px) {
-	.request_wrap_small p,
 	.request_wrap_small a{
 		display: block;
 	}
@@ -440,9 +475,6 @@
 	}
 	.accordion h3{
 		font-size: 16px;
-	}
-	.judges_personal_data img {
-		width: 60%;
 	}
 	.judges_item_content{
 		padding-bottom: 0;
