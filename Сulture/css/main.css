@@ -800,7 +800,7 @@ _:-ms-input-placeholder, :root .judges .mask {
 	margin-bottom: 40px;
 }
 
-.ad_wrap{
+.red_square_wrap{
 	margin: 20px 0;
 	display: block;
 }
@@ -812,7 +812,7 @@ _:-ms-input-placeholder, :root .judges .mask {
 	background-color: #e12633;
 }
 
-.ad_wrap ul{
+.red_square_wrap ul{
 	list-style-type: none;
 	vertical-align: super;
 	display: inline-block;
@@ -821,7 +821,7 @@ _:-ms-input-placeholder, :root .judges .mask {
 	margin-left: 50px;
 }
 
-.ad_wrap ul li {
+.red_square_wrap ul li {
 	position: relative;
 	font-size: 24px;
 	color: rgb(42, 42, 42);
@@ -830,7 +830,7 @@ _:-ms-input-placeholder, :root .judges .mask {
 	line-height: 1.917;
 }
 
-.ad_wrap ul li:after{
+.red_square_wrap ul li:after{
 	content: '';
 	position: absolute;
 	top: 18px;
@@ -854,7 +854,7 @@ _:-ms-input-placeholder, :root .judges .mask {
     padding-top: 12px;
 }
 
-.about_section_content .ad_wrap .red_square p{
+.about_section_content .red_square_wrap .red_square p{
 	color: #fff;
 	display: inline-block;
 	writing-mode: vertical-rl;
