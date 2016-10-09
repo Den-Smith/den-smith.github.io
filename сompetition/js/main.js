@@ -134,7 +134,7 @@ $(document).ready(function() {
                 dropZone.text('Загрузка успешно завершена!');
             } else {
                 dropZone.text('Произошла ошибка!');
-                dropZone.removeClass('hover');
+                dropZone.removeClass('drop');
                 dropZone.addClass('error');
             }
         }
