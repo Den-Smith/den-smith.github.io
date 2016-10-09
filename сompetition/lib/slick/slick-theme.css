@@ -94,7 +94,7 @@
 
 .slick-prev
 {
-    left: -50px;
+    left: -40px;
     background-image: url('../slick/arrows (left2).png');
     background-position: 0px;
     background-size: cover;
@@ -102,7 +102,7 @@
 }
 [dir='rtl'] .slick-prev
 {
-    right: -50px;
+    right: -40px;
     left: auto;
 }
 .slick-prev:before
@@ -116,7 +116,7 @@
 
 .slick-next
 {
-    right: -50px;
+    right: -40px;
     background-image: url('../slick/arrows (right2).png');
     background-position: 0px;
     background-size: cover;
@@ -125,7 +125,7 @@
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -50px;
+    left: -40px;
 }
 .slick-next:before
 {
