@@ -78,6 +78,8 @@ $(function(){
 
 });
 
+// drag zone
+
 $(document).ready(function() {
     var dropZone = $('#dropZone'),
         maxFileSize = 1000000; // максимальный размер файла - 1 мб.
@@ -109,16 +111,17 @@ $(document).ready(function() {
           dropZone.removeClass('drop');
           dropZone.addClass('error');
           return false;
-      }
-    };
-
-    var xhr = new XMLHttpRequest();
+      };
+      var xhr = new XMLHttpRequest();
 
     xhr.upload.addEventListener('progress', uploadProgress, false);
     xhr.onreadystatechange = stateChange;
     xhr.open('POST', '../upload.php');
     xhr.setRequestHeader('X-FILE-NAME', file.name);
     xhr.send(file);
+
+    
+    };
 
     function uploadProgress(event) {
       var percent = parseInt(event.loaded / event.total * 100);
