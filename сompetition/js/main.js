@@ -114,11 +114,11 @@ $(document).ready(function() {
       };
       var xhr = new XMLHttpRequest();
 
-    xhr.upload.addEventListener('progress', uploadProgress, false);
-    xhr.onreadystatechange = stateChange;
-    xhr.open('POST', '../upload.php');
-    xhr.setRequestHeader('X-FILE-NAME', file.name);
-    xhr.send(file);
+      xhr.upload.addEventListener('progress', uploadProgress, false);
+      xhr.onreadystatechange = stateChange;
+      xhr.open('POST', '../upload.php');
+      xhr.setRequestHeader('X-FILE-NAME', file.name);
+      xhr.send(file);
 
     
     };
@@ -134,6 +134,7 @@ $(document).ready(function() {
                 dropZone.text('Загрузка успешно завершена!');
             } else {
                 dropZone.text('Произошла ошибка!');
+                dropZone.removeClass('hover');
                 dropZone.addClass('error');
             }
         }
