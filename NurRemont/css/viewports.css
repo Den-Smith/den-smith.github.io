@@ -50,6 +50,9 @@
 	.gallery ul li a{
 		font-size: 10px;
 	}
+	.services_item h2{
+		font-size: 22px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -116,9 +119,6 @@
 	.banner h1{
 		font-size: 30px;
 		padding: 60px 0;
-	}
-	.services_item h2{
-		font-size: 22px;
 	}
 }
 
