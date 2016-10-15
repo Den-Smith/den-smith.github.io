@@ -1,0 +1,267 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1450px){
+	.slick-prev, 
+	.slick-next{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.hero h1{
+		    margin: 210px 0 60px;
+	}
+	.hero .contact_form_wrap{
+		margin-top: 220px;
+		width: 340px;
+	}
+	.contact_form_wrap form{
+		padding: 10px;
+	}
+	.contact_form_wrap form input[type='submit']{
+		font-size: 20px;
+	}
+	.hero .video_wrap{
+		width: 100%;
+		height: auto;
+	}
+	.advantage_item .square{
+		width: 160px;
+		height: 160px;
+	}
+	.advantage_item.item_1 .square::after{
+		top: 29px;
+    	left: 16px;
+	}
+	.advantage_item.item_2 .square::after{
+		top: 22px;
+    	left: 34px;
+	}
+	.advantage_item.item_3 .square::after{
+		top: 25px;
+    	left: 25px;
+	}
+	.advantage_item.item_4 .square::after{
+		top: 35px;
+    	left: 21px;
+	}
+	.gallery ul li{
+		margin: 20px 0;
+	}
+	.gallery ul li a{
+		font-size: 10px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.tel_wrap{
+		padding-top: 35px;
+	}
+	.tel_wrap p{
+		font-size: 48px;
+	}
+	.hero{
+		height: auto;
+	}
+	.hero h1{
+		margin: 170px auto 50px;
+		text-align: center;
+	}
+	.hero .contact_form_wrap{
+		margin: 100px 0 40px;
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+	.contact_form_wrap form input[type='submit']{
+		margin-top: 20px !important;
+	}
+	.advantages h1{
+		font-size: 26px;
+	}
+	.advantage_item_wrap{
+		margin: 40px 0 0px;
+	}
+	.advantage_item .square{
+		margin: auto;
+	}
+	.advantage_item p{
+		margin-top: 20px;
+	}
+	.advantage_item:nth-of-type(odd){
+		padding-top: 0;
+	}
+	.advantage_item{
+		margin-bottom: 60px;
+	}
+	.reasons{
+		padding: 40px 0;
+	}
+	.reasons h1{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	.reasons_content_item:first-of-type{
+		margin: 120px 0 40px;
+	}
+	.reasons p{
+		margin-bottom: 10px;
+	}
+	.reasons_content_wrap{
+		background-image: url('../img/001_electricista.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 805px;
+	}
+	.banner h1{
+		font-size: 30px;
+		padding: 60px 0;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.tel_wrap p,
+	.tel_wrap_small p{
+		font-size: 32px;
+	}
+	.services_item:hover{
+		background-color: transparent;
+	}
+	.services_item:nth-of-type(odd){
+		background-color: #d71149;
+	}
+	.services_item:nth-of-type(odd) h2::after{
+		background-color: #fff;
+	}
+	.services_item:nth-of-type(even):hover h2::after{
+		background-color: #d71149;
+	}
+	.reasons_content_item:first-of-type{
+		margin: 40px 0;
+	}
+	.reasons p{
+		margin-bottom: 10px;
+	}
+	.reasons_content_wrap{
+		text-align: left;
+		background-image: url('../img/001_electricista.png');
+		background-repeat: no-repeat;
+		background-position: center right;
+		height: auto;
+	}
+	.reasons_content_item p{
+		text-align: left;
+		margin: 0;
+		font-weight: bold;
+	}
+	.gallery ul li{
+		display: block;
+	}
+	.feedback{
+		padding-top: 40px;
+	}
+	.feedback p{
+		margin: 0;
+	}
+	.slick-feedback{
+		margin-top: 0;
+	}
+	.feedback h1{
+		font-size: 30px;
+	}
+	.feedback .slick-feedback p{
+		margin: 20px auto 40px;
+	}
+	footer{
+		padding: 45px 0 ;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header .col-xs-6{
+		width: 100%;
+	}
+	.logo_wrap{
+		position: relative;
+		width: 100%;
+	}
+	.logo_wrap .part1{
+		text-align: center;
+		position: initial;
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.logo_wrap .part1::after{
+		top: -20px;
+		left: calc(50% - 23px);
+	}
+	.logo_wrap .part2{
+		text-align: left;
+		width: 50%;
+		top: 0;
+		right: 0;
+		left: auto;
+	}
+	.logo_wrap .slogan{
+		text-align: center;
+		display: block;
+		padding: 0;
+	}
+	.tel_wrap,
+	.tel_wrap_small{
+		text-align: center;
+	}
+	.tel_wrap{
+		padding-top: 20px;
+	}
+	.logo_wrap_small{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.logo_wrap_small .part1_small{
+		padding-left: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	.logo_wrap_small .part1_small::after{
+		top: -5px;
+		left: calc(50% - 27px);
+	}
+	.hero h1{
+		font-size: 34px;
+	}
+	.advantages h1{
+		font-size: 18px;
+		padding: 30px 0 20px;
+	}
+	.services h1{
+		font-size: 30px;
+		padding: 30px 0 30px;
+	}
+	.services_item{
+		padding: 20px 0;
+	}
+	.reasons h1{
+		font-size: 20px;
+	}
+	.reasons_content_wrap{
+		text-align: center;
+		background-image: none;
+	}
+	.reasons_content_item p{
+		text-align: center;
+		margin: auto;
+	}
+	.gallery h1{
+		font-size: 28px;
+	}
+	.gallery p{
+		margin: 10px 0;
+	}
+	.banner h1{
+		font-size: 20px;
+		padding: 30px 10px;
+	}
+}
