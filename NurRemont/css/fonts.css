@@ -1,21 +1,3 @@
-/* AA-BebasNeue */
-@font-face {
-    font-family: "AA BebasNeue";
-    src: url("../fonts/AA-BebasNeue/AA-BebasNeue.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
-/* bebas_neue */
-
-@font-face {
-	font-family: 'Bebas Neue';
-	src:  url('../fonts/bebas_neue/BebasNeue Bold.ttf');
-	src: url('../fonts/bebas_neue/BebasNeue Bold.otf');
-	font-weight: normal;
-	font-style: normal;
-}
-
 /* entypo */
 
 @font-face{ 
@@ -25,40 +7,4 @@
 	     url('../fonts/entypo/Entypo.woff') format('woff'),
 	     url('../fonts/entypo/Entypo.ttf') format('truetype'),
 	     url('../fonts/entypo/Entypo.svg#webfont') format('svg');
-}
-
-/* Helvetica-Neue-Cyr Black*/
-
-@font-face {
-	font-family: 'Helvetica Neue Black';
-	src: url('../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-Black.otf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Helvetica-Neue-Cyr Bold*/
-
-@font-face {
-	font-family: 'Helvetica Neue Bold';
-	src: url('../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-Bold.otf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Helvetica-Neue-Cyr Roman*/
-
-@font-face {
-	font-family: 'Helvetica Neue Roman';
-	src: url('../fonts/Helvetica-Neue-Cyr/HelveticaNeueCyr-Roman.otf');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* montserrat balck */
-
-@font-face {
-	font-family: 'Montserrat black';
-	src: url('../fonts/montserrat/Montserrat-Black.otf');
-	font-weight: normal;
-	font-style: normal;
 }

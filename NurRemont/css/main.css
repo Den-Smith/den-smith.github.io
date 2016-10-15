@@ -12,7 +12,7 @@ a, img, i, ol, ul, li, form {
 body{
 	background-color: #fff;
 	color: #000;
-	font: normal 14px 'Helvetica Neue Roman', sans-serif;
+	font: normal 14px 'Roboto', sans-serif;
 }
 
 img{
@@ -99,7 +99,7 @@ header{
 .logo_wrap_small .part1,
 .logo_wrap_small .part2{
 	display: block;
-	font-size: 20px;
+	font-size: 19px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 900;
 	color: rgb(255, 255, 255);
@@ -141,20 +141,20 @@ header{
 }
 .logo_wrap .slogan{
 	display: inline-block;
-	font-size: 16px;
-	font-family: 'AA BebasNeue', sans-serif;
+	font-size: 10px;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(255, 255, 255);
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 1.2px;
-	padding: 0 11px;
+	padding: 0 6px;
 	text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.4);
 }
 
 .logo_wrap_small .slogan{
 	display: inline-block;
 	font-size: 16px;
-	font-family: 'AA BebasNeue', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(255, 255, 255);
 	font-weight: normal;
 	text-transform: uppercase;
@@ -172,7 +172,7 @@ header{
 .tel_wrap p{
 	display: inline-block;
 	font-size: 68px;
-	font-family: "Bebas Neue", sans-serif;
+	font-family: "Ubuntu", sans-serif;
 	color: rgb(215, 17, 73);
 	font-weight: bold;
 	line-height: 0.543;
@@ -189,7 +189,7 @@ header{
 .tel_wrap_small p{
 	display: inline-block;
 	font-size: 48px;
-	font-family: "Bebas Neue", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(215, 17, 73);
 	font-weight: bold;
 	line-height: 0.543;
@@ -257,8 +257,8 @@ header{
 	margin: 250px 0 80px;
 	max-width: 500px;
 	font-size: 48px;
-	font-family: "HelveticaNeueCyr", sans-serif;
-	font-weight: 900;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
 	color: rgb(255, 255, 255);
 	line-height: 1.042;
 	text-align: left;
@@ -270,14 +270,14 @@ header{
 }
 
 .hero .video_wrap{
-	width: 560px;
-	height: 300px;
+	width: 567px;
+	height: auto;
 	background-color: transparent;
 	border: 6px solid rgba(255, 255, 255, 0.3);
 	border-radius: 12px;
 	-webkit-box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
--moz-box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
-box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
+	box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 }
 
 .hero .contact_form_wrap{
@@ -336,8 +336,8 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 	margin: 20px auto;
 	width: 100%;
 	font-size: 24px;
-	font-family: "HelveticaNeueCyr", sans-serif;
-	font-weight: 900;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
 	letter-spacing: 2.5px;
 	text-transform: uppercase;
 	padding: 18px 20px 14px;
@@ -359,17 +359,19 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 ::-webkit-input-placeholder{
 	color:#797979;
-	font-family: "AA Bebas Neue", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	line-height: 1;
-	font-size: 20px;
+	font-weight: bold;
+	font-size: 14px;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 	text-overflow:ellipsis;
 }
 ::-moz-placeholder{
 	color:#797979;
-	font-family: "AA Bebas Neue", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	line-height: 1;
+	font-weight: bold;
 	font-size: 20px;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
@@ -377,7 +379,8 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 }
 :-moz-placeholder{
 	color:#797979;
-	font-family: "AA Bebas Neue", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
 	line-height: 1;
 	font-size: 20px;
 	letter-spacing: 1.5px;
@@ -386,7 +389,8 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 }
 :-ms-input-placeholder{
 	color:#797979;
-	font-family: "AA Bebas Neue", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
 	line-height: 1;
 	font-size: 20px;
 	letter-spacing: 1.5px;
@@ -407,7 +411,7 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .advantages h1 {
 	font-size: 36px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(42, 42, 42);
 	font-weight: bold;
 	line-height: 1.167;
@@ -417,9 +421,10 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .advantages a {
 	position: relative;
-	font-size: 20px;
-	font-family: "AA Bebas Neue", sans-serif;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(31, 93, 234);
+	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 2.1;
 	text-align: center;
@@ -427,22 +432,6 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 	margin: 20px 0;
 }
 
-.advantages a::after{
-	content: '';
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	width: 0;
-	height: 2px;
-	background-color: #1f5dea;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.advantages a:hover::after{
-	width: 95%;
-}
 
 .advantage_item_wrap{
 	margin: 80px 0;
@@ -552,13 +541,14 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .advantage_item p {
   font-size: 16px;
-  font-family: "HelveticaNeueCyr", sans-serif;
-  font-weight: 900;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
   color: rgb(42, 42, 42);
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  margin-top: 40px;
+  width: 240px;
+  margin: 40px auto 0;
 }
 
 .advantage_item:nth-of-type(even) p{
@@ -595,7 +585,7 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 .services h1 {
 	padding: 30px 0 80px;
 	font-size: 36px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
 	line-height: 1.167;
@@ -624,11 +614,12 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .services_item h2{
 	position: relative;
-	font-size: 32px;
-	font-family: "AA Bebas Neue", sans-serif;
+	font-size: 18px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
-	line-height: 0.906;
+	line-height: 1.2;
 	letter-spacing: 1px;
 	padding: 25px 0;
 }
@@ -652,8 +643,9 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .services_item ul li{
 	font-size: 12px;
-	font-family: "Helvetica Neue Roman", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: rgb(255, 255, 255);
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 30px 0;
@@ -671,7 +663,7 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .reasons h1 {
 	font-size: 36px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(42, 42, 42);
 	font-weight: bold;
 	line-height: 1.167;
@@ -693,12 +685,12 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 .reasons p a{
 	display: inline-block;
 	position: relative;
-	font-size: 12px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(31, 93, 234);
 	text-transform: uppercase;
 	line-height: 3.5;
-	font-weight: 900;
+	font-weight: bold;
 	letter-spacing: 12px;
 }
 
@@ -722,11 +714,11 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .reasons_content_item h3{
 	font-size: 16px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(42, 42, 42);
 	text-transform: uppercase;
 	line-height: 1.2;
-	font-weight: 900;
+	font-weight: bold;
 	margin-bottom: 25px;
 }
 
@@ -754,7 +746,7 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 .gallery h1 {
 	padding-top: 30px;
 	font-size: 36px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
 	line-height: 1.167;
@@ -762,12 +754,12 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .gallery p a {
 	position: relative;
-	font-size: 12px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(108, 116, 241);
 	text-transform: uppercase;
 	line-height: 3.5;
-	font-weight: 900;
+	font-weight: bold;
 	letter-spacing: 12px;
 }
 
@@ -786,7 +778,7 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .gallery ul li a{
   font-size: 12px;
-  font-family: "HelveticaNeueCyr", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
@@ -958,19 +950,19 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .feedback h1 {
   font-size: 36px;
-  font-family: "HelveticaNeueCyr", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: rgb(42, 42, 42);
   font-weight: bold;
 }
 
 .feedback p a {
 	position: relative;
-	font-size: 12px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
 	color: #1f5dea;
 	text-transform: uppercase;
 	line-height: 3.5;
-	font-weight: 900;
+	font-weight: bold;
 	letter-spacing: 12px;
 }
 
@@ -1007,7 +999,8 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 
 .slick_feedback_item p{
 	font-size: 14px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	color: rgb(37, 37, 37);
 	line-height: 1.286;
 	max-width: 225px;
@@ -1015,7 +1008,7 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 }
 
 .slick_feedback_item h3{
-	font-size: 11px;
+	font-size: 12px;
 	font-family: "Montserrat", sans-serif;
 	color: rgb(60, 61, 65);
 	font-weight: bold;
@@ -1032,10 +1025,10 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 .banner h1 {
 	padding: 85px 0;
 	font-size: 36px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	color: rgb(255, 255, 255);
 	line-height: 1.2;
-	font-weight: 900;
+	font-weight: bold;
 }
 
 .banner h1 span{
@@ -1072,7 +1065,7 @@ footer{
 }
 
 .footer_logo span {
-	font-size: 20px;
+	font-size: 19px;
 	font-family: "Montserrat", sans-serif;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
@@ -1084,10 +1077,10 @@ footer{
 
 .footer_logo_wrap p{
 	font-size: 11px;
-	font-family: "HelveticaNeueCyr", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 400;
 	letter-spacing: 5px;
 	padding-left: 5px;
 }
