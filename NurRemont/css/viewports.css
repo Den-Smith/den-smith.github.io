@@ -117,6 +117,9 @@
 		font-size: 30px;
 		padding: 60px 0;
 	}
+	.services_item h2{
+		font-size: 22px;
+	}
 }
 
 /* Small Devices, Tablets */
