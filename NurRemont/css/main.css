@@ -465,6 +465,9 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .advantage_item:nth-of-type(even) .square{
@@ -472,6 +475,9 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 	-ms-transform: rotate(-135deg);
 	-o-transform: rotate(-135deg);
 	transform: rotate(-135deg);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .advantage_item.item_1 .square::after{

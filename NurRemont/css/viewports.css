@@ -8,7 +8,7 @@
 
 @media only screen and (max-width : 1200px) {
 	.tel_wrap p{
-		font-size: 56px;
+		font-size: 48px;
 	}
 	.hero h1{
 		    margin: 210px 0 60px;
@@ -61,10 +61,10 @@
 		padding-top: 35px;
 	}
 	.tel_wrap p{
-		font-size: 42px;
+		font-size: 36px;
 	}
 	.tel_wrap_small p{
-		font-size: 42px;
+		font-size: 36px;
 	}
 	.hero{
 		height: auto;
@@ -132,7 +132,7 @@
 @media only screen and (max-width : 768px) {
 	.tel_wrap p,
 	.tel_wrap_small p{
-		font-size: 25px;
+		font-size: 21px;
 	}
 	.services_item:hover{
 		background-color: transparent;
