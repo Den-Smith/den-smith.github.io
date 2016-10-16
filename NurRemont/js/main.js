@@ -5,8 +5,9 @@ $(document).ready(function(){
 
 // header scroll
   $(window).scroll(function() {
-      if ($(window).scrollTop() > 800) {
+      if ($(window).scrollTop() > 900) {
       	$('header').css({
+      		'position': 'fixed',
           	'background-color': '#3f5ab6',
         });
         $('.logo_wrap').css({
@@ -24,6 +25,7 @@ $(document).ready(function(){
 
       } else{
       	$('header').css({
+      		'position': 'absolute',
           	'background-color': 'transparent',
         });
     	$('.logo_wrap').css({
