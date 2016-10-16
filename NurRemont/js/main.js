@@ -107,6 +107,11 @@ $(document).ready(function(){
   	]
   	});
 
- new WOW().init();
+ wow = new WOW({
+		offset: 5,
+		mobile: false,
+		live: true
+	})
+	wow.init();
 
 })

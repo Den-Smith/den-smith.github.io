@@ -497,6 +497,10 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 	transition: all 0.3s;
 }
 
+.advantage_item.item_1 .square #time{
+	fill: #000;
+}
+
 .advantage_item.item_2 .square::after{
 	content: '';
 	position: absolute;
@@ -549,15 +553,15 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 }
 
 .advantage_item p {
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: bold;
-  color: rgb(42, 42, 42);
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-  width: 240px;
-  margin: 40px auto 0;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: rgb(42, 42, 42);
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+	width: 240px;
+	margin: 40px auto 0;
 }
 
 .advantage_item:nth-of-type(even) p{
@@ -580,6 +584,8 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 .advantage_item.item_4:hover .square::after{
 	background-image: url('../img/village-red.png');
 }
+
+
 
 /* SERVICES SECTION */
 
@@ -707,6 +713,8 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 	text-align: center;
 }
 
+
+
 .reasons_content_item{
 	margin: 40px 0;
 }
@@ -719,6 +727,16 @@ box-shadow: 18px 13px 48px -4px rgba(0,0,0,0.75);
 	width: 54px;
 	height: 52px;
 	margin-bottom: 20px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.reasons_content_item:hover img{
+	-webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .reasons_content_item h3{
