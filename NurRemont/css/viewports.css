@@ -31,6 +31,9 @@
 		width: 160px;
 		height: 160px;
 	}
+	.advantage_item p{
+		width: auto;
+	}
 	.advantage_item.item_1 .square::after{
 		top: 29px;
     	left: 16px;

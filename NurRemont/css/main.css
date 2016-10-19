@@ -247,11 +247,12 @@ header{
 /* HERO SECTION */
 
 .hero{
-	background-image: url('../img/Sloy_1.jpg');
+	background-image: url('../img/Sloy_2.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background-color: #3F58B5;
+/*	-webkit-background-size: cover;
+	background-size: cover;*/
 	height: 800px;
 }
 
@@ -869,7 +870,7 @@ header{
 	background-color: #4058b5;
 	border: 2px solid #4058b5;
 	border-radius: 50%;
-	margin: 115px auto 20px;
+	margin: calc(50% - 28px) auto 20px;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
