@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+// PRELOADER
     $(".loader_inner").fadeOut();
     $(".loader").delay(400).fadeOut("slow");
 
@@ -107,11 +109,24 @@ $(document).ready(function(){
   	]
   	});
 
- wow = new WOW({
+
+// ANIMATE CSS
+	 wow = new WOW({
 		offset: 5,
 		mobile: false,
 		live: true
 	})
 	wow.init();
+
+
+// //  MODAL submit message
+	$('input[type="submit"]').click(function () {
+	      swal({
+	      	title: "Благодарим Вас!",
+			text: "Наши специалисты свяжутся с вами в течении <span style=color:#F8BB86>2 минут</span>", 
+			type: "success",
+			html: true, 
+	      })
+	});
 
 })
