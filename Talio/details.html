@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>index</title>
+    <title>details</title>
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="lib/slick-1.6.0/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/viewports.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 750px)" href="css/mobile.css" />
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -56,23 +55,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-3">
-                        <a href="javascript:void(0)" id="menu-toggle-wrapper" class="menu_button">
-                            <div id="menu-toggle"></div>
-                        </a>
+                        <div class="menu_button hidden-lg hidden-md hidden-sm">
+                            <i class="fa fa-align-left" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="col-xs-6 content_wrap">
                         <a href="" class="logo">
                             <img src="img/logo.png">
-                        </a>
-                        <a href="" class="logo-mobile">
-                            <img src="img/mobile-logo.png">
                         </a>
                     </div>
                     <div class="col-xs-3">
                         <div class="acc_wrap">
                             <a href="" class="user"><i class="fa fa-user" aria-hidden="true"></i></a>
                             <a href="" class="cart">
-                                <p>Cart</p><span class="cart_count">5</span>
+                                <p>Cart</p><span class="cart_count">1</span>
                             </a>
                         </div>
                     </div>
@@ -197,435 +193,115 @@
         </section>
     </header>
     <section class="margin_top_section"></section>
-    <section class="for_section">
-        <div class="container-fluid">
-            <div class="row desktop_section">
-                <div class="col-md-4 for_section_item for_her">
-                    <img src="img/women.png" class="big_img">
-                    <h1>for her</h1>
-                    <div class="content">
-                        <div class="brands_wrap">
-                            <img src="img/conte_logo.png" style="width: 121px; height: 46px;">
-                            <img src="img/esli_logo.png" style="width: 66px; height: 35px;">
-                            <img src="img/serge_logo.png" style="width: 74px; height: 44px;">
-                        </div>
-                        <a href="">shop now</a>
-                    </div>
-                </div>
-                <div class="col-md-4 for_section_item for_him">
-                    <img src="img/man.png" class="big_img">
-                    <h1>for him</h1>
-                    <div class="content">
-                        <div class="brands_wrap">
-                            <img src="img/serge_logo.png" style="width: 74px; height: 44px;">
-                            <img src="img/diwari_logo.png" style="width: 138px; height: 20px;">
-                        </div>
-                        <a href="">shop now</a>
-                    </div>
-                </div>
-                <div class="col-md-4 for_section_item for_kids">
-                    <img src="img/kids.png" class="big_img">
-                    <h1>for kids</h1>
-                    <div class="content">
-                        <div class="brands_wrap">
-                            <img src="img/esli_kids_logo.png" style="width: 105px; height: 73px;">
-                            <img src="img/conte_kids_logo.png" style="width: 119px; height: 29px;">
-                        </div>
-                        <a href="">shop now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mobile_section">
-                <a href="" class="col-xs-12 for_section_item_mobile for_her">
-                    <div class="content">
-                        <h1>for her</h1>
-                        <p>conte esli serge</p>
-                    </div>
-                </a>
-                <a href="" class="col-xs-12 for_section_item_mobile for_him">
-                    <div class="content">
-                        <h1>for him</h1>
-                        <p>serge diwari</p>
-                    </div>
-                </a>
-                <a href="" class="col-xs-12 for_section_item_mobile for_kids">
-                    <div class="content">
-                        <h1>for kids</h1>
-                        <p>conte kids esli kids</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <section class="breadcrumbs_section">
+        <ol class="breadcrumb">
+            <li><a href="index.html">home</a></li>
+            <li><a href="">for her</a></li>
+            <li><a href="">pantyhose</a></li>
+            <li><a href="">classic</a></li>
+            <li class="active">solo 20</li>
+        </ol>
     </section>
-    <section class="collection">
-        <div class="container">
-            <div class="row collection_slider_mobile">
-                <div class="col-md-12">
-                    <div class="collection_slider">
-                        <div class="slider_item item_1">
-                            <div class="content">
-                                <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                <p class="label">conte</p>
-                                <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                <a href="">see collection</a>
+    <section class="details_section">
+        <div class="container details_item">
+            <div class="row">
+                <div class="col-md-6 images_section">
+                    <div class="images_slider_wrap">
+                        <div class="slider-for_wrap">
+                            <div class="slider-for">
+                                <div class="slider_item"><img src="img/conte_big.png"></div>
+                                <div class="slider_item"><img src="img/conte_big.png"></div>
+                                <div class="slider_item"><img src="img/conte_big.png"></div>
                             </div>
-                            <div class="gradient"></div>
                         </div>
-                        <div class="slider_item item_2">
-                            <div class="content">
-                                <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                <p class="label">conte</p>
-                                <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                <a href="">see collection</a>
+                        <div class="slider-nav_wrap">
+                            <div class="slider-nav">
+                                <div class="slider_item"><img src="img/conte_small.png">
+                                    <div class="hover"></div>
+                                </div>
+                                <div class="slider_item"><img src="img/conte_small.png">
+                                    <div class="hover"></div>
+                                </div>
+                                <div class="slider_item"><img src="img/conte_small.png">
+                                    <div class="hover"></div>
+                                </div>
                             </div>
-                            <div class="gradient"></div>
                         </div>
-                        <div class="slider_item item_1">
-                            <div class="content">
-                                <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                <p class="label">conte</p>
-                                <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                <a href="">see collection</a>
+                    </div>
+                </div>
+                <div class="col-md-6 main_info_wrap">
+                    <div class="info_header">
+                        <h1>solo 20</h1>
+                        <h4>article: <span class="item_article">1015242</span></h4>
+                        <a href="" class="like"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="info_content">
+                        <div class="item_price"><span class="euro_wrap">&euro;</span>7</div>
+                        <form class="details_item_form">
+                            <div class="item_size_wrap">
+                                size:
+                                <ul class="item_size">
+                                    <li>2</li>
+                                    <li class="active">3</li>
+                                    <li>4</li>
+                                </ul>
+                                <a href="" class="size_table">size table</a>
                             </div>
-                            <div class="gradient"></div>
-                        </div>
-                        <div class="slider_item item_1">
-                            <div class="content">
-                                <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                <p class="label">conte</p>
-                                <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                <a href="">see collection</a>
+                            <div class="item_color_wrap">
+                                color:
+                                <ul class="item_color">
+                                    <li class="color_item_1"></li>
+                                    <li class="color_item_2"></li>
+                                    <li class="color_item_3 active"></li>
+                                    <li class="color_item_4"></li>
+                                    <li class="color_item_5"></li>
+                                    <li class="color_item_6"></li>
+                                    <li class="color_item_7"></li>
+                                    <li class="color_item_8"></li>
+                                    <li class="color_item_9"></li>
+                                    <li class="color_item_10"></li>
+                                </ul>
                             </div>
-                            <div class="gradient"></div>
-                        </div>
+                            <div class="item_amount_wrap">
+                                amount:
+                                <div class="item_amount"><i class="fa fa-minus" aria-hidden="true"></i><span class="count">2</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="submit_button_wrap">
+                                <input type="submit" name="" value="add cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-xs-6">
-                    <div class="side_block">
-                        <div class="content">
-                            <p class="label">conte</p>
-                            <h2>Leggins <br><span>Leona</span></h2>
-                            <p class="price_crossed">&euro;189.99</p>
-                            <p class="price_main">&euro;109.99</p>
-                            <a href="">shop now</a>
-                        </div>
-                        <div class="gradient"></div>
-                    </div>
+                <div class="col-md-6 col-md-push-6 item_descr">
+                    <p>Everybody that has ever been to a meeting, can recall the all familiar “passing” of the business cards. This powerfull marketing tool is often used matter of factly, and we have to wonder how often does the recipient of your card hold on to it, and use your business information positively?</p>
+                    <p>In a world where first impressions count and business is becoming more competitive, it would be foolish to go with the crowd. You have to act different to make a impact so that you will be remembered when the rest are forgotten. Often times, traditional business cards reflects your name, position in the company and contact details…not very inspiring. Full colour business cards might be a better option, but once again,you would have needed to make some kind of impression, for the recipient of your card to give it a second glance.</p>
                 </div>
-                <div class="col-md-8 col-xs-6">
-                    <div class="row collection_slider_desktop">
-                        <div class="col-md-12">
-                            <div class="collection_slider">
-                                <div class="slider_item item_1">
-                                    <div class="content">
-                                        <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                        <p class="label">conte</p>
-                                        <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                        <a href="">see collection</a>
-                                    </div>
-                                    <div class="gradient"></div>
-                                </div>
-                                <div class="slider_item item_2">
-                                    <div class="content">
-                                        <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                        <p class="label">conte</p>
-                                        <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                        <a href="">see collection</a>
-                                    </div>
-                                    <div class="gradient"></div>
-                                </div>
-                                <div class="slider_item item_1">
-                                    <div class="content">
-                                        <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                        <p class="label">conte</p>
-                                        <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                        <a href="">see collection</a>
-                                    </div>
-                                    <div class="gradient"></div>
-                                </div>
-                                <div class="slider_item item_1">
-                                    <div class="content">
-                                        <h2>Aimong for <span>Higher</span><br>The mastopexy</h2>
-                                        <p class="label">conte</p>
-                                        <p class="text">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before? If she recently has.</p>
-                                        <a href="">see collection</a>
-                                    </div>
-                                    <div class="gradient"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row banners_mobile">
-                        <div class="col-md-6">
-                            <a href="" class="collection_item item_men">
-                                <div class="content">
-                                    <p class="label">diwari</p>
-                                    <h2>t-shirt & slips</h2>
-                                    <div class="price_block">
-                                        <sup class="currency">&euro;</sup>
-                                        <p class="price_main">30</p>
-                                    </div>
-                                </div>
-                                <img src="img/men.png">
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="" class="collection_item item_sport">
-                                <div class="content">
-                                    <p class="label">serge</p>
-                                    <h2>sport costume</h2>
-                                    <div class="price_block">
-                                        <sup class="currency">&euro;</sup>
-                                        <p class="price_main">30</p>
-                                    </div>
-                                </div>
-                                <img src="img/sport.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="store_nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <ul class="list_right">
-                        <li><a href="">men</a></li>
-                        <li><a href="" class="active">women</a></li>
-                        <li><a href="">kids</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-9">
-                    <ul class="list_left">
-                        <li><a href="" class="active">all</a></li>
-                        <li><a href="">panty's</a></li>
-                        <li><a href="">leggins</a></li>
-                        <li><a href="">socks</a></li>
-                        <li><a href="">underpants</a></li>
-                        <li><a href="">gaiters</a></li>
-                        <li><a href="">brassieres</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="product_section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="product_section_slider">
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_1.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Summer Series</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>5</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_2.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Prestige</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>7</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_3.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Summer Series</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>7</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_4.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Summer Series</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>9</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_1.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Summer Series</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>5</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_2.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Prestige</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>7</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_3.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Summer Series</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>7</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div class="img_wrap">
-                                <img src="img/product_4.png">
-                                <div class="hover_wrap">
-                                    <div class="icons_wrap">
-                                        <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <a href=""><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h2>Summer Series</h2>
-                                <p class="descr">Are ultra-fine tights, which give a sensation of lightness and com</p>
-                                <div class="price_block">
-                                    <p class="price_main"><span class="currency">&euro;</span>9</p>
-                                </div>
-                                <div class="palette">
-                                    <div class="color_1"></div>
-                                    <div class="color_2"></div>
-                                    <div class="color_3"></div>
-                                    <div class="color_4"></div>
-                                    <div class="color_5"></div>
-                                </div>
-                                <a href="" class="to_cart_button">add to cart</a>
-                            </div>
-                        </div>
+                <div class="col-md-6 col-md-pull-6 item_table">
+                    <div class="table_wrap">
+                        <table>
+                            <tr>
+                                <td class="table_head">article</td>
+                                <td class="table_content">1010180022</td>
+                            </tr>
+                            <tr>
+                                <td class="table_head">color</td>
+                                <td class="table_content">bronz</td>
+                            </tr>
+                            <tr>
+                                <td class="table_head">size</td>
+                                <td class="table_content">2</td>
+                            </tr>
+                            <tr>
+                                <td class="table_head">density</td>
+                                <td class="table_content">20</td>
+                            </tr>
+                            <tr>
+                                <td class="table_head">fabric</td>
+                                <td class="table_content">88% polyamide, 12% elastane</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
