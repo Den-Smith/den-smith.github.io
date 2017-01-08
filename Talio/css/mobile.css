@@ -75,14 +75,14 @@ header{
 	padding: 0;
 }
 
-.acc_wrap .cart:hover{
+/*.acc_wrap .cart:hover{
 	background-image: url(../img/cart-hover.png);
 }
 
 .acc_wrap .cart:hover span{
 	border-color: #080504;
 	color: #e9353b;
-}
+}*/
 
 .acc_wrap .cart p{
 	font-size: 0;
