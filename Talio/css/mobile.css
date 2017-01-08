@@ -182,6 +182,10 @@
 
 /* for section */
 
+.for_section{
+	width: 100%;
+}
+
 .for_section .desktop_section{
     display: none;
 }
