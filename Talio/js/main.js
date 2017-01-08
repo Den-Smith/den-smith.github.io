@@ -27,19 +27,19 @@ $(document).ready(function() {
                 }
             });
         } else {
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 0) {
-                    $('header').addClass('fixed');
-                    $('.margin_top_section').css({
-                        'margin-top': '100px',
-                    });
-                } else {
-                    $('header').removeClass('fixed');
-                    $('.margin_top_section').css({
-                        'margin-top': '0',
-                    });
-                }
-            });
+            // $(window).scroll(function() {
+            //     if ($(window).scrollTop() > 0) {
+            //         $('header').addClass('fixed');
+            //         $('.margin_top_section').css({
+            //             'margin-top': '100px',
+            //         });
+            //     } else {
+            //         $('header').removeClass('fixed');
+            //         $('.margin_top_section').css({
+            //             'margin-top': '0',
+            //         });
+            //     }
+            // });
         };
     });
 
@@ -59,19 +59,19 @@ $(document).ready(function() {
                 }
             });
         } else {
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 0) {
-                    $('header').addClass('fixed');
-                    $('.margin_top_section').css({
-                        'margin-top': '100px',
-                    });
-                } else {
-                    $('header').removeClass('fixed');
-                    $('.margin_top_section').css({
-                        'margin-top': '0',
-                    });
-                }
-            });
+            // $(window).scroll(function() {
+            //     if ($(window).scrollTop() > 0) {
+            //         $('header').addClass('fixed');
+            //         $('.margin_top_section').css({
+            //             'margin-top': '100px',
+            //         });
+            //     } else {
+            //         $('header').removeClass('fixed');
+            //         $('.margin_top_section').css({
+            //             'margin-top': '0',
+            //         });
+            //     }
+            // });
         };
 
 

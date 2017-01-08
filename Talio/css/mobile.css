@@ -1,5 +1,29 @@
 /* mibile ver */
 
+
+
+
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 111;
+	top: 0;
+	left: 0;
+}
+
+.margin_top_section{
+	margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
 .header_top{
 	display: none;
 }
