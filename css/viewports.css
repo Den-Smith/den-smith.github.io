@@ -45,7 +45,7 @@
 		height: 200px;
 	}
 	.tab-pane .photo_wrap{
-		position: initial;
+		position: relative;
 		display: block;
 		margin: 0 auto;
 		padding: 25px 0;
