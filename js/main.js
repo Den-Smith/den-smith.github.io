@@ -30,7 +30,7 @@ $(document).ready(function() {
         window.getSelection().addRange(range);
 
         try {
-            // Теперь, когда мы выбрали текст ссылки, выполним команду копирования
+            // копирование
             var successful = document.execCommand('copy');
             $('.tooltip_li').popover('show');
             var msg = successful ? 'successful' : 'unsuccessful';
