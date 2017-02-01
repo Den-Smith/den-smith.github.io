@@ -54,6 +54,7 @@
 	.tab-pane .about_content{
 		float: none;
 		margin: 0;
+		max-width: 100%;
 		text-align: center;
 	}
 }

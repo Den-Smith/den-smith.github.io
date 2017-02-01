@@ -142,6 +142,7 @@ ul{
 .tab-pane .about_content{
     float: right;
     margin: 149px 0;
+    max-width: 470px;
 }
 
 .tab-pane .about_content h2{
@@ -187,16 +188,16 @@ ul{
 }
 
 .portfolio_content .portfolio_content_item.item_1{
-    background-image: url(../img/pearl.png);
-}
-.portfolio_content .portfolio_content_item.item_2{
-    background-image: url(../img/friday-design.png);
-}
-.portfolio_content .portfolio_content_item.item_3{
     background-image: url(../img/press-club.png);
 }
-.portfolio_content .portfolio_content_item.item_4{
+.portfolio_content .portfolio_content_item.item_2{
     background-image: url(../img/culture.png);
+}
+.portfolio_content .portfolio_content_item.item_3{
+    background-image: url(../img/pearl.png);
+}
+.portfolio_content .portfolio_content_item.item_4{
+    background-image: url(../img/friday-design.png);
 }
 .portfolio_content .portfolio_content_item.item_5{
     background-image: url(../img/belarus-in-focus.png);
