@@ -84,6 +84,14 @@ ul{
 
 /* content section */
 
+.tab-content{
+	display: block !important;
+}
+
+.slider-content{
+	display: none !important;
+}
+
 .content_section{
     width: 100%;
     max-width: 900px;
@@ -134,7 +142,7 @@ ul{
     left: 50px;
 }
 
-.tab-pane .photo_wrap img{
+.photo_wrap img{
     width: 260px;
     height: 260px;
 }
@@ -162,7 +170,11 @@ ul{
 }
 
 .portfolio_content ul{
-    display:flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;     /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Chrome */
+	display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -171,6 +183,7 @@ ul{
     max-width: 600px;
     margin: 0 auto;
 }
+
 
 .portfolio_content li{
     display: inline-block;

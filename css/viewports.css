@@ -37,6 +37,36 @@
 	.temp h1{
 		font-size: 4em !important;
 	}
+	.content_block{
+		vertical-align: top;
+	}
+	.tab-content{
+		display: none !important;
+	}
+	.slider-content{
+		display: block !important;
+	}
+	.slick-slide{
+		height: 85vh !important;
+		min-height: 300px !important;
+		overflow: hidden;
+	}
+	.slider_portfolio {
+		height: 85vh !important;
+	}
+	.slider_portfolio.slick-active{
+		height: 100% !important;
+	}
+	.slick-slide .photo_wrap img{
+		margin: 00px auto 30px;
+	}
+	.slick-slide .about_content{
+		text-align: center;
+	}
+	.content_section,
+	.content_block{
+		display: block;
+	}
 	.content_block .nav_tabs li a{
 		margin: 0 30px;
 	}
@@ -60,9 +90,8 @@
 }
 
 @media only screen and (max-width : 630px){
-	.content_block{
-		vertical-align: top;
-	}
+	
+
 }
 
 /* Extra Small Devices, Phones */
@@ -84,7 +113,29 @@
 	}
 	.portfolio_content .portfolio_content_item{
 		margin: 5px;
-		width: 150px;
-		height: 150px;
+		width: 140px;
+		height: 140px;
+	}
+}
+
+@media only screen and (max-width : 370px){
+	.slick-slide .photo_wrap img{
+		width: 200px;
+		height: 200px;
+	}
+	.content_block .nav_tabs li a{
+		padding: 10px 0px;
+	}
+	.contacts_content{
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-height: 450px){
+	.slick-slide{
+		height: 120vh !important;
+	}
+	.contacts_content{
+		padding: 80px 0;
 	}
 }

@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/viewports.css">
 
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -33,9 +36,9 @@
         <div class="content_block">
             <!-- Nav tabs -->
             <ul class="nav_tabs" role="tablist">
-                <li role="presentation" class="active"><a class="hvr-underline-from-center" href="#about" aria-controls="about" role="tab" data-toggle="tab">Обо мне</a></li>
-                <li role="presentation"><a class="hvr-underline-from-center" href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">Примеры работ</a></li>
-                <li role="presentation"><a class="hvr-underline-from-center" href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab">Контакты</a></li>
+                <li role="presentation" class="tab_about active"><a class="hvr-underline-from-center" href="#about" aria-controls="about" role="tab" data-toggle="tab">Обо мне</a></li>
+                <li role="presentation" class="tab_portfolio"><a class="hvr-underline-from-center" href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">Примеры работ</a></li>
+                <li role="presentation" class="tab_contacts"><a class="hvr-underline-from-center" href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab">Контакты</a></li>
             </ul>
             <!-- Tab panes -->
             <div class="tab-content">
@@ -49,6 +52,7 @@
                 		<p>HTML5/CSS3; JS; Git; Bootstrap; Sass; Drupal; WordPress; AdobePS</p>
                 	</div>
                 </div>
+
                 <div role="tabpanel" class="tab-pane fade" id="portfolio">
                 	<div class="portfolio_content">
                 		<ul>
@@ -101,6 +105,70 @@
                 	</div>
                 </div>
             </div>
+            <!-- slider panes -->
+            <div class="slider-content">
+                <div role="" class="slider_about" id="">
+                    <div class="photo_wrap"><img src="img/my-photo-small.png" class="img-circle"></div>
+                    <div class="about_content">
+                        <h2>Куликовский Денис</h2>
+                        <p>25 лет</p>
+                        <p>Front-End разработчик</p>
+                        <!-- <p>Навыки:</p> -->
+                        <p>HTML5/CSS3; JS; Git; Bootstrap; Sass; Drupal; WordPress; AdobePS</p>
+                    </div>
+                </div>
+                <div role="" class="slider_portfolio" id="">
+                    <div class="portfolio_content">
+                        <ul>
+                            <li><a href="http://service.press-club.by/" rel="external" class="portfolio_content_item item_1 hvr-float"><div class="hover">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div></a></li>
+                            <li><a href="http://kv.press-club.by/" rel="external" class="portfolio_content_item item_2 hvr-float"><div class="hover">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div></a></li>
+                            <li><a href="http://pearltrade.be/" rel="external" class="portfolio_content_item item_3 hvr-float"><div class="hover">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div></a></li>
+                            <li><a href="https://den-smith.github.io/work/FridayDesign/index.html" rel="external" class="portfolio_content_item item_4 hvr-float"><div class="hover">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div></a></li>
+                            <li><a href="http://competition2016.belarusinfocus.info/" rel="external" class="portfolio_content_item item_5 hvr-float"><div class="hover">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div></a></li>
+                            <li><a href="https://den-smith.github.io/work/the5element/index.html" rel="external" class="portfolio_content_item item_6 hvr-float"><div class="hover">
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div role="" class="slider_contacts" id="">
+                    <div class="contacts_content">
+                        <ul>
+                            <li><a class="hvr-icon-sink-away vk" href="https://vk.com/sky_drums" rel="external">Денис Смит</a></li>
+                            <li><a class="hvr-icon-sink-away mail" href="mailto:winston100red@gmail.com">winston100red@gmail.com</a></li>
+                            <li class=""><a class="hvr-icon-sink-away phone tooltip_li" data-toggle="popover" data-placement="bottom" data-content="Номер скопирован в буфер обмена">+375 25 945 22 23</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -111,6 +179,7 @@
     <script src="lib/AnimatedHeaderBackgrounds/js/EasePack.min.js"></script>
     <script src="lib/AnimatedHeaderBackgrounds/js/rAF.js"></script>
     <script src="lib/AnimatedHeaderBackgrounds/js/demo-1.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

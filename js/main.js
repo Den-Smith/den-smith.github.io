@@ -41,4 +41,47 @@ $(document).ready(function() {
         }
         window.getSelection().removeAllRanges();
     });
+
+    // Slider
+    $('.slider-content').slick({
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+
+    $('.slider-content').on('swipe', function(){
+        if($('.slider_about').hasClass('slick-active')){
+            $('.tab_about').addClass('active');
+            $('#about').addClass('active in');
+        } else{
+            $('.tab_about').removeClass('active');
+            $('#about').removeClass('active in');
+        }
+        if($('.slider_portfolio').hasClass('slick-active')){
+            $('.tab_portfolio').addClass('active');
+            $('#portfolio').addClass('active in');
+        } else{
+            $('.tab_portfolio').removeClass('active');
+            $('#portfolio').removeClass('active in');
+        }
+        if($('.slider_contacts').hasClass('slick-active')){
+            $('.tab_contacts').addClass('active');
+            $('#contacts').addClass('active in');
+        } else{
+            $('.tab_contacts').removeClass('active');
+            $('#contacts').removeClass('active in');
+        }
+    });
+
+    $('.tab_about a').click(function(e) {
+        $('.slider-content').slick('slickGoTo', 0)
+    });
+    $('.tab_portfolio a').click(function(e) {
+        $('.slider-content').slick('slickGoTo', 1)
+    });
+    $('.tab_contacts a').click(function(e) {
+        $('.slider-content').slick('slickGoTo', 2)
+    });
+    
 });
