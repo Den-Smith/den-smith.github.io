@@ -68,7 +68,7 @@
 		display: block;
 	}
 	.content_block .nav_tabs li a{
-		margin: 0 30px;
+		margin: 0 20px;
 	}
 	.tab-pane .photo_wrap img{
 		width: 200px;
@@ -97,7 +97,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 590px){
 	.content_block .nav_tabs li a{
-		margin: 0 10px;
+		margin: 0 5px;
 	}
 }
 
