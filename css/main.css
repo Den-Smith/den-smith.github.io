@@ -32,7 +32,7 @@ a:hover,
 a:active,
 a:focus{
     color: #94001c;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 form input:focus,
@@ -117,7 +117,8 @@ ul{
     display: inline-block;
 }
 
-.content_block .nav_tabs li.active a{
+.content_block .nav_tabs li.active a,
+.content_block .nav_tabs li a.hover_class:hover{
     color: #94001c;
 }
 
@@ -198,6 +199,7 @@ ul{
     margin: 10px 10px;
     background-position: center;
     background-repeat: no-repeat;
+    outline: none;
 }
 
 .portfolio_content .portfolio_content_item.item_1{
@@ -264,7 +266,8 @@ ul{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover::before,
+
+.hvr-underline-from-center.hover_class:hover::before,
 .content_block .nav_tabs li.active .hvr-underline-from-center::before{
   left: 0;
   right: 0;

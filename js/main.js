@@ -75,16 +75,29 @@ $(document).ready(function() {
     });
 
     $('.tab_about a').click(function(e) {
-        $('.nav_tabs li a').focusout();
         $('.slider-content').slick('slickGoTo', 0)
     });
     $('.tab_portfolio a').click(function(e) {
-        $('.nav_tabs li a').focusout();
         $('.slider-content').slick('slickGoTo', 1)
     });
     $('.tab_contacts a').click(function(e) {
-        $('.nav_tabs li a').focusout();
         $('.slider-content').slick('slickGoTo', 2)
     });
+
+    // del hover
+    $(window).resize(function() {
+        var width = $('body').innerWidth()
+        if ($(window).width() < 768) {
+            $('.nav_tabs li a').removeClass('hover_class');
+        } else{
+            $('.nav_tabs li a').addClass('hover_class');
+        }
+    });
+    var width = $('body').innerWidth()
+        if ($(window).width() < 768) {
+            $('.nav_tabs li a').removeClass('hover_class');
+        } else{
+            $('.nav_tabs li a').addClass('hover_class');
+        }
     
 });

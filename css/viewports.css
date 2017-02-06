@@ -87,6 +87,9 @@
 		max-width: 100%;
 		text-align: center;
 	}
+	a:hover, a:active, a:focus{
+		color: #41516b;
+	}
 }
 
 @media only screen and (max-width : 630px){
@@ -128,6 +131,11 @@
 	}
 	.contacts_content{
 		font-size: 16px;
+	}
+	.hvr-icon-sink-away::before, .hvr-icon-sink-away::after{
+		left: 0.3em;
+    	top: -1px;
+    	font-size: 20px;
 	}
 }
 
