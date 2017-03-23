@@ -192,11 +192,11 @@ header .contacts_block {
   z-index: 110;
 }
 
-header .menu_buton_wrap {
+header .menu_button_wrap {
   z-index: 101;
 }
 
-header .menu_buton_wrap .menu-btn {
+header .menu_button_wrap .menu-btn {
   cursor: pointer;
   display: block;
   width: 64px;
@@ -204,7 +204,7 @@ header .menu_buton_wrap .menu-btn {
   position: relative;
 }
 
-header .menu_buton_wrap .menu-btn .menu-btn_line {
+header .menu_button_wrap .menu-btn .menu-btn_line {
   display: block;
   width: 44px;
   height: 2px;
@@ -215,49 +215,49 @@ header .menu_buton_wrap .menu-btn .menu-btn_line {
   left: 10px;
 }
 
-header .menu_buton_wrap .menu-btn .menu-btn_line__1 {
+header .menu_button_wrap .menu-btn .menu-btn_line__1 {
   top: 24px;
 }
 
-header .menu_buton_wrap .menu-btn .menu-btn_line__2 {
+header .menu_button_wrap .menu-btn .menu-btn_line__2 {
   top: 31px;
 }
 
-header .menu_buton_wrap .menu-btn .menu-btn_line__3 {
+header .menu_button_wrap .menu-btn .menu-btn_line__3 {
   top: 38px;
 }
 
-header .menu_buton_wrap .menu-btn .menu-btn_line__4 {
+header .menu_button_wrap .menu-btn .menu-btn_line__4 {
   top: 31px;
   -webkit-transform: rotate(45deg) translateX(-70%) scaleX(0);
       -ms-transform: rotate(45deg) translateX(-70%) scaleX(0);
           transform: rotate(45deg) translateX(-70%) scaleX(0);
 }
 
-header .menu_buton_wrap .menu-btn .menu-btn_line__5 {
+header .menu_button_wrap .menu-btn .menu-btn_line__5 {
   top: 31px;
   -webkit-transform: rotate(-45deg) translateX(-70%) scaleX(0);
       -ms-transform: rotate(-45deg) translateX(-70%) scaleX(0);
           transform: rotate(-45deg) translateX(-70%) scaleX(0);
 }
 
-header .menu_buton_wrap .menu-btn:hover .menu-btn_line__1 {
+header .menu_button_wrap .menu-btn:hover .menu-btn_line__1 {
   -webkit-transform: translate(0, -5px);
       -ms-transform: translate(0, -5px);
           transform: translate(0, -5px);
 }
 
-header .menu_buton_wrap .menu-btn:hover .menu-btn_line__3 {
+header .menu_button_wrap .menu-btn:hover .menu-btn_line__3 {
   -webkit-transform: translate(0, 5px);
       -ms-transform: translate(0, 5px);
           transform: translate(0, 5px);
 }
 
-header .menu_buton_wrap .menu-btn.active .menu-btn_line {
+header .menu_button_wrap .menu-btn.active .menu-btn_line {
   background-color: #ff306f;
 }
 
-header .menu_buton_wrap .menu-btn.active .menu-btn_line__1 {
+header .menu_button_wrap .menu-btn.active .menu-btn_line__1 {
   top: 31px;
   -webkit-transform: rotate(45deg) translateX(0) scaleX(1);
       -ms-transform: rotate(45deg) translateX(0) scaleX(1);
@@ -266,12 +266,12 @@ header .menu_buton_wrap .menu-btn.active .menu-btn_line__1 {
           transition-delay: .12s;
 }
 
-header .menu_buton_wrap .menu-btn.active .menu-btn_line__2 {
+header .menu_button_wrap .menu-btn.active .menu-btn_line__2 {
   opacity: 0;
   visibility: hidden;
 }
 
-header .menu_buton_wrap .menu-btn.active .menu-btn_line__3 {
+header .menu_button_wrap .menu-btn.active .menu-btn_line__3 {
   top: 31px;
   -webkit-transform: rotate(-45deg) translateX(0) scaleX(1);
       -ms-transform: rotate(-45deg) translateX(0) scaleX(1);
@@ -280,7 +280,7 @@ header .menu_buton_wrap .menu-btn.active .menu-btn_line__3 {
           transition-delay: .22s;
 }
 
-header .menu_buton_wrap .menu-btn.active:hover .menu-btn_line__1 {
+header .menu_button_wrap .menu-btn.active:hover .menu-btn_line__1 {
   -webkit-transform: rotate(45deg) translateX(70%) scaleX(0);
       -ms-transform: rotate(45deg) translateX(70%) scaleX(0);
           transform: rotate(45deg) translateX(70%) scaleX(0);
@@ -288,7 +288,7 @@ header .menu_buton_wrap .menu-btn.active:hover .menu-btn_line__1 {
           transition-delay: 0s;
 }
 
-header .menu_buton_wrap .menu-btn.active:hover .menu-btn_line__3 {
+header .menu_button_wrap .menu-btn.active:hover .menu-btn_line__3 {
   -webkit-transform: rotate(-45deg) translateX(70%) scaleX(0);
       -ms-transform: rotate(-45deg) translateX(70%) scaleX(0);
           transform: rotate(-45deg) translateX(70%) scaleX(0);
@@ -296,7 +296,7 @@ header .menu_buton_wrap .menu-btn.active:hover .menu-btn_line__3 {
           transition-delay: 0s;
 }
 
-header .menu_buton_wrap .menu-btn.active:hover .menu-btn_line__4 {
+header .menu_button_wrap .menu-btn.active:hover .menu-btn_line__4 {
   -webkit-transform: rotate(45deg) translateX(0) scaleX(1);
       -ms-transform: rotate(45deg) translateX(0) scaleX(1);
           transform: rotate(45deg) translateX(0) scaleX(1);
@@ -304,7 +304,7 @@ header .menu_buton_wrap .menu-btn.active:hover .menu-btn_line__4 {
           transition-delay: .22s;
 }
 
-header .menu_buton_wrap .menu-btn.active:hover .menu-btn_line__5 {
+header .menu_button_wrap .menu-btn.active:hover .menu-btn_line__5 {
   -webkit-transform: rotate(-45deg) translateX(0) scaleX(1);
       -ms-transform: rotate(-45deg) translateX(0) scaleX(1);
           transform: rotate(-45deg) translateX(0) scaleX(1);
@@ -551,12 +551,6 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
   transition: all 0.6s;
 }
 
-.wave-container:hover:before {
-  -webkit-transform: scale(0.95);
-      -ms-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
 .navigation__border {
   position: absolute;
   background: #ff306f;
@@ -662,6 +656,7 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 /* hero section */
 .hero_section {
   background-image: url("../img/hero-bg.png");
+  background-color: #3b3b57;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -671,14 +666,20 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 }
 
 .hero_section .item_wrap .form_item, .hero_section .item_wrap .description_item {
-  min-height: 690px;
+  height: 670px;
+  max-width: 490px;
   position: relative;
+  overflow: hidden;
   background-color: #FFF;
-  margin: 20px;
-  padding: 40px 25px 25px;
+  margin: 20px auto 20px;
+  padding: 25px;
   border: 7px solid #ff306f;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .hero_section .item_wrap .form_item .form_title, .hero_section .item_wrap .form_item .item_title, .hero_section .item_wrap .description_item .form_title, .hero_section .item_wrap .description_item .item_title {
@@ -740,6 +741,8 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
   font-size: 17px;
   color: #ff306f;
   font-weight: bold;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .hero_section .item_wrap .form_item .form_content p, .hero_section .item_wrap .description_item .form_content p {
@@ -826,6 +829,7 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
           border-radius: 50%;
   border: 2px solid #D3D3D3;
   font-size: 18px;
+  font-weight: bold;
   text-align: center;
   padding: 3px 0;
   color: #91dc5a;
@@ -871,4 +875,48 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 .hero_section .item_wrap .form_item .item_footer a:hover, .hero_section .item_wrap .form_item .item_footer a:focus, .hero_section .item_wrap .form_item .item_footer a:active, .hero_section .item_wrap .description_item .item_footer a:hover, .hero_section .item_wrap .description_item .item_footer a:focus, .hero_section .item_wrap .description_item .item_footer a:active {
   border-color: #91dc5a;
   color: #91dc5a;
+}
+
+.hero_section .item_wrap .description_item {
+  float: left;
+  border: 5px solid;
+  border-color: #c6c6c6;
+  -webkit-transform: translate(80px, 0px);
+      -ms-transform: translate(80px, 0px);
+          transform: translate(80px, 0px);
+}
+
+.hero_section .item_wrap .description_item h2 {
+  text-transform: capitalize;
+}
+
+.hero_section .item_wrap .form_item {
+  float: right;
+  -webkit-transform: translate(-80px, 0px);
+      -ms-transform: translate(-80px, 0px);
+          transform: translate(-80px, 0px);
+}
+
+.hero_section .item_wrap .form_item.animate, .hero_section .item_wrap .description_item.animate {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.hero_section .hero_footer {
+  background-color: #3B3B57;
+  padding: 26px 0;
+}
+
+.hero_section .hero_footer h2 {
+  color: #91dc5a;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero_section .hero_footer p {
+  color: #fff;
+  line-height: 1.5;
 }
