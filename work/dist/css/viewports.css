@@ -120,6 +120,7 @@
     padding: 20px 0;
   }
   .security_video_section .security_img {
+    text-align: center;
     margin-bottom: 20px;
   }
   .security_video_section .security_img .item {
