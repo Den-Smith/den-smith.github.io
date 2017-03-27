@@ -22,6 +22,9 @@
   .hero_section .item_wrap .description_item .item_content {
     padding: 0;
   }
+  .security_video_section .security_img .item {
+    margin: 5px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -113,6 +116,15 @@
   .hero_section .hero_footer p {
     text-align: justify;
   }
+  .security_video_section {
+    padding: 20px 0;
+  }
+  .security_video_section .security_img {
+    margin-bottom: 20px;
+  }
+  .security_video_section .security_img .item {
+    margin: 5px;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -203,5 +215,11 @@
   }
   .hero_section .item_wrap .description_item .item_content .item_title {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .security_video_section .security_img .item {
+    margin: 0;
   }
 }

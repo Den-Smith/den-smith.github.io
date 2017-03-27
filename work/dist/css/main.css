@@ -117,7 +117,6 @@ html.mobile body {
 
 body {
   overflow: inherit;
-  background-color: #AAAAAA;
 }
 
 body.scroll {
@@ -665,8 +664,7 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: -webkit-calc(100vh - 100px);
-  height: calc(100vh - 100px);
+  height: auto;
   min-height: 800px;
 }
 
@@ -925,4 +923,53 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 .hero_section .hero_footer p {
   color: #fff;
   line-height: 1.5;
+}
+
+.security_video_section {
+  background-color: #3B3B57;
+  color: #fff;
+  padding: 0 0 26px;
+}
+
+.security_video_section .security_img .item {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.security_video_section iframe {
+  width: 100%;
+}
+
+.footer_disclaimer {
+  padding: 20px 0;
+  background-color: #3b3b57;
+}
+
+.footer_disclaimer .panel, .footer_disclaimer .panel-default > .panel-heading {
+  color: #fff;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border-color: #12121a;
+  background-color: #2b2b3f;
+}
+
+.footer_disclaimer .panel a, .footer_disclaimer .panel-default > .panel-heading a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.footer_disclaimer .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #12121a;
+}
+
+.footer_disclaimer .panel-heading {
+  padding: 0;
+}
+
+footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #2b2b3f;
 }
