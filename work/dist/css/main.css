@@ -452,32 +452,6 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
   display: inline-block;
 }
 
-.menu_container .nav_footer .social {
-  float: left;
-}
-
-.menu_container .nav_footer .social a {
-  position: relative;
-  width: 36px;
-  height: 36px;
-  display: block;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  border: 2px solid transparent;
-  margin: 0 5px;
-}
-
-.menu_container .nav_footer .social a i {
-  color: #ff306f;
-  font-size: 18px;
-  padding: 7px 5px;
-}
-
-.menu_container .nav_footer .social a.wave-container:hover .wave {
-  -webkit-box-shadow: 0px 0px 10px 0px #ff306f;
-          box-shadow: 0px 0px 10px 0px #ff306f;
-}
-
 .menu_container .nav_footer .sign_wrap {
   float: right;
 }
@@ -498,6 +472,32 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 
 .menu_container .nav_footer .sign_wrap ul li a {
   font-size: 18px;
+}
+
+.social {
+  float: left;
+}
+
+.social a {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: block;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid transparent;
+  margin: 0 5px;
+}
+
+.social a i {
+  color: #ff306f;
+  font-size: 18px;
+  padding: 7px 5px;
+}
+
+.social a.wave-container:hover .wave {
+  -webkit-box-shadow: 0px 0px 10px 0px #ff306f;
+          box-shadow: 0px 0px 10px 0px #ff306f;
 }
 
 .wave-container .wave {
@@ -916,20 +916,35 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
   padding: 0 0 26px;
 }
 
+.security_video_section .security_img {
+  margin: 20px 0;
+}
+
 .security_video_section .security_img .item {
   width: 100px;
   height: 100px;
   display: inline-block;
-  margin: 10px;
+}
+
+.security_video_section .security_img .item:nth-of-type(2) {
+  margin: 0 10px;
 }
 
 .security_video_section iframe {
   width: 100%;
 }
 
+.security_video_section p {
+  margin: 33px 0;
+}
+
 .footer_disclaimer {
   padding: 20px 0;
   background-color: #3b3b57;
+}
+
+.footer_disclaimer .panel-group {
+  margin: 0;
 }
 
 .footer_disclaimer .panel, .footer_disclaimer .panel-default > .panel-heading {
@@ -957,4 +972,138 @@ footer {
   padding: 20px 0;
   color: #fff;
   background-color: #2b2b3f;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin: 10px 0;
+}
+
+footer .contacts_block {
+  width: 200px;
+  float: right;
+}
+
+footer .contacts_block .phone_block {
+  text-align: center;
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+  position: relative;
+  color: #fff;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+footer .contacts_block .phone_block:hover {
+  color: #ff306f;
+}
+
+footer .contacts_block .phone_block h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+footer .contacts_block .phone_block i {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -webkit-calc(50% - 20px / 2);
+  top: calc(50% - 20px / 2);
+}
+
+footer .contacts_block .phone_block p {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+footer .contacts_block .phone_block span {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+
+footer .contacts_block .apply_block {
+  display: block;
+  background-color: #ff306f;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 2px solid #ff306f;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 10px;
+  display: block;
+  margin: 20px auto;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+footer .contacts_block .apply_block:hover, footer .contacts_block .apply_block:focus, footer .contacts_block .apply_block:active {
+  background-color: transparent;
+  color: #ff306f;
+}
+
+footer .social {
+  margin: 0;
+  float: right;
+  width: 200px;
+  text-align: center;
+}
+
+footer .social li {
+  margin: 0;
+  display: inline-block;
+}
+
+footer .social li a {
+  text-align: left;
+}
+
+.footer_bottom {
+  margin-top: 30px;
+  line-height: 1.3;
+}
+
+.footer_bottom .logo_footer {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.footer_bottom .logo_footer span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ff306f;
+}
+
+.footer_bottom .logo_footer:hover {
+  color: #ff306f;
+}
+
+.footer_bottom .logo_footer:hover span {
+  color: #fff;
+}
+
+.footer_bottom .paycard_block {
+  text-align: right;
+}
+
+.footer_bottom .paycard_block .item {
+  vertical-align: middle;
+  margin: 0 3px;
+  display: inline-block;
 }
