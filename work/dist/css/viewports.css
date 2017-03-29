@@ -22,6 +22,9 @@
   .hero_section .item_wrap .description_item .item_content {
     padding: 0;
   }
+  footer .contacts_block .phone_block h3 {
+    font-size: 16px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -130,9 +133,16 @@
   .footer_top {
     text-align: center;
   }
+  footer h3 {
+    margin-bottom: 9px;
+    min-height: 60px;
+  }
   footer .contacts_block, footer .social {
     float: none;
     margin: 0 auto;
+  }
+  footer .contacts_block {
+    max-width: 200px;
   }
 }
 
