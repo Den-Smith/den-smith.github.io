@@ -160,6 +160,10 @@ header .logo_wrap .logo h1 {
   font-size: 4rem;
 }
 
+header .logo_wrap .logo p {
+  font-size: 10px;
+}
+
 header .logo_wrap .logo span {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -991,6 +995,10 @@ footer ul li {
 
 footer ul li a {
   color: #fff;
+}
+
+footer .last_block {
+  margin-bottom: 20px;
 }
 
 footer .last_block h3 {

@@ -47,9 +47,13 @@
   header .logo_wrap {
     z-index: 111;
     padding: 0;
+    max-width: 100px;
   }
   header .logo_wrap .logo h1 {
     font-size: 24px;
+  }
+  header .logo_wrap .logo p {
+    line-height: 1.2;
   }
   header .phone_block p {
     font-size: 10px;
@@ -214,7 +218,7 @@
     margin-left: 0;
   }
   header .contacts_block .phone_block i {
-    left: 5px;
+    left: 10px;
   }
   header .contacts_block .phone_block h3 {
     font-size: 18px;
