@@ -1024,6 +1024,7 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 }
 
 .footer_disclaimer .panel, .footer_disclaimer .panel-default > .panel-heading {
+  position: relative;
   color: #fff;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -1033,7 +1034,13 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 
 .footer_disclaimer .panel a, .footer_disclaimer .panel-default > .panel-heading a {
   display: block;
-  padding: 10px 15px;
+  padding: 10px 25px 10px 15px;
+}
+
+.footer_disclaimer .panel a i, .footer_disclaimer .panel-default > .panel-heading a i {
+  position: absolute;
+  right: 10px;
+  font-size: 17px;
 }
 
 .footer_disclaimer .panel-default > .panel-heading + .panel-collapse > .panel-body {
