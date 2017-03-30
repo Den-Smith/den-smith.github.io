@@ -152,12 +152,13 @@ header .logo_wrap {
 
 header .logo_wrap .logo {
   color: #fff;
+  text-transform: uppercase;
 }
 
 header .logo_wrap .logo h1 {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  font-size: 4rem;
+  font-size: 26px;
 }
 
 header .logo_wrap .logo p {
@@ -939,7 +940,78 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 }
 
 .security_video_section p {
-  margin: 33px 0;
+  margin: 33px 0 10px;
+}
+
+.security_video_section .contacts_block {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.security_video_section .contacts_block .phone_block {
+  text-align: center;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  color: #fff;
+  padding-left: 0;
+  margin: 0 20px;
+}
+
+.security_video_section .contacts_block .phone_block:hover {
+  color: #ff306f;
+}
+
+.security_video_section .contacts_block .phone_block h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.security_video_section .contacts_block .phone_block i {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -webkit-calc(50% - 20px / 2);
+  top: calc(50% - 20px / 2);
+}
+
+.security_video_section .contacts_block .phone_block p {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 10px;
+  margin: 0;
+}
+
+.security_video_section .contacts_block .phone_block span {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+}
+
+.security_video_section .contacts_block .apply_block {
+  display: block;
+  background-color: #ff306f;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 2px solid #ff306f;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 20px 20px;
+  font-weight: bold;
+  width: 40%;
+  padding: 10px 10px;
+}
+
+.security_video_section .contacts_block .apply_block:hover, .security_video_section .contacts_block .apply_block:focus, .security_video_section .contacts_block .apply_block:active {
+  background-color: transparent;
+  color: #ff306f;
 }
 
 .footer_disclaimer {
@@ -1093,8 +1165,9 @@ footer .social li a {
 }
 
 .footer_bottom .logo_footer {
+  text-transform: uppercase;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 10px;
   font-weight: bold;
 }
