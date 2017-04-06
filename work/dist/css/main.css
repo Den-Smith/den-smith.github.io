@@ -10,12 +10,10 @@ a, img, i, ol, ul, li, form {
 }
 
 body {
-  min-width: 320px;
   position: relative;
   background-color: #fff;
   color: #2a2a2a;
   font-family: 'Ubuntu', sans-serif;
-  overflow-x: hidden;
   opacity: 1;
   line-height: 1.2;
 }
@@ -121,6 +119,10 @@ p {
 }
 
 /* main page */
+.container {
+  width: 1170px !important;
+}
+
 section {
   padding: 40px 0;
 }
