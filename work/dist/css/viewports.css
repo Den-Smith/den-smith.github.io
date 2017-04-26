@@ -287,6 +287,9 @@
     width: 100%;
     height: 12px;
   }
+  html.mobile header .nav_bg {
+    width: 100%;
+  }
 }
 
 /* Extra Small Devices, Phones */
