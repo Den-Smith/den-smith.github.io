@@ -7,48 +7,60 @@ $(document).ready(function(){
 		});
 	});
 
-	// accordion - / +
-	$('#accordion .panel-title a').click(function () {
-		$('#accordion .panel-title a').children().removeClass('fa-minus').addClass('fa-plus');
-		if ($(this).attr('aria-expanded') == 'true') {
-			$(this).children().removeClass('fa-minus').addClass('fa-plus');
-		} else{
-			$(this).children().removeClass('fa-plus').addClass('fa-minus');
-		}
-	});
+	// menu button
+	 $('.menu-btn').click(function(){
+	 	$(this).toggleClass('active');
+	 	$('.menu_container').toggleClass('active');
+	 	$('body').toggleClass('scroll')
+	 });
 
-	// slider init
-	$('#faq-slider').slick({
+
+	// nav ul dropdown
+	$('.header-nav .main-item > a').on('click', function(e){
+		e.preventDefault();
+	});
+	
+	var navSubMenuToggle = function() {
+		var width = $('body').innerWidth();
+		if ($(window).width() > 768) {
+				$('.header-nav > .main-item').off();
+				$('.header-nav > .main-item').hover(function () {
+				clearTimeout($.data(this,'timer'));
+				$('.sub-container',this).stop(true,true).show();
+			}, function () {
+				$.data(this,'timer', setTimeout($.proxy(function() {
+					$('.sub-container',this).stop(true,true).hide();
+				}, this), 100));
+			});
+		} else {
+			$('.header-nav > .main-item').off();
+			$('.header-nav > .main-item').click(function () {
+				$(this).toggleClass('in-active');
+				$('.header-nav').toggleClass('slide-on');
+				$('.sub-container').not($('.sub-container', this)).removeClass('in-active');
+				$('.sub-container', this).toggleClass('in-active');
+
+			});
+		}
 		
-	});
-	$('#main-slider').slick({
-		arrows: false,
-		dots: true,
-		slidesToShow: 3
-	});
+	}
+
+	// move navigation block from header block to menu container
+	var navMove = function() {
+		var width = $('body').innerWidth();
+		if ($(window).width() < 768) {
+			$('.flex-wrap .header-nav').detach().prependTo('.nav_content');
+		} else {
+			$('.nav_content .header-nav').detach().prependTo('.flex-wrap');
+		}
+	} 
+	$(window).resize(navMove);
+	$(document).ready(navMove);
+	$(window).resize(navSubMenuToggle);
+	$(document).ready(navSubMenuToggle);
 
 });
 
-
-// map init
-var map;
-function initMap() {
-	var pos = {lat: 53.905, lng: 27.557};
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: pos,
-		zoom: 16,
-		disableDefaultUI: true,
-		scrollwheel: false
-	});
-
-	var image = 'img/map-marker.png';
-	var marker = new google.maps.Marker({
-		position: pos,
-		map: map,
-		icon: image,
-		title: '143 Jerde Junion Suite 137'
-	});
-};
 
 
 
