@@ -1,25 +1,24 @@
+/*preloader*/
+$(window).on('load', function(){
+	$('.preloader').fadeOut('slow',function(){
+		$(this).remove();
+	});
+});
+
 $(document).ready(function(){
 
-	// preloader
-	$(window).on('load', function(){
-		$('.preloader').fadeOut('slow',function(){
-			$(this).remove();
-		});
-	});
-
-	// menu button
+	/*menu button*/
 	 $('.menu-btn').click(function(){
 	 	$(this).toggleClass('active');
 	 	$('.menu_container').toggleClass('active');
-	 	$('body').toggleClass('scroll')
+	 	$('body').toggleClass('scroll');
 	 });
 
-
-	// nav ul dropdown
+	/*nav ul dropdown*/
 	$('.header-nav .main-item.dropdown-item > a').on('click', function(e){
 		e.preventDefault();
 	});
-	
+
 	var navSubMenuToggle = function() {
 		var width = $('body').innerWidth();
 		if ($(window).width() > 768) {
@@ -45,13 +44,13 @@ $(document).ready(function(){
 				} else {
 					$('.header-nav .sub-container.detached').detach().removeClass('detached').prependTo(this);
 				}
-				
+
 			});
 		}
-		
-	}
 
-	// move navigation block from header block to menu container
+	};
+
+	/*move navigation block from header block to menu container*/
 	var navMove = function() {
 		var width = $('body').innerWidth();
 		if ($(window).width() < 768) {
@@ -59,29 +58,47 @@ $(document).ready(function(){
 		} else {
 			$('.nav_content .header-nav').detach().prependTo('.flex-wrap');
 		}
-	} 
+	};
 	$(window).resize(navMove);
 	$(document).ready(navMove);
 	$(window).resize(navSubMenuToggle);
 	$(document).ready(navSubMenuToggle);
 
-	// services slick slider init
+	/*services slick slider init*/
+	$('.services-slider-nav a').on('click', function(e){
+		e.preventDefault();
+	});
+	$('.services-slider-content').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.services-slider-nav'
+	});
 	$('.services-slider-nav').slick({
 		slidesToShow: 4,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		asNavFor: '.services-slider-content',
+		focusOnSelect: true,
+		prevArrow: '<button type="button" class="slick-prev slider-button-default">Previous</button>',
+		nextArrow: '<button type="button" class="slick-next slider-button-default">Next</button>'
 	});
-		// slider nav fix
-	$('.services-slider-nav li').click(function() {
-		$('.services-slider-nav li').not($(this)).removeClass('active');
-	});
+
+	/*Articles section tab init*/
+
+	$(document).ready(switchNewsTab);
+
+	function  switchNewsTab() {
+		$('.articles-content .articles-container').not($('.articles-content .articles-container.articles-first')).hide();
+		$('.articles-filter').click(function () {
+			$('.articles-filter').removeClass('articles-filter-current');
+			$(this).addClass('articles-filter-current');
+			var adviceBlockContainer = $(this).data('select');
+			$('.articles-content .articles-container').hide();
+			$(".articles-content  div[data-container='" + adviceBlockContainer + "']").show();
+		});
+	}
+	
+
 
 });
-
-
-
-
-
-
-
-
-
