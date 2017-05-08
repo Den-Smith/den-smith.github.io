@@ -73,8 +73,11 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		arrows: false,
 		fade: true,
+		draggable: false,
+		touchMove: false,
 		asNavFor: '.services-slider-nav'
 	});
+
 	$('.services-slider-nav').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -98,7 +101,18 @@ $(document).ready(function(){
 			$(".articles-content  div[data-container='" + adviceBlockContainer + "']").show();
 		});
 	}
-	
+
+	/* card item show more init */
+	$('.card-block').click(function () {
+		$(this).toggleClass('is-open');
+		if ($(this).hasClass('is-open')) {
+			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').addClass('fa-times');
+		} else {
+			$('.toggle-details-btn i', this).removeClass('fa-times').addClass('fa-ellipsis-h');
+		}
+
+	});
+
 
 
 });
