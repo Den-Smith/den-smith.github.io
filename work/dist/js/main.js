@@ -125,13 +125,11 @@ $(document).ready(function(){
 	$('.card-block').click(function () {
 		$(this).toggleClass('is-open');
 		if ($(this).hasClass('is-open')) {
-			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').fadeOut(100, function() {
-				$(this).addClass('fa-times');
-			}).fadeIn();
+			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').addClass('fa-times');
+			$('.toggle-details-btn.btn-text', this).text('show less');
 		} else {
-			$('.toggle-details-btn i', this).removeClass('fa-times').fadeOut(100, function() {
-				$(this).addClass('fa-ellipsis-h');
-			}).fadeIn();
+			$('.toggle-details-btn i', this).removeClass('fa-times').addClass('fa-ellipsis-h');
+			$('.toggle-details-btn.btn-text', this).text('show more');
 		}
 
 	});

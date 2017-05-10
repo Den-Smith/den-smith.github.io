@@ -1575,9 +1575,11 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 }
 
 .card-block.is-open .toggle-details-btn {
-  bottom: initial;
-  top: 10px;
-  right: 10px;
+  top: 103px;
+}
+
+.card-block.is-open .btn-text {
+  top: initial;
 }
 
 .card-block.is-open .card-details-container {
@@ -1798,5 +1800,18 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 }
 
 .card-block .toggle-details-btn .fa:hover {
+  color: #00a5e0;
+}
+
+.card-block .toggle-details-btn.btn-text {
+  display: block;
+  text-align: center;
+  width: 80px;
+  right: -webkit-calc(50% - 40px);
+  right: calc(50% - 40px);
+  bottom: 0;
+}
+
+.card-block .toggle-details-btn.btn-text:hover {
   color: #00a5e0;
 }
