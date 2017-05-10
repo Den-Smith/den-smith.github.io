@@ -75,16 +75,35 @@ $(document).ready(function(){
 		fade: true,
 		draggable: false,
 		touchMove: false,
+		// adaptiveHeight: true,
 		asNavFor: '.services-slider-nav'
 	});
 
 	$('.services-slider-nav').slick({
-		slidesToShow: 4,
+		slidesToShow: 5,
 		slidesToScroll: 1,
 		asNavFor: '.services-slider-content',
 		focusOnSelect: true,
+		centerMode: true,
 		prevArrow: '<button type="button" class="slick-prev slider-button-default">Previous</button>',
-		nextArrow: '<button type="button" class="slick-next slider-button-default">Next</button>'
+		nextArrow: '<button type="button" class="slick-next slider-button-default">Next</button>',
+		responsive: [
+		{
+			breakpoint: 1288,
+			settings: {
+				centerMode: true,
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				centerMode: true,
+				variableWidth: true,
+				slidesToShow: 1
+			}
+		}
+		]
 	});
 
 	/*Articles section tab init*/
@@ -106,9 +125,13 @@ $(document).ready(function(){
 	$('.card-block').click(function () {
 		$(this).toggleClass('is-open');
 		if ($(this).hasClass('is-open')) {
-			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').addClass('fa-times');
+			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').fadeOut(100, function() {
+				$(this).addClass('fa-times');
+			}).fadeIn();
 		} else {
-			$('.toggle-details-btn i', this).removeClass('fa-times').addClass('fa-ellipsis-h');
+			$('.toggle-details-btn i', this).removeClass('fa-times').fadeOut(100, function() {
+				$(this).addClass('fa-ellipsis-h');
+			}).fadeIn();
 		}
 
 	});

@@ -3,6 +3,9 @@
   header .header-nav .sub-container .sub-list {
     max-width: 970px;
   }
+  .side-bg-fade {
+    width: 220px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -338,6 +341,18 @@
   html.mobile header .nav_bg, html.mobile header .nav_footer {
     width: 100%;
   }
+  .side-bg-fade {
+    width: 40px;
+  }
+  .services-slider-nav .item a {
+    padding: 10px 40px;
+    min-width: 320px;
+    max-width: 400px;
+  }
+  .slider-button-default {
+    z-index: 2;
+    opacity: 1;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -391,5 +406,14 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 70px 0 25px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .services-slider-nav .slider-button-default.slick-prev {
+    left: 10px;
+  }
+  .services-slider-nav .slider-button-default.slick-next {
+    right: 10px;
   }
 }
