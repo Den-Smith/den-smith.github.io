@@ -56,7 +56,7 @@ $(document).ready(function(){
 		if ($(window).width() < 768) {
 			$('.flex-wrap .header-nav').detach().prependTo('.nav_content');
 		} else {
-			$('.nav_content .header-nav').detach().prependTo('.flex-wrap');
+			$('.nav_content .header-nav').detach().prependTo('header .flex-wrap');
 		}
 	};
 	$(window).resize(navMove);
@@ -125,11 +125,13 @@ $(document).ready(function(){
 	$('.card-block').click(function () {
 		$(this).toggleClass('is-open');
 		if ($(this).hasClass('is-open')) {
-			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').addClass('fa-times');
-			$('.toggle-details-btn.btn-text', this).text('show less');
+			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').fadeOut(100, function() {
+				$(this).addClass('fa-times');
+			}).fadeIn();
 		} else {
-			$('.toggle-details-btn i', this).removeClass('fa-times').addClass('fa-ellipsis-h');
-			$('.toggle-details-btn.btn-text', this).text('show more');
+			$('.toggle-details-btn i', this).removeClass('fa-times').fadeOut(100, function() {
+				$(this).addClass('fa-ellipsis-h');
+			}).fadeIn();
 		}
 
 	});
