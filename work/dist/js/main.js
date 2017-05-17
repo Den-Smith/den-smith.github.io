@@ -63,7 +63,6 @@ $(document).ready(function(){
 	$(document).ready(navMove);
 	$(window).resize(navSubMenuToggle);
 	$(document).ready(navSubMenuToggle);
-
 	/*services slick slider init*/
 	$('.services-slider-nav a').on('click', function(e){
 		e.preventDefault();

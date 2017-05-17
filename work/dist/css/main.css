@@ -1853,3 +1853,213 @@ header .apply_block:hover, header .apply_block:focus, header .apply_block:active
 .card-block .toggle-details-btn .fa:hover {
   color: #00a5e0;
 }
+
+/* links-block */
+.links-section .row {
+  margin-bottom: 20px;
+}
+
+.links-section .links-item .heading {
+  margin-bottom: 2px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3d3d3d;
+}
+
+.links-section .links-item a {
+  display: block;
+  font-size: 12px;
+  color: #707070;
+}
+
+.links-section .links-item a:hover {
+  color: #0a0a0a;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  padding: 25px 0;
+}
+
+/* footer */
+.footer-top {
+  background-color: #fff;
+  padding: 25px 0;
+  margin-bottom: 0;
+}
+
+.footer-top .flex-wrap {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-social-block {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.footer-social-block p {
+  color: #a3a3a3;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.footer-social-block .socials {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  -webkit-box-flex: initial;
+  -webkit-flex-grow: initial;
+      -ms-flex-positive: initial;
+          flex-grow: initial;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.footer-logo .logo {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center;
+  display: block;
+  max-width: 200px;
+  color: #91dc5a;
+  text-transform: uppercase;
+}
+
+.footer-logo .logo h1 {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  font-size: 26px;
+}
+
+.footer-logo .logo p {
+  font-size: 10px;
+}
+
+.footer-logo .logo span {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #00a5e0;
+}
+
+.footer-logo .logo:hover h1 {
+  color: #00a5e0;
+}
+
+.footer-logo .logo:hover span {
+  color: #91dc5a;
+}
+
+.footer-social-block .socials li {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 0 14px;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e0e0e0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-social-block .socials li a {
+  color: #e0e0e0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social-block .socials li:hover {
+  border-color: inherit;
+}
+
+.footer-social-block .socials li:hover a {
+  color: inherit;
+}
+
+.footer-social-block .socials li .fa {
+  font-size: 20px;
+}
+
+.footer-bottom {
+  padding: 30px 0;
+  background-color: #1B2126;
+  margin-bottom: 0;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer-nav ul li a {
+  font-size: 16px;
+  padding: 3px 10px 5px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.footer-nav ul li a:hover {
+  background-color: black;
+}
+
+.copyright-block {
+  padding: 0 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
