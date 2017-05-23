@@ -98,6 +98,7 @@ $(document).ready(function(){
 			breakpoint: 768,
 			settings: {
 				centerMode: true,
+				arrows: false,
 				variableWidth: true,
 				slidesToShow: 1
 			}
@@ -125,16 +126,30 @@ $(document).ready(function(){
 		$(this).toggleClass('is-open');
 		if ($(this).hasClass('is-open')) {
 			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').fadeOut(100, function() {
-				$(this).addClass('fa-times');
+				$(this).addClass('fa-chevron-up');
 			}).fadeIn();
 		} else {
-			$('.toggle-details-btn i', this).removeClass('fa-times').fadeOut(100, function() {
+			$('.toggle-details-btn i', this).removeClass('fa-chevron-up').fadeOut(100, function() {
 				$(this).addClass('fa-ellipsis-h');
 			}).fadeIn();
 		}
 
 	});
 
+	// Select country init
+	function formatState(state) {
+	  if (!state.id) {
+	    return state.text;
+	  }
+	  var $state = $(
+	    '<span ><img class="img-flag" src="img/flags/' + state.element.value.toLowerCase() + '.png" /> ' + state.text + '</span>'
+	  );
+	  return $state;
+	};
+	$('.country-checkbox').select2({
+		minimumResultsForSearch: Infinity,
+		templateResult: formatState
+	});
 
 
 });
