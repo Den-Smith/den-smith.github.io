@@ -148,6 +148,9 @@
     border-left: 0;
     border-right: 0;
   }
+  .card-block.is-open .times {
+    display: block;
+  }
   .services-slider-content .flex-wrap .form {
     -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
@@ -407,6 +410,29 @@
   .catalog-section > .container {
     padding: 0;
   }
+  .article-section .article-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article-section .article-body .content-side, .article-section .article-body .article-sidebar {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+  }
+  .article-section .article-body .content-side {
+    text-align: justify;
+  }
+  .article-section .article-headline-container {
+    bottom: 20px;
+    padding: 0 15px;
+  }
+  .article-section .article-headline-container h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -497,6 +523,9 @@
   .menu_container .nav_header {
     width: 100%;
     padding: 0 15px;
+  }
+  .article-section .article-headline-container h1 {
+    font-size: 22px;
   }
 }
 

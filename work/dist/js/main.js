@@ -151,5 +151,30 @@ $(document).ready(function(){
 		templateResult: formatState
 	});
 
+	// feedback section slider init
+	$('.feedback-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev slider-button-default">Previous</button>',
+		nextArrow: '<button type="button" class="slick-next slider-button-default">Next</button>'
+	});
+
+	// faq section collapse
+	$('#faq-collapse-list > li').addClass('collapse-item');
+	$('.collapse-item a').not('.active').next('ul').css('display', 'none');
+	$('.collapse-item > a').click(function(e) {
+		e.preventDefault();
+		$('.collapse-item > a').removeClass('active');
+		$(this).addClass('active');
+		$('.collapse-item ul').not($(this).next()).slideUp();
+		$(this).next().slideDown().clearQueue();
+	});
+	$(document).mouseup(function (e){
+		var divCollapse = $(".collapse-item");
+		if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
+			$('.collapse-item ul').slideUp();
+			$('.collapse-item > a').removeClass('active');
+		}
+	});
 
 });
