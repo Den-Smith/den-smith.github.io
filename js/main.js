@@ -8,8 +8,11 @@ $(window).on('load', function(){
 // main js
 $(document).ready(function(){
 
+	setTimeout(function() {
+	    $('.card').addClass('in');
+	}, 700);
 	// start animation
-	$('.card').addClass('in');
+
 
 	// set links to a new tab
 	$('a').attr('target', '_blank');
