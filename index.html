@@ -1,186 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Den Smith</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700,900&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <!-- <link rel="stylesheet" type="text/css" href="lib/hover-min.css"> -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/viewports.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Index</title>
+	<link rel="stylesheet" href="css/lib.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/viewports.css">
 
-    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
-
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
-
 <body>
-    <div class="loader">
-        <div class="loader_inner">
-        </div>
-    </div>
 
-    <section class="content_section large-header" id="large-header">
-		<canvas id="demo-canvas"></canvas>
-        <div class="content_block">
-            <!-- Nav tabs -->
-            <ul class="nav_tabs" role="tablist">
-                <li role="presentation" class="tab_about active"><a class="hvr-underline-from-center hover_class" href="#about" aria-controls="about" role="tab" data-toggle="tab">Обо мне</a></li>
-                <li role="presentation" class="tab_portfolio"><a class="hvr-underline-from-center hover_class" href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">Примеры работ</a></li>
-                <li role="presentation" class="tab_contacts"><a class="hvr-underline-from-center hover_class" href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab">Контакты</a></li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active" id="about">
-                	<div class="photo_wrap"><img src="img/my-photo-small.png" class="img-circle"></div>
-                	<div class="about_content">
-                		<h2>Куликовский Денис</h2>
-                		<p>25 лет</p>
-                		<p>Front-End разработчик</p>
-                		<!-- <p>Навыки:</p> -->
-                		<p>HTML5/CSS3; JS; Git; Bootstrap; Sass; Drupal; WordPress; AdobePS</p>
-                	</div>
-                </div>
+<div class="preloader"></div>
+<nav>
+	<ul class="ru-lng active">
+		<li><a class="to-about active">обо мне</a></li>
+		<li><a class="to-portfolio">примеры работ</a></li>
+	</ul>
+	<ul class="eng-lng">
+		<li><a class="to-about active">About me</a></li>
+		<li><a class="to-portfolio">Portfolio</a></li>
+	</ul>
+</nav>
 
-                <div role="tabpanel" class="tab-pane fade" id="portfolio">
-                	<div class="portfolio_content">
-                		<ul>
-                			<li><a href="http://service.press-club.by/" rel="external" class="portfolio_content_item item_1 hvr-float"><div class="hover">
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                			</div></a></li>
-                			<li><a href="http://kv.press-club.by/" rel="external" class="portfolio_content_item item_2 hvr-float"><div class="hover">
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                			</div></a></li>
-                			<li><a href="http://pearltrade.be/" rel="external" class="portfolio_content_item item_3 hvr-float"><div class="hover">
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                			</div></a></li>
-                			<li><a href="https://den-smith.github.io/work/FridayDesign/index.html" rel="external" class="portfolio_content_item item_4 hvr-float"><div class="hover">
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                			</div></a></li>
-                			<li><a href="http://competition2016.belarusinfocus.info/" rel="external" class="portfolio_content_item item_5 hvr-float"><div class="hover">
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                			</div></a></li>
-                			<li><a href="https://den-smith.github.io/work/the5element/index.html" rel="external" class="portfolio_content_item item_6 hvr-float"><div class="hover">
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-                			</div></a></li>
-                		</ul>
-                	</div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="contacts">
-                	<div class="contacts_content">
-                		<ul>
-                			<li><a class="hvr-icon-sink-away vk" href="https://vk.com/sky_drums" rel="external">Денис Смит</a></li>
-                			<li><a class="hvr-icon-sink-away mail" href="mailto:winston100red@gmail.com">winston100red@gmail.com</a></li>
-                			<li class=""><a class="hvr-icon-sink-away phone tooltip_li" data-toggle="popover" data-placement="bottom" data-content="Номер скопирован в буфер обмена">+375 25 945 22 23</a></li>
-                		</ul>
-                	</div>
-                </div>
-            </div>
-            <!-- slider panes -->
-            <div class="slider-content">
-                <div role="" class="slider_about" id="">
-                    <div class="photo_wrap"><img src="img/my-photo-small.png" class="img-circle"></div>
-                    <div class="about_content">
-                        <h2>Куликовский Денис</h2>
-                        <p>25 лет</p>
-                        <p>Front-End разработчик</p>
-                        <!-- <p>Навыки:</p> -->
-                        <p>HTML5/CSS3; JS; Git; Bootstrap; Sass; Drupal; WordPress; AdobePS</p>
-                    </div>
-                </div>
-                <div role="" class="slider_portfolio" id="">
-                    <div class="portfolio_content">
-                        <ul>
-                            <li><a href="http://service.press-club.by/" rel="external" class="portfolio_content_item item_1 hvr-float"><div class="hover">
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                            </div></a></li>
-                            <li><a href="http://kv.press-club.by/" rel="external" class="portfolio_content_item item_2 hvr-float"><div class="hover">
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                            </div></a></li>
-                            <li><a href="http://pearltrade.be/" rel="external" class="portfolio_content_item item_3 hvr-float"><div class="hover">
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                            </div></a></li>
-                            <li><a href="https://den-smith.github.io/work/FridayDesign/index.html" rel="external" class="portfolio_content_item item_4 hvr-float"><div class="hover">
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                            </div></a></li>
-                            <li><a href="http://competition2016.belarusinfocus.info/" rel="external" class="portfolio_content_item item_5 hvr-float"><div class="hover">
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                            </div></a></li>
-                            <li><a href="https://den-smith.github.io/work/the5element/index.html" rel="external" class="portfolio_content_item item_6 hvr-float"><div class="hover">
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                            </div></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div role="" class="slider_contacts" id="">
-                    <div class="contacts_content">
-                        <ul>
-                            <li><a class="hvr-icon-sink-away vk" href="https://vk.com/sky_drums" rel="external">Денис Смит</a></li>
-                            <li><a class="hvr-icon-sink-away mail" href="mailto:winston100red@gmail.com">winston100red@gmail.com</a></li>
-                            <li class=""><a class="hvr-icon-sink-away phone tooltip_li" data-toggle="popover" data-placement="bottom" data-content="Номер скопирован в буфер обмена">+375 25 945 22 23</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="body-inner ru" id="body-inner">
+	<canvas id="canvas-bg"></canvas>
 
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="lib/AnimatedHeaderBackgrounds/js/TweenLite.min.js"></script>
-    <script src="lib/AnimatedHeaderBackgrounds/js/EasePack.min.js"></script>
-    <script src="lib/AnimatedHeaderBackgrounds/js/rAF.js"></script>
-    <script src="lib/AnimatedHeaderBackgrounds/js/demo-1.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
+	<div class="container" id="main-container">
+		<div class="row">
+			<div class="col-xs-12 slide card-block-wrap active">
+				<div class="card-block">
+					<div class="card">
+						<div class="line pos-t"></div>
+						<div class="line pos-r"></div>
+						<div class="line pos-b"></div>
+						<div class="line pos-l"></div>
+						<div class="front face ru-lng">
+							<div class="card-inner">
+								<div class="card-img">
+									<img src="img/photo.png" alt="Я" class="img-circle">
+								</div>
+								<div class="card-content">
+									<h1 class="employee-name">Куликовский Денис, <span class="employee-age">25 лет</span></h1>
+
+									<h3 class="employee-prof">Front-End разработчик</h3>
+									<p class="employee-skills">HTML5/CSS3; JS; Git; Bootstrap; Sass; Drupal; WordPress; AdobePS</p>
+									<div class="contacts-block">
+										<h3>Контакты: </h3>
+										<ul>
+											<li><a href="https://vk.com/sky_drums" class="hvr-icon-sink-away vk">Денис Смит</a></li>
+											<li><a href="mailto:winston100red@gmail.com" class="hvr-icon-sink-away mail">winston100red@gmail.com</a></li>
+											<li><a class="hvr-icon-sink-away phone tooltip_li">+375 25 945 22 23</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="lng-switch"><p>ENG</p></div>
+							</div>
+						</div>
+						<div class="back face en-lng">
+							<div class="card-inner">
+								<div class="card-img">
+									<img src="img/photo.png" alt="Я" class="img-circle">
+								</div>
+								<div class="card-content">
+									<h1 class="employee-name">Denis Kulikousky, <span class="employee-age">25</span></h1>
+
+									<h3 class="employee-prof">Front-End developer</h3>
+									<p class="employee-skills">HTML5/CSS3; JS; Git; Bootstrap; Sass; Drupal; WordPress; AdobePS</p>
+									<div class="contacts-block">
+										<h3>Contacts: </h3>
+										<ul>
+											<li><a href="https://vk.com/sky_drums" class="hvr-icon-sink-away vk">Denis Smith</a></li>
+											<li><a href="mailto:winston100red@gmail.com" class="hvr-icon-sink-away mail">winston100red@gmail.com</a></li>
+											<li><a class="hvr-icon-sink-away phone tooltip_li">+375 25 945 22 23</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="lng-switch"><p>RU</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 slide portfolio-block-wrap">
+				<div class="portfolio-block">
+					<div class="block-content">
+
+							<figure class="portfolio-item imghvr-fold-down">
+								<img src="img/portfolio/talio.png">
+								<figcaption>
+									<h2 class="item-name">Talio web store</h2>
+									<ul>
+										<li><a id="modal-init-01" href="#modal-01">PSD template</a></li>
+          <li><a href="https://www.talio.be/en">Go to website</a></li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure class="portfolio-item imghvr-fold-down">
+								<img src="img/portfolio/rival.png">
+								<figcaption>
+									<h2 class="item-name">Rival-svarka web store</h2>
+									<ul>
+										<li><a id="modal-init-02" href="#modal-02">PSD template</a></li>
+          <li><a href="http://new.rivalsvarka.by/">Go to website</a></li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure class="portfolio-item imghvr-fold-down">
+								<img src="img/portfolio/all-parts.png">
+								<figcaption>
+									<h2 class="item-name">All-parts web store</h2>
+									<ul>
+										<li><a id="modal-init-03" href="#modal-03">PSD template</a></li>
+          <li><a href="https://den-smith.github.io/work/all-parts.by">Go to website</a></li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure class="portfolio-item imghvr-fold-down">
+								<img src="img/portfolio/press-club.png">
+								<figcaption>
+									<h2 class="item-name">Press club Belarus</h2>
+									<ul>
+										<li><a id="modal-init-04" href="#modal-04">PSD template</a></li>
+          <li><a href="http://service.press-club.by/">Go to website</a></li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure class="portfolio-item imghvr-fold-down">
+								<img src="img/portfolio/kv-press-club.png">
+								<figcaption>
+									<h2 class="item-name">Culture Press club</h2>
+									<ul>
+										<li><a id="modal-init-05" href="#modal-05">PSD template</a></li>
+          <li><a href="http://kv.press-club.by/">Go to website</a></li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure class="portfolio-item imghvr-fold-down">
+								<img src="img/portfolio/pearl.png">
+								<figcaption>
+									<h2 class="item-name">Pearl trade electronics</h2>
+									<ul>
+										<li><a id="modal-init-06" href="#modal-06">PSD template</a></li>
+          <li><a href="http://pearltrade.be/">Go to website</a></li>
+									</ul>
+								</figcaption>
+							</figure>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="buffer-message">Номер скопирован в буфер обмена</div>
+</section>
+
+<section class="modals-wrap">
+		<!--modal 01-->
+		<div id="modal-01">
+			<div id="btn-close-modal" class="close-btn close-modal-01"><i class="fa fa-times"></i></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="modal-title">Talio web store template</div>
+						<div class="modal-content">
+							<img src="img/templates/talio-template.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--modal 02-->
+		<div id="modal-02">
+			<div id="btn-close-modal" class="close-btn close-modal-02"><i class="fa fa-times"></i></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="modal-title">Rival-svarka web store template</div>
+						<div class="modal-content">
+							<img src="img/templates/rival-template.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--modal 03-->
+		<div id="modal-03">
+			<div id="btn-close-modal" class="close-btn close-modal-03"><i class="fa fa-times"></i></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="modal-title">All-parts web store template</div>
+						<div class="modal-content">
+							<img src="img/templates/all-parts-template.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--modal 04-->
+		<div id="modal-04">
+			<div id="btn-close-modal" class="close-btn close-modal-04"><i class="fa fa-times"></i></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="modal-title">Press-club.by template</div>
+						<div class="modal-content">
+							<img src="img/templates/pressclub-template.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--modal 05-->
+		<div id="modal-05">
+			<div id="btn-close-modal" class="close-btn close-modal-05"><i class="fa fa-times"></i></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="modal-title">Culture of Press-club template</div>
+						<div class="modal-content">
+							<img src="img/templates/kv-pressclub-template.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--modal 06-->
+		<div id="modal-06">
+			<div id="btn-close-modal" class="close-btn close-modal-06"><i class="fa fa-times"></i></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="modal-title">Pearl trade electronics template</div>
+						<div class="modal-content">
+							<img src="img/templates/pearl-template.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+</section>
+
+
+<script src="js/lib.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
-
 </html>
