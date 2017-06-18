@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catalog</title>
+	<link rel="stylesheet" href="css/lib.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/viewports.css">
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="loader">
+	<div class="loader_inner">
+	</div>
+</div>
+
+<header>
+	<div class="container">
+		<div class="row header_top">
+			<div class="col-sm-3 col-xs-6 logo_wrap">
+				<a href="" class="logo">
+					<h1>All-Parts<span>.by</span></h1>
+					<p>запчасти по лучшим ценам здесь</p>
+				</a>
+			</div>
+			<div class="col-sm-5 col-xs-2 search_wrap">
+				<i class="fa fa-search hidden-lg hidden-md hidden-sm" aria-hidden="true"></i>
+				<div class="search_block">
+					<form action="">
+						<input type="search" name="" id="" placeholder="Что будем искать?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Что будем искать?'">
+						<input type="submit" name="" id="">
+					</form>
+					<ul class="search_examples">
+						<li><a href="">Коллекторы</a></li>
+						<li><a href="">Блоки управления</a></li>
+						<li><a href="">Бензобаки</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="col-sm-4 col-xs-2 contacts_wrap">
+				<i class="fa fa-phone hidden-lg hidden-md hidden-sm" aria-hidden="true"></i>
+				<div class="content_block">
+					<div class="tel_wrap">
+						<a href="tel:">+375 <span>(44)</span> 555-23-59</a>
+					</div>
+					<div class="call_wrap">
+						<a href="" class="call_button">Заказать звонок</a>
+						<p>закажите звонок и наш менеджер свяжется с вами в течении 5 минут</p>
+					</div>
+				</div>
+			</div>
+			<a class="col-xs-2 hidden-lg hidden-md hidden-sm mobile_menu_button"><span></span></a>
+		</div>
+	</div>
+</header>
+
+<section class="header_nav">
+	<div class="container">
+		<div class="row">
+			<nav class="col-sm-12">
+				<ul>
+					<li><a href="index.html" class="active">Главная</a></li>
+					<li><a href="">Каталог</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</section>
+
+<section class="breadcrumb_section">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 breadcrumb_wrap">
+				<ol class="breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li class="active">Каталог</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="page_content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 side_block filter_block">
+				<div class="categories_block filter_item">
+					<ul>
+						<li><a href="">коллекторы<i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+						<li><a href="">блоки управления<i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+						<li><a href="">коллекторы<i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="manufacturer_block filter_item">
+					<div class="item_header">
+						<h3>производитель</h3>
+					</div>
+					<div class="item_content">
+						<div class="input_item">
+							<input type="checkbox" id="input_1">
+							<label for="input_1">Bosh</label>
+						</div>
+						<div class="input_item">
+							<input type="checkbox" id="input_2">
+							<label for="input_2">Siemens</label>
+						</div>
+						<div class="input_item">
+							<input type="checkbox" id="input_3">
+							<label for="input_3">Lime green</label>
+						</div>
+					</div>
+				</div>
+				<div class="mark_block filter_item">
+					<div class="item_header">
+						<h3>марка авто</h3>
+					</div>
+					<div class="item_content">
+						<select name="" id="">
+							<option selected disabled>Выберите марку</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+					</div>
+				</div>
+				<div class="model_block filter_item">
+					<div class="item_header">
+						<h3>Модель авто</h3>
+					</div>
+					<div class="item_content">
+						<select name="" id="">
+							<option selected disabled>Выберите модель</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+					</div>
+				</div>
+				<div class="model_block filter_item">
+					<div class="item_header">
+						<h3>цена</h3>
+					</div>
+					<div class="item_content">
+						<p>price plugin</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9 content_block">
+				<div class="catalog_form_wrap">
+					<h3>Хотите лучшую цену на нужную запчасть?</h3>
+					<form action="" class="main_form">
+						<div class="name">
+							<i class="fa fa-user-o" aria-hidden="true"></i>
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="phone">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<input type="tel" placeholder="Ваш номер">
+						</div>
+						<div class="button_wrap">
+							<input type="submit" value="оставить заявку">
+						</div>
+					</form>
+				</div>
+				<div class="filter_results_block">
+					<div class="title">
+						<h3>Блоки управления</h3>
+						<p class="found_result">Найдено <span class="found_count">135</span></p>
+					</div>
+					<div class="content">
+						<div class="content_item">
+							<img src="./img/catalog-item-img.png" alt="">
+							<div class="item_descr">
+								<h4>Watch goa with silicone</h4>
+								<div class="price">$25</div>
+								<div class="availability">в наличии</div>
+							</div>
+							<a href="">подробнее</a>
+						</div>
+						<div class="content_item">
+							<img src="./img/catalog-item-img.png" alt="">
+							<div class="item_descr">
+								<h4>Watch goa with silicone</h4>
+								<div class="price">$25</div>
+								<div class="availability">в наличии</div>
+							</div>
+							<a href="">подробнее</a>
+						</div>
+						<div class="content_item">
+							<img src="./img/catalog-item-img.png" alt="">
+							<div class="item_descr">
+								<h4>Watch goa with silicone</h4>
+								<div class="price">$25</div>
+								<div class="availability">в наличии</div>
+							</div>
+							<a href="">подробнее</a>
+						</div>
+						<div class="content_item">
+							<img src="./img/catalog-item-img.png" alt="">
+							<div class="item_descr">
+								<h4>Watch goa with silicone</h4>
+								<div class="price">$25</div>
+								<div class="availability">в наличии</div>
+							</div>
+							<a href="">подробнее</a>
+						</div>
+						<div class="content_item">
+							<img src="./img/catalog-item-img.png" alt="">
+							<div class="item_descr">
+								<h4>Watch goa with silicone</h4>
+								<div class="price">$25</div>
+								<div class="availability">в наличии</div>
+							</div>
+							<a href="">подробнее</a>
+						</div>
+						<div class="content_item">
+							<img src="./img/catalog-item-img.png" alt="">
+							<div class="item_descr">
+								<h4>Watch goa with silicone</h4>
+								<div class="price">$25</div>
+								<div class="availability">в наличии</div>
+							</div>
+							<a href="">подробнее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="map_section">
+	<div class="adress_block">
+		<ul>
+			<li>
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<h4>Наш адрес</h4>
+				<a href="">143 Jerde Junion Suite 137</a>
+			</li>
+			<li>
+				<i class="fa fa-mobile" aria-hidden="true"></i>
+				<h4>Наш телефон</h4>
+				<a href="tel:">+375 (44) 565-22-35</a>
+			</li>
+			<li>
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<h4>Наш e-mail</h4>
+				<a href="mailto:">anabelle_jacobson@yahoo.com</a>
+			</li>
+		</ul>
+	</div>
+	<div id="map"></div>
+</section>
+
+<footer>
+	<div class="container">
+		<div class="row footer_top">
+			<div class="col-xs-6">
+				<a href="" class="footer_logo">All-Parts.by</a>
+			</div>
+			
+			<div class="col-xs-6">
+				<ul>
+					<li><a href="">press</a></li>
+					<li><a href="">about</a></li>
+					<li><a href="">careers</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row footer_bottom">
+			<div class="col-xs-6">
+				<p>© All rigths reserved 2016.</p>
+			</div>
+			<div class="col-xs-6">
+				<ul>
+					<li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/lib.min.js"></script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdVFlncxTHFNGuyaPTtTVmCv7OdJulaZ0&callback=initMap">
+</script>
+<script src="js/main.js"></script>
+	
+</body>
+</html>
