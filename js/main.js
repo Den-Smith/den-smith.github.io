@@ -1,5 +1,3 @@
-
-
 // preloader
 $(window).on('load', function(){
 	$('.preloader').fadeOut('slow',function(){
@@ -10,6 +8,7 @@ $(window).on('load', function(){
 		$('.card').addClass('in');
 	}, 300);
 });
+
 // main js
 $(document).ready(function(){
 	// set links to a new tab
@@ -23,27 +22,15 @@ $(document).ready(function(){
 			}).removeAttr('alt');
 		});
 	}, 3000);
-	
-	// copy phone to buffer
-	var copyPhoneBtn = $('.phone span');
-	copyPhoneBtn.click(function(event) {
-		var phoneNumber = document.querySelector('.phone span');
-	  var range = document.createRange();
-	  range.selectNode(phoneNumber);
-	  window.getSelection().addRange(range);
 
-	  try {
-	    var successful = document.execCommand('copy');
-	    $('.buffer-message').addClass('active');
-	    var msg = successful ? 'successful' : 'unsuccessful';
-	    console.log('Copy phone was ' + msg);
-	    setTimeout(function() {
-	      $('.buffer-message').removeClass('active');
-	    }, 1600);
-	  } catch (err) {
-	    console.log('unable to copy');
-	  }
-	  window.getSelection().removeAllRanges();
+	// copy phone to buffer
+	var clipboard = new Clipboard('.phone');
+	clipboard.on('success', function(e) {
+		$('.buffer-message').addClass('active');
+		setTimeout(function() {
+			$('.buffer-message').removeClass('active');
+		}, 1600);
+		e.clearSelection();
 	});
 
 	// LNG switch
@@ -133,8 +120,6 @@ $(document).ready(function(){
 	};
 	$(document).ready(widthControl);
 	$(window).resize(widthControl);
-
-	
 
 	// canvas bg animate
 	(function() {
