@@ -19,7 +19,7 @@ $(document).ready(function(){
 	setTimeout(function() {
 		$('img[datasrc]').each(function() {
 			$(this).attr('src', function() {
-				return this.datasrc;
+				return this.alt;
 			})
 		});
 	}, 3000);
