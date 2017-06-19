@@ -1,12 +1,13 @@
-// preloader
-$(window).on('load', function(){
-	$('.preloader').fadeOut('slow',function(){
-		$(this).remove();
-	});
-});
+
 
 // main js
 $(document).ready(function(){
+	// preloader
+	$(window).on('load', function(){
+		$('.preloader').fadeOut('slow',function(){
+			$(this).remove();
+		});
+	});
 
 	setTimeout(function() {
 	    $('.card').addClass('in');

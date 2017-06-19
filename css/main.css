@@ -722,6 +722,7 @@ figure figcaption ul li a:hover {
   right: 20px;
   padding: 0px;
   cursor: pointer;
+  z-index: 10;
   color: #41516b;
   -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -757,6 +758,30 @@ figure figcaption ul li a:hover {
   font-size: 30px;
   font-weight: bold;
   margin: 20px 0 5px;
+}
+
+/* IE10+ CSS */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .card.in .face {
+    background-color: #fff !important;
+    z-index: 10 !important;
+  }
+  .card.in.flip-front .face {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .card.in.flip-back .face {
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+  }
+}
+
+/*firefox CSS */
+@-moz-document url-prefix() {
+  .card.in .face {
+    background-color: #fff !important;
+    z-index: 10 !important;
+  }
 }
 
 /* animation keyframes */

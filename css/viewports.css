@@ -43,3 +43,12 @@
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 400px) {
+  .portfolio-block .block-content .portfolio-item {
+    width: 100%;
+    height: auto;
+  }
+  [class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption {
+    padding: 10px;
+  }
+}
