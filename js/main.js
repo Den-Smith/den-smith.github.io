@@ -9,6 +9,17 @@ $(window).on('load', function(){
 	}, 300);
 });
 
+// lazyload init
+$(function() {
+    $("img.lazy").lazyload({
+        event : "init"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() { $("img.lazy").trigger("init") }, 5000);
+});
+
 // main js
 $(document).ready(function(){
 	// set links to a new tab
@@ -124,10 +135,7 @@ $(document).ready(function(){
 	$(document).ready(widthControl);
 	$(window).resize(widthControl);
 
-	// lazyload init
-	$(function() {
-		$("img.lazy").lazyload();
-	});
+	
 
 	// canvas bg animate
 	(function() {
