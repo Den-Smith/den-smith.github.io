@@ -22,7 +22,7 @@ $(document).ready(function(){
 	$('a').attr('target', '_blank');
 
 
-	$("img.lazy").lazyload();
+	// $("img.lazy").lazyload();
 
 
 
