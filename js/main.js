@@ -20,7 +20,7 @@ $(document).ready(function(){
 		$('img[datasrc]').each(function() {
 			$(this).attr('src', function() {
 				return this.alt;
-			})
+			});
 		});
 	}, 3000);
 	
