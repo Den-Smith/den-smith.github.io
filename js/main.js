@@ -18,8 +18,7 @@ $(document).ready(function(){
 	// load imgs
 	setTimeout(function() {
 		$('img[data-src]').each(function() {
-			$(this).attr('data-src', 'src');
-			$(this).addClass('test');
+			$(this).removeAttr('data-src').attr('src');
 		});
 	}, 3000);
 	
