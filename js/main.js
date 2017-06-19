@@ -14,14 +14,17 @@ $(window).on('load', function(){
 $(document).ready(function(){
 	// set links to a new tab
 	$('a').attr('target', '_blank');
-	
+
 	// load imgs
-	[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
-		img.setAttribute('src', img.getAttribute('data-src'));
-		img.ready = function() {
-			img.removeAttribute('data-src');
-		};
-	});
+	setTimeout(function() {
+		[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+			img.setAttribute('src', img.getAttribute('data-src'));
+			img.ready = function() {
+				img.removeAttribute('data-src');
+			};
+		});
+	}, 300);
+
 
 
 	// copy phone to buffer
