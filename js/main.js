@@ -10,20 +10,23 @@ $(window).on('load', function(){
 });
 
 // lazyload init
-$(function() {
-    $("img.lazy").lazyload({
-        event : "init"
-    });
-});
 
-$(window).bind("load", function() {
-    var timeout = setTimeout(function() { $("img.lazy").trigger("init") }, 5000);
-});
+
+
 
 // main js
 $(document).ready(function(){
 	// set links to a new tab
 	$('a').attr('target', '_blank');
+
+	$(function() {
+		$("img.lazy").lazyload({
+			event : "click"
+		});
+	});
+	$('.to-portfolio').click(function() {
+		$("img.lazy").trigger("click")''
+	});
 
 	// copy phone to buffer
 	var copyPhoneBtn = $('.phone span');
