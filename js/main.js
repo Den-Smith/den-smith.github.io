@@ -6,7 +6,7 @@
 		// start animation
 		setTimeout(function() {
 			$('.card').addClass('in');
-		}, 700);
+		}, 300);
 	});
 
 // main js
