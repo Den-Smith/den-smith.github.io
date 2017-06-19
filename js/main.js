@@ -21,11 +21,11 @@ $(document).ready(function(){
 
 	$(function() {
 		$("img.lazy").lazyload({
-			event : "click"
+			
 		});
 	});
 	$('.to-portfolio').click(function() {
-		$("img.lazy").trigger("click");
+		$("img.lazy").lazyload();
 	});
 
 	// copy phone to buffer
