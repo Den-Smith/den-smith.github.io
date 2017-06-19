@@ -17,8 +17,10 @@ $(document).ready(function(){
 
 	// load imgs
 	setTimeout(function() {
-		$('img[data-src]').each().attr('data-src', 'src');
-	}, 5000);
+		$('img[data-src]').map(function() {
+			$(this).attr('data-src', 'src');
+		});
+	}, 3000);
 	
 
 
