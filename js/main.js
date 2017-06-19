@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 	// load imgs
 	setTimeout(function() {
-		$('img').attr('data-src', 'src');
+		$('img[data-src]').attr('data-src', 'src');
 	}, 5000);
 	
 
