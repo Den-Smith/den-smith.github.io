@@ -1,4 +1,19 @@
-
+	function delayPics (picsArray) {
+    /* Это событие происходит каждый раз 
+    при изменении onreadystatechange */
+    document.onreadystatechange = function(e) {
+        /* Когда документ загрузился - начинаем 
+        загрузку изображений: */
+        if ("complete" === document.readyState) {
+        	for (var i = 0; i < picsArray.length; i +=1) {
+                /* Просто переписываем путь к изображению из 
+                одного атрибута в другой: */
+                picsArray[i].src = picsArray[i].dataset.src;
+              }
+            }
+          };
+        }
+delayPics (document.getElementsByClassName("lazy"));
 
 
 // preloader
@@ -23,7 +38,6 @@ $(document).ready(function(){
 
 
 	// $("img.lazy").lazyload();
-
 
 
 	// copy phone to buffer
