@@ -1,19 +1,16 @@
-
-
-// main js
-$(document).ready(function(){
 	// preloader
 	$(window).on('load', function(){
 		$('.preloader').fadeOut('slow',function(){
 			$(this).remove();
 		});
+		// start animation
+		setTimeout(function() {
+			$('.card').addClass('in');
+		}, 700);
 	});
 
-	setTimeout(function() {
-	    $('.card').addClass('in');
-	}, 700);
-	// start animation
-
+// main js
+$(document).ready(function(){
 
 	// set links to a new tab
 	$('a').attr('target', '_blank');
