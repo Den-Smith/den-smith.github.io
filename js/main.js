@@ -1,10 +1,4 @@
-	// load imgs
-	[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
-		img.setAttribute('src', img.getAttribute('data-src'));
-		img.onload = function() {
-			img.removeAttribute('data-src');
-		};
-	});
+
 
 // preloader
 $(window).on('load', function(){
@@ -20,7 +14,14 @@ $(window).on('load', function(){
 $(document).ready(function(){
 	// set links to a new tab
 	$('a').attr('target', '_blank');
-
+	
+	// load imgs
+	[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+		img.setAttribute('src', img.getAttribute('data-src'));
+		img.onload = function() {
+			img.removeAttribute('data-src');
+		};
+	});
 
 
 	// copy phone to buffer
