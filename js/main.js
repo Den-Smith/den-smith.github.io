@@ -13,6 +13,7 @@
 
 // preloader
 $(window).on('load', function(){
+	$("img.lazy").lazyload();
 	$('.preloader').fadeOut('slow',function(){
 		$(this).remove();
 	});
@@ -25,20 +26,21 @@ $(window).on('load', function(){
 
 
 
+
 // main js
 $(document).ready(function(){
 	// set links to a new tab
 	$('a').attr('target', '_blank');
 
-	$(function() {
-		$("img.lazy").lazyload({
-			event : "lazyautoload"
-		});
-	});
+	// $(function() {
+	// 	$("img.lazy").lazyload({
+	// 		event : "lazyautoload"
+	// 	});
+	// });
 
-	setTimeout(function () {
-		$(window).trigger('lazyautoload');
-	}, 1000);
+	// setTimeout(function () {
+	// 	$(window).trigger('lazyautoload');
+	// }, 1000);
 
 	// copy phone to buffer
 	var copyPhoneBtn = $('.phone span');
