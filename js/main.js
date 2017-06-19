@@ -1,19 +1,8 @@
-// lazyload init
 
-// $(function() {
-//     $("img.lazy").lazyload({
-//         event : "sporty"
-//     });
-// });
-
-// $(window).bind("load", function() {
-//     var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
-// });
 
 
 // preloader
 $(window).on('load', function(){
-	$("img.lazy").lazyload();
 	$('.preloader').fadeOut('slow',function(){
 		$(this).remove();
 	});
@@ -32,15 +21,6 @@ $(document).ready(function(){
 	// set links to a new tab
 	$('a').attr('target', '_blank');
 
-	// $(function() {
-	// 	$("img.lazy").lazyload({
-	// 		event : "lazyautoload"
-	// 	});
-	// });
-
-	// setTimeout(function () {
-	// 	$(window).trigger('lazyautoload');
-	// }, 1000);
 
 	// copy phone to buffer
 	var copyPhoneBtn = $('.phone span');
