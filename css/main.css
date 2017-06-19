@@ -482,6 +482,8 @@ nav ul.active {
   border: 2px solid #660814;
   padding: 10px;
   font-weight: bold;
+  z-index: 10;
+  background: #fff;
   font-size: 14px;
   -webkit-box-shadow: 0px 2px 10px -2px black;
           box-shadow: 0px 2px 10px -2px black;
