@@ -163,6 +163,7 @@ nav {
   left: 0;
   height: 50px;
   width: 100%;
+  min-width: 320px;
 }
 
 nav ul {
@@ -482,11 +483,11 @@ nav ul.active {
   border: 2px solid #660814;
   padding: 10px;
   font-weight: bold;
-  z-index: 10;
-  background: #fff;
   font-size: 14px;
   -webkit-box-shadow: 0px 2px 10px -2px black;
           box-shadow: 0px 2px 10px -2px black;
+  z-index: 10;
+  background: #fff;
   bottom: -50px;
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -714,7 +715,8 @@ figure figcaption ul li a:hover {
 }
 
 .modals-wrap > div {
-  background-color: #3498db !important;
+  background-color: #52000a !important;
+  min-width: 320px;
 }
 
 .modals-wrap .close-btn {
@@ -725,7 +727,7 @@ figure figcaption ul li a:hover {
   padding: 0px;
   cursor: pointer;
   z-index: 10;
-  color: #41516b;
+  color: #fff;
   -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -737,7 +739,7 @@ figure figcaption ul li a:hover {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;
-  color: #660814;
+  color: #41516b;
 }
 
 .modals-wrap .close-btn i {
@@ -759,6 +761,7 @@ figure figcaption ul li a:hover {
 .modals-wrap .modal-title {
   font-size: 30px;
   font-weight: bold;
+  color: #fff;
   margin: 20px 0 5px;
 }
 
@@ -778,12 +781,30 @@ figure figcaption ul li a:hover {
   }
 }
 
+@media (max-width: 480px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .card-inner .card-content {
+    max-width: 300px;
+  }
+}
+
 /*firefox CSS */
 @-moz-document url-prefix() {
   .card.in .face {
     background-color: #fff !important;
     z-index: 10 !important;
   }
+}
+
+html.mobile .line {
+  display: none;
+}
+
+html.mobile .face.front {
+  border-color: #52000a;
+}
+
+html.mobile .face.back {
+  border-color: #41516b;
 }
 
 /* animation keyframes */
@@ -827,6 +848,50 @@ figure figcaption ul li a:hover {
   100% {
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes flip-back-mobile {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+}
+
+@keyframes flip-back-mobile {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+}
+
+@-webkit-keyframes flip-front-mobile {
+  0% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes flip-front-mobile {
+  0% {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 

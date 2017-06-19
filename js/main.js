@@ -1,25 +1,23 @@
-	// preloader
-	$(window).on('load', function(){
-		$('.preloader').fadeOut('slow',function(){
-			$(this).remove();
-		});
-		// start animation
-		setTimeout(function() {
-			$('.card').addClass('in');
-		}, 300);
+// preloader
+$(window).on('load', function(){
+	$('.preloader').fadeOut('slow',function(){
+		$(this).remove();
 	});
+	// start animation
+	setTimeout(function() {
+		$('.card').addClass('in');
+	}, 300);
+});
 
 // main js
 $(document).ready(function(){
-
 	// set links to a new tab
 	$('a').attr('target', '_blank');
 
-
 	// copy phone to buffer
-	var copyPhoneBtn = document.querySelector('.phone');
-	copyPhoneBtn.addEventListener('click', function(event) {
-	  var phoneNumber = document.querySelector('.phone');
+	var copyPhoneBtn = $('.phone span');
+	copyPhoneBtn.click(function(event) {
+		var phoneNumber = document.querySelector('.phone span');
 	  var range = document.createRange();
 	  range.selectNode(phoneNumber);
 	  window.getSelection().addRange(range);
@@ -49,12 +47,16 @@ $(document).ready(function(){
 			// portfolio switch
 			$('figcaption li:first-child a').html('PSD макет');
 			$('figcaption li:last-child a').html('Перейти на сайт');
+			// phone copy switch
+			$('.buffer-message').html('Номер скопирован в буфер обмена');
 		} else if ($('.card').hasClass('flip-back')) {
 			$('nav ul.ru-lng').removeClass('active');
 			$('nav ul.eng-lng').addClass('active');
 			// portfolio switch
 			$('figcaption li:first-child a').html('PSD template');
 			$('figcaption li:last-child a').html('Go to website');
+			// phone copy switch
+			$('.buffer-message').html('Number copied to clipboard');
 		}
 	});
 

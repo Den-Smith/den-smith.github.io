@@ -21,10 +21,10 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .card {
-    height: -webkit-calc(100% - 65px);
-    height: calc(100% - 65px);
+    height: -webkit-calc(100% - 60px);
+    height: calc(100% - 60px);
     width: 96%;
-    margin: 50px 0 15px;
+    margin: 50px 0 10px;
   }
   .card-inner {
     -webkit-box-orient: vertical;
@@ -40,15 +40,66 @@
   .card-inner .contacts-block ul {
     padding: 0;
   }
+  .face.back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .flip-front {
+    -webkit-animation: flip-front-mobile 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 normal both;
+            animation: flip-front-mobile 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 normal both;
+  }
+  .flip-back {
+    -webkit-animation: flip-back-mobile 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 normal both;
+            animation: flip-back-mobile 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 normal both;
+  }
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .card-inner .employee-name {
+    font-size: 24px;
+  }
+  .card.in .face.front {
+    background-color: #fff;
+  }
+  .card.in .face.back {
+    background-color: #fff;
+  }
+}
+
 @media only screen and (max-width: 400px) {
+  .portfolio-block .block-content {
+    height: -webkit-calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin-bottom: 10px;
+  }
   .portfolio-block .block-content .portfolio-item {
     width: 100%;
     height: auto;
   }
+  .card-inner .card-img img {
+    width: 160px;
+  }
   [class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption {
     padding: 10px;
+  }
+  figure figcaption {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  figure figcaption ul {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    -webkit-box-flex: inherit;
+    -webkit-flex-grow: inherit;
+        -ms-flex-positive: inherit;
+            flex-grow: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
