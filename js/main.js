@@ -17,9 +17,9 @@ $(document).ready(function(){
 
 	// load imgs
 	setTimeout(function() {
-		$('img[data-src]').each(function() {
+		$('img[datasrc]').each(function() {
 			$(this).attr('src', function() {
-				return this.data-src;
+				return this.datasrc;
 			})
 		});
 	}, 3000);
