@@ -124,6 +124,11 @@ $(document).ready(function(){
 	$(document).ready(widthControl);
 	$(window).resize(widthControl);
 
+	// lazyload init
+	$(function() {
+		$("img.lazy").lazyload();
+	});
+
 	// canvas bg animate
 	(function() {
 
