@@ -1,14 +1,3 @@
-// preloader
-$(window).on('load', function(){
-	$('.preloader').fadeOut('slow',function(){
-		$(this).remove();
-	});
-	// start animation
-	setTimeout(function() {
-		$('.card').addClass('in');
-	}, 300);
-});
-
 // lazyload init
 
 $(function() {
@@ -20,6 +9,20 @@ $(function() {
 $(window).bind("load", function() {
     var timeout = setTimeout(function() { $("img.lazy").trigger("sporty") }, 5000);
 });
+
+
+// preloader
+$(window).on('load', function(){
+	$('.preloader').fadeOut('slow',function(){
+		$(this).remove();
+	});
+	// start animation
+	setTimeout(function() {
+		$('.card').addClass('in');
+	}, 300);
+});
+
+
 
 
 // main js
