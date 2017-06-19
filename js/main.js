@@ -24,9 +24,6 @@ $(document).ready(function(){
 		});
 	}, 3000);
 	
-
-
-
 	// copy phone to buffer
 	var copyPhoneBtn = $('.phone span');
 	copyPhoneBtn.click(function(event) {

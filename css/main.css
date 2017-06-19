@@ -772,7 +772,7 @@ img {
   transition: opacity 0.3s;
 }
 
-img[data-src] {
+img[datasrc] {
   opacity: 0;
 }
 
