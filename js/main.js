@@ -25,7 +25,7 @@ $(document).ready(function(){
 		});
 	});
 	$('.to-portfolio').click(function() {
-		$("img.lazy").trigger("click")''
+		$("img.lazy").trigger("click");
 	});
 
 	// copy phone to buffer
