@@ -19,6 +19,7 @@ $(document).ready(function(){
 	setTimeout(function() {
 		$('img[data-src]').each(function() {
 			$(this).attr('data-src', 'src');
+			$(this).addClass('test');
 		});
 	}, 3000);
 	
