@@ -1,6 +1,3 @@
-
-
-
 // preloader
 $(window).on('load', function(){
 	$('.preloader').fadeOut('slow',function(){
@@ -12,15 +9,10 @@ $(window).on('load', function(){
 	}, 300);
 });
 
-
-
-
-
 // main js
 $(document).ready(function(){
 	// set links to a new tab
 	$('a').attr('target', '_blank');
-
 
 	// copy phone to buffer
 	var copyPhoneBtn = $('.phone span');
@@ -132,7 +124,10 @@ $(document).ready(function(){
 	$(document).ready(widthControl);
 	$(window).resize(widthControl);
 
-	
+	// lazyload init
+	$(function() {
+		$("img.lazy").lazyload();
+	});
 
 	// canvas bg animate
 	(function() {
