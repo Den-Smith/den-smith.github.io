@@ -766,15 +766,6 @@ figure figcaption ul li a:hover {
 }
 
 
-/* load img */
-img {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-img[datasrc] {
-  opacity: 0;
-}
 
 /* IE10+ CSS */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
