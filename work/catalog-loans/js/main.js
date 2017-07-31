@@ -35,6 +35,7 @@ $(document).ready(function(){
 			$('.header-nav > .main-item').off();
 			$('.header-nav > .main-item.dropdown-item').click(function () {
 				$(this).toggleClass('in-active');
+				$('.nav_footer').toggleClass('in-active');
 				$('.header-nav').toggleClass('slide-on');
 				$('.sub-container').not($('.sub-container', this)).removeClass('in-active');
 
@@ -100,7 +101,8 @@ $(document).ready(function(){
 				centerMode: true,
 				arrows: false,
 				variableWidth: true,
-				slidesToShow: 1
+				slidesToShow: 1,
+				dots: true
 			}
 		}
 		]
@@ -122,7 +124,7 @@ $(document).ready(function(){
 	}
 
 	/* card item show more init */
-	$('.card-block').click(function () {
+	$('.card-block').not('.empty-card').click(function () {
 		$(this).toggleClass('is-open');
 		if ($(this).hasClass('is-open')) {
 			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').fadeOut(100, function() {
@@ -164,10 +166,10 @@ $(document).ready(function(){
 	$('.collapse-item a').not('.active').next('ul').css('display', 'none');
 	$('.collapse-item > a').click(function(e) {
 		e.preventDefault();
-		$('.collapse-item > a').removeClass('active');
-		$(this).addClass('active');
+		$('.collapse-item > a').not($(this)).removeClass('active');
+		$(this).toggleClass('active');
 		$('.collapse-item ul').not($(this).next()).slideUp();
-		$(this).next().slideDown().clearQueue();
+		$(this).next().slideToggle().clearQueue();
 	});
 	$(document).mouseup(function (e){
 		var divCollapse = $(".collapse-item");
@@ -176,5 +178,21 @@ $(document).ready(function(){
 			$('.collapse-item > a').removeClass('active');
 		}
 	});
+
+	// marquee
+	function widthControl() {
+	  var w = window.innerWidth
+	  if (w < 768) {
+			$('.loans-today-section .description-block p').replaceWith(function(index, oldHTML) {
+			  return $("<marquee>").html(oldHTML);
+			});
+	  } else {
+			$('.loans-today-section .description-block marquee').replaceWith(function(index, oldHTML) {
+				return $("<p>").html(oldHTML);
+			});
+	  }
+	}
+	$(document).ready(widthControl);
+	$(window).resize(widthControl);
 
 });
