@@ -102,6 +102,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .services-slider-content {
+    margin-top: 10px;
+  }
+  header .list .main-item {
+    height: auto;
+  }
   header .logo_wrap {
     z-index: 111;
     padding: 0;
@@ -514,7 +520,7 @@
     -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
             align-self: stretch;
-    margin-top: 20px;
+    margin: 20px 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -532,6 +538,16 @@
   .articles-container .article-preview {
     width: 100%;
     padding: 20px 0 0 0 !important;
+  }
+  .catalog-wrap .catalog-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catalog-wrap .catalog-header img {
+    margin: 0 auto 15px;
   }
 }
 

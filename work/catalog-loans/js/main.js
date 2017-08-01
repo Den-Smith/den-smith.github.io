@@ -20,8 +20,7 @@ $(document).ready(function(){
 	});
 
 	var navSubMenuToggle = function() {
-		var width = $('body').innerWidth();
-		if ($(window).width() > 768) {
+		if (window.innerWidth > 768) {
 				$('.header-nav > .main-item').off();
 				$('.header-nav > .main-item').hover(function () {
 				clearTimeout($.data(this,'timer'));
@@ -51,10 +50,10 @@ $(document).ready(function(){
 
 	};
 
+
 	/*move navigation block from header block to menu container*/
 	var navMove = function() {
-		var width = $('body').innerWidth();
-		if ($(window).width() < 768) {
+		if (window.innerWidth < 768) {
 			$('.flex-wrap .header-nav').detach().prependTo('.nav_content');
 		} else {
 			$('.nav_content .header-nav').detach().prependTo('header .flex-wrap');
@@ -127,31 +126,14 @@ $(document).ready(function(){
 	$('.card-block').not('.empty-card').click(function () {
 		$(this).toggleClass('is-open');
 		if ($(this).hasClass('is-open')) {
-			$('.toggle-details-btn i', this).removeClass('fa-ellipsis-h').fadeOut(100, function() {
-				$(this).addClass('fa-chevron-up');
-			}).fadeIn();
+			$('.toggle-details-btn', this).addClass('rotated');
 		} else {
-			$('.toggle-details-btn i', this).removeClass('fa-chevron-up').fadeOut(100, function() {
-				$(this).addClass('fa-ellipsis-h');
-			}).fadeIn();
+			$('.toggle-details-btn', this).removeClass('rotated');
 		}
 
 	});
 
-	// Select country init
-	function formatState(state) {
-	  if (!state.id) {
-	    return state.text;
-	  }
-	  var $state = $(
-	    '<span ><img class="img-flag" src="img/flags/' + state.element.value.toLowerCase() + '.png" /> ' + state.text + '</span>'
-	  );
-	  return $state;
-	};
-	$('.country-checkbox').select2({
-		minimumResultsForSearch: Infinity,
-		templateResult: formatState
-	});
+
 
 	// feedback section slider init
 	$('.feedback-slider').slick({
