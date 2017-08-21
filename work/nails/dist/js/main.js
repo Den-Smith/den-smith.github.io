@@ -23,6 +23,18 @@ $(document).ready(function(){
 			arrows: true
 	  });
 
+		$('.offers-slider--all').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			arrows: true
+	  });
+
+		$('.brands-slider').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			arrows: true
+	  });
+
 		$('.offers-nav li').click(function(event) {
 			event.preventDefault();
 			$('.offers-nav li').removeClass('active');
