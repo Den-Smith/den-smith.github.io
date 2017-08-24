@@ -36,9 +36,11 @@ $(document).ready(function(){
 	  });
 
 		$('.front-catalog--test-1').slick({
-			slidesToShow: 5,
+			slidesToShow: 4,
+			// variableWidth: true,
 			slidesToScroll: 1,
-			arrows: false
+			arrows: true,
+			dots: true
 	  });
 
 		$('.offers-nav li').click(function(event) {
