@@ -28,6 +28,13 @@ $(document).ready(function(){
 		      settings: {
 						arrows: false
 		      }
+		    },
+				{
+		      breakpoint: 555,
+		      settings: {
+						centerMode: false,
+						arrows: false
+		      }
 		    }
 		  ]
 	  });
@@ -113,15 +120,15 @@ $(document).ready(function(){
 
 		// slide menu list
 		$('#catalog-list > li').addClass('collapse-item');
-		$('.collapse-item a').not('.active').next('ul').css('display', 'none');
-		$('.collapse-item > a').click(function(e) {
-			e.preventDefault();
-			$('.collapse-item > a').not($(this)).removeClass('active');
+		$('.collapse-item i').not('.active').next('ul').css('display', 'none');
+		$('.collapse-item > i').click(function(e) {
+			// e.preventDefault();
+			$('.collapse-item > i').not($(this)).removeClass('active');
 			$(this).toggleClass('active');
 			if ($(this).hasClass('active')) {
-				$('.fa', this).removeClass('fa-plus').addClass('fa-minus')
+				$(this).removeClass('fa-plus').addClass('fa-minus')
 			} else {
-				$('.fa', this).removeClass('fa-minus').addClass('fa-plus')
+				$(this).removeClass('fa-minus').addClass('fa-plus')
 			}
 			$('.collapse-item ul').not($(this).next()).slideUp();
 			$(this).next().slideToggle().clearQueue();
@@ -130,15 +137,16 @@ $(document).ready(function(){
 			var divCollapse = $(".collapse-item");
 			if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
 				$('.collapse-item ul').slideUp();
-				$('.collapse-item > a').removeClass('active');
+				$('.collapse-item > i').removeClass('active');
 			}
 		});
 
 		// switch slide's tabs
 		// catalog \ brands
 		$('header .catalog-btn').click(function(event) {
-			$('body').addClass('in-active');
-			$('.slide-block-wrap.left-block').addClass('in-active');
+			$('body').toggleClass('in-active');
+			$('.slide-block-wrap.right-block').removeClass('in-active');
+			$('.slide-block-wrap.left-block').toggleClass('in-active');
 			$('.slide-inner .brands-btn').removeClass('active');
 			$('.slide-inner .catalog-btn').addClass('active');
 			$('#brands-list').removeClass('in-active');
@@ -155,8 +163,9 @@ $(document).ready(function(){
 
 		// favor \ cart
 		$('header .cart-btn').click(function(event) {
-			$('body').addClass('in-active');
-			$('.slide-block-wrap.right-block').addClass('in-active');
+			$('body').toggleClass('in-active');
+			$('.slide-block-wrap.left-block').removeClass('in-active');
+			$('.slide-block-wrap.right-block').toggleClass('in-active');
 			$('.slide-inner .favor-btn').removeClass('active');
 			$('.slide-inner .cart-btn').addClass('active');
 			$('#favor-list').removeClass('in-active');
@@ -205,11 +214,13 @@ $(document).ready(function(){
 			$('body').removeClass('in-active');
 		});
 		$(document).mouseup(function (e){
-			var divCollapse = $(".slide-block-wrap .slide-inner-wrap, .mobile-menu-wrap");
-			if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
-				$('body').removeClass('in-active');
-				$('.slide-block-wrap').removeClass('in-active');
-			}
+			if (!$('html').hasClass('mobile')) {
+				var divCollapse = $(".slide-block-wrap .slide-inner-wrap, .mobile-menu-wrap");
+				if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
+					$('body').removeClass('in-active');
+					$('.slide-block-wrap').removeClass('in-active');
+				}
+	    }
 		});
 
 		// add to favorite animation init
@@ -241,7 +252,7 @@ $(document).ready(function(){
 		$(window).resize(headerResize);
 
 
-		// bovile btn
+		// mobile menu
 		$('.mobile-menu-btn').on('click', function() {
 		  $(this).toggleClass('open');
 			if ($(this).hasClass('open')) {
@@ -278,6 +289,18 @@ $(document).ready(function(){
 				$('i', this).removeClass('fa-times').addClass('fa-search');
 			}
 			$('.search-block').toggleClass('active');
+		});
+
+		// close btn
+		$('.m-close-btn').click(function(event) {
+			$('body').removeClass('in-active');
+			$('.pup-up-wrap').removeClass('in-active');
+		});
+
+		// features-section click pop-up
+		$('.features-section .flex-item').click(function(event) {
+			$('.pup-up-wrap').addClass('in-active');
+			$('body').addClass('in-active');
 		});
 
 });
