@@ -46,7 +46,7 @@ $(document).ready(function(){
 			arrows: true,
 			responsive: [
 		    {
-		      breakpoint: 1200,
+		      breakpoint: 1300,
 		      settings: {
 						variableWidth: true,
 						centerMode: true,
@@ -118,24 +118,24 @@ $(document).ready(function(){
 		});
 
 		// slide menu list
-		$('#catalog-list > li').addClass('collapse-item');
-		$('.collapse-item i').not('.active').next('ul').css('display', 'none');
-		$('.collapse-item > i').click(function(e) {
-			$('.collapse-item > i').not($(this)).removeClass('active');
+		$('#catalog-list  > li').addClass('collapse-item');
+		$('#catalog-list .collapse-item i').not('.active').next('ul').css('display', 'none');
+		$('#catalog-list .collapse-item > i').click(function(e) {
+			$('#catalog-list .collapse-item > i').not($(this)).removeClass('active').removeClass('fa-minus').addClass('fa-plus');
 			$(this).toggleClass('active');
 			if ($(this).hasClass('active')) {
 				$(this).removeClass('fa-plus').addClass('fa-minus')
 			} else {
 				$(this).removeClass('fa-minus').addClass('fa-plus')
 			}
-			$('.collapse-item ul').not($(this).next()).slideUp();
+			$('#catalog-list .collapse-item ul').not($(this).next()).slideUp();
 			$(this).next().slideToggle().clearQueue();
 		});
 		$(document).mouseup(function (e){
-			var divCollapse = $(".collapse-item");
+			var divCollapse = $("#catalog-list .collapse-item");
 			if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
-				$('.collapse-item ul').slideUp();
-				$('.collapse-item > i').removeClass('active');
+				$('#catalog-list .collapse-item ul').slideUp();
+				$('#catalog-list .collapse-item > i').removeClass('active').removeClass('fa-minus').addClass('fa-plus');
 			}
 		});
 
@@ -256,7 +256,9 @@ $(document).ready(function(){
 				});
 	    } else if($('html').hasClass('mobile')){
 				$('header').addClass('fixed');
+				$('.rubric-of-catalog .item-header').addClass('active');
 			} else {
+				$('.rubric-of-catalog .item-header').addClass('active');
 				$(window).scroll(function() {
 				  if ($(window).scrollTop() > 87) {
 				    $('header').addClass('fixed');
@@ -329,5 +331,125 @@ $(document).ready(function(){
 			$(this).toggleClass('active');
 			$('.cart-footer').toggleClass('active');
 		});
+
+
+
+
+// inner
+
+		// filter tabs
+		$('.main-filter-wrap > .filter-block').addClass('collapse-item');
+		// $('.collapse-item a').not('.active').next('ul').css('display', 'none');
+		$('.main-filter-wrap .collapse-item > a').click(function(e) {
+			e.preventDefault();
+			// $('.collapse-item > a').not($(this)).removeClass('active');
+			$(this).toggleClass('active');
+			// $('.collapse-item ul').not($(this).next()).slideUp();
+			$(this).next().slideToggle().clearQueue();
+		});
+		// $(document).mouseup(function (e){
+		// 	var divCollapse = $('.collapse-item');
+		// 	if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
+		// 		$('.collapse-item ul').slideUp();
+		// 		$('.collapse-item > a').removeClass('active');
+		// 	}
+		// });
+
+		// rubric tabs
+		$('.rubric-of-catalog').addClass('collapse-item');
+		// $('.collapse-item a').not('.active').next('ul').css('display', 'none');
+		$('.rubric-of-catalog > a').click(function(e) {
+			e.preventDefault();
+			// $('.collapse-item > a').not($(this)).removeClass('active');
+			$(this).toggleClass('active');
+			// $('.collapse-item ul').not($(this).next()).slideUp();
+			$(this).next().slideToggle().clearQueue();
+		});
+		// $(document).mouseup(function (e){
+		// 	var divCollapse = $('.collapse-item');
+		// 	if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
+		// 		$('.collapse-item ul').slideUp();
+		// 		$('.collapse-item > a').removeClass('active');
+		// 	}
+		// });
+
+
+		// catalog-nav scroll by btns
+
+		$('.catalog-nav .scroll-btn.btn-down').click(function(event) {
+			var scrollDown = $(this).parent().parent().find('.item-content ul').scrollTop();
+			var scrollDown2 = scrollDown + 30
+			$(this).parent().parent().find('.item-content ul').scrollTop(scrollDown2);
+		});
+		$('.catalog-nav .scroll-btn.btn-up').click(function(event) {
+			var scrollUp = $(this).parent().parent().find('.item-content ul').scrollTop();
+			var scrollUp2 = scrollUp - 30
+			$(this).parent().parent().find('.item-content ul').scrollTop(scrollUp2);
+		});
+
+		// filter catalog to-col / to-row
+		$('.display-items-btn').click(function(event) {
+			if ($(this).hasClass('to-col')) {
+				$('.display-items-btn').not(this).removeClass('selected');
+				$(this).addClass('selected');
+				$('.items-cards').removeClass('to-row').addClass('to-col');
+			} else if ($(this).hasClass('to-row')) {
+				$('.display-items-btn').not(this).removeClass('selected');
+				$(this).addClass('selected');
+				$('.items-cards').removeClass('to-col').addClass('to-row');
+			} {
+
+			}
+		});
+
+		// filter btn init
+		$('.filter-btn').click(function(event) {
+			$(this).toggleClass('active');
+			$('.main-filter-wrap').toggleClass('active');
+		});
+
+		// node block
+		$('.slider-for').slick({
+		 slidesToShow: 1,
+		 slidesToScroll: 1,
+		 arrows: true,
+		 fade: true,
+		 asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+		 slidesToShow: 4,
+		 slidesToScroll: 1,
+		 asNavFor: '.slider-for',
+		 dots: false,
+		 arrows: false
+		});
+
+		// node tabs init
+		(function($) {
+		  jQuery.fn.lightTabs = function(options) {
+		    var createTabs = function() {
+		      tabs = this;
+		      i = 0;
+		      showPage = function(i) {
+		        $(tabs).children("div").children("div").hide();
+		        $(tabs).children("div").children("div").eq(i).show();
+		        $(tabs).children('.tabs-header').children("ul").children("li").removeClass("active");
+		        $(tabs).children('.tabs-header').children("ul").children("li").eq(i).addClass("active");
+		      }
+		      showPage(0);
+		      $(tabs).children('.tabs-header').children("ul").children("li").each(function(index, element) {
+		        $(element).attr("data-page", i);
+		        i++;
+		      });
+		      $(tabs).children('.tabs-header').children("ul").children("li").click(function() {
+		        showPage(parseInt($(this).attr("data-page")));
+		      });
+		    };
+		    return this.each(createTabs);
+		  };
+		})(jQuery);
+		$(".node-tabs-block").lightTabs();
+
+
 
 });
