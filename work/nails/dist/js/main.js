@@ -320,8 +320,8 @@ $(document).ready(function(){
 			$('.pup-up-wrap').removeClass('in-active');
 		});
 
-		// features-section click pop-up
-		$('.features-section .flex-item').click(function(event) {
+		//  pop-up
+		$('.slider-product-item .item-img .hvr-img i').click(function(event) {
 			$('.pup-up-wrap').addClass('in-active');
 			$('body').addClass('in-active');
 		});
@@ -405,7 +405,7 @@ $(document).ready(function(){
 		// filter btn init
 		$('.filter-btn').click(function(event) {
 			$(this).toggleClass('active');
-			$('.main-filter-wrap').toggleClass('active');
+			$('.left-side-block').toggleClass('active');
 		});
 
 		// node block
@@ -450,6 +450,17 @@ $(document).ready(function(){
 		})(jQuery);
 		$(".node-tabs-block").lightTabs();
 
+
+		// move sorting filter to main filter
+		var sortingFilterMove = function() {
+			if (window.innerWidth < 768) {
+				$('.sorting-filter-wrap .sorting-filter').detach().prependTo('.main-filter-wrap');
+			} else {
+				$('.main-filter-wrap .sorting-filter').detach().prependTo('.sorting-filter-wrap');
+			}
+		};
+		$(window).resize(sortingFilterMove);
+		$(document).ready(sortingFilterMove);
 
 
 });

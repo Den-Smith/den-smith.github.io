@@ -166,24 +166,34 @@
   .not-front .right-side-block {
     margin: 0;
   }
-  .main-filter-wrap {
+  .left-side-block {
     position: fixed;
+    overflow: hidden;
     left: -100%;
     top: 165px;
-    z-index: 200;
-    margin: 0;
+    z-index: 299;
+    margin: 0 !important;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     -webkit-box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.15);
             box-shadow: 0 0 26px 0 rgba(0, 0, 0, 0.15);
   }
-  .main-filter-wrap.active {
+  .left-side-block.active {
     left: 0;
   }
-  .main-filter-wrap .filter-block {
+  .left-side-block .main-filter-wrap {
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    width: -webkit-calc(100% + 17px);
+    width: calc(100% + 17px);
+  }
+  .left-side-block .filter-block {
     margin: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
+    width: 100%;
+    min-width: 300px;
   }
   .items-cards {
     -webkit-box-pack: center;
@@ -261,6 +271,18 @@
         -ms-flex-order: 1;
             order: 1;
     margin: 20px 0 0;
+  }
+  .node-main-block .node-control .favor-label {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .node-main-block .node-control .favor-label .favor-label-text {
+    margin-left: 10px;
+  }
+  .node-main-block .node-control .favor-label.active {
+    background-position: 0px 22px;
   }
   body.not-front .features-section {
     -webkit-flex-wrap: wrap;
@@ -575,7 +597,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .slider-product-item .favor-label .favor-label-text, .node-main-block .favor-label .favor-label-text {
+  .slider-product-item .favor-label .favor-label-text {
     display: none;
   }
   .items-cards.to-row .slider-product-item .item-img {
@@ -734,8 +756,14 @@
   .header-middle .header-contacts-block::after {
     display: none;
   }
+  .header-contacts-block a {
+    font-size: 14px;
+  }
   body.not-front .features-section .flex-item {
     width: 100%;
+  }
+  body.not-front h1 {
+    padding: 0 15px;
   }
   body.not-front .col-xs-12 {
     padding: 0;
