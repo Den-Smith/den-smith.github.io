@@ -895,8 +895,8 @@ header .logo {
   background-color: #fff;
   padding-left: 90px;
   z-index: 1;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .sidebar-nav a i {
@@ -909,8 +909,8 @@ header .logo {
 
 .sidebar-nav a svg {
   fill: #1b1e21;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .sidebar-nav a::before {
@@ -927,8 +927,8 @@ header .logo {
 .sidebar-nav a::after {
   content: '';
   position: absolute;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
   top: 0;
   left: 0;
   width: 4px;
@@ -1585,6 +1585,81 @@ header .logo {
   margin-bottom: 30px;
 }
 
+.shares-item .item-img {
+  position: relative;
+}
+
+.shares-item .hvr-wrap {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: absolute;
+  width: 100%;
+  height: -webkit-calc(100% - 7px);
+  height: calc(100% - 7px);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shares-item .hvr-btn {
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00abe7;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 40px;
+  font-size: 14px;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.shares-item .hvr-btn:hover {
+  background-color: #4ed1ff;
+  color: #fff;
+}
+
+.shares-item .hvr-btn:active {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 .shares-item .item-content {
   padding: 10px 30px;
 }
@@ -1671,6 +1746,16 @@ header .logo {
           box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.6);
 }
 
+.shares-item:hover .hvr-wrap {
+  opacity: 1;
+}
+
+.shares-item:hover .hvr-btn {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .shares-section-show-more {
   -webkit-border-radius: 100px;
           border-radius: 100px;
@@ -1734,11 +1819,24 @@ footer {
 }
 
 .footer-nav h3 {
+  cursor: pointer;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   color: #00abe7;
   letter-spacing: 1.5px;
+}
+
+.footer-nav h3 .fa {
+  display: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-nav h3.active .fa {
+  -webkit-transform: rotate(540deg);
+      -ms-transform: rotate(540deg);
+          transform: rotate(540deg);
 }
 
 .footer-nav li {

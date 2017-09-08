@@ -200,7 +200,7 @@
     margin-bottom: 20px;
   }
   .footer-nav li {
-    margin: 0;
+    margin: 5px 0;
   }
   .socials {
     -webkit-box-pack: center;
@@ -226,6 +226,12 @@
     visibility: visible;
     bottom: 0px;
     opacity: 1;
+  }
+  footer {
+    min-height: auto;
+  }
+  .footer-nav h3 .fa {
+    display: inline-block;
   }
 }
 

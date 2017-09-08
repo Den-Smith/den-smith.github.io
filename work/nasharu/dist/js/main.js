@@ -60,4 +60,38 @@ $(document).ready(function() {
 		$(this).parent().parent().children('.m-menu-body').toggleClass('active');
 	});
 
+	// footer tabs init
+	function collapseList() {
+	  var w = window.innerWidth
+	  if (w < 768) {
+	    $('.footer-nav > li').addClass('collapse-item');
+	    $('.collapse-item h3').not('.active').next('ul').css('display', 'none');
+			$('.collapse-item > h3').off();
+			$('.collapse-item > h3').click(function(e) {
+	      // e.preventDefault();
+	      $('.collapse-item > h3').not($(this)).removeClass('active');
+	      $(this).toggleClass('active');
+	      $('.collapse-item ul').not($(this).next()).slideUp();
+	      $(this).next().slideToggle().clearQueue();
+
+	    });
+	    $(document).mouseup(function(e) {
+	      var divCollapse = $(".collapse-item");
+	      if (!divCollapse.is(e.target) && divCollapse.has(e.target).length === 0) {
+	        $('.collapse-item ul').slideUp();
+	        $('.collapse-item > h3').removeClass('active');
+	      }
+	    });
+	  } else {
+	    $('.collapse-item > h3').off();
+	    $('ul > li ul').css('display', 'block');
+	    $('ul > li').removeClass('collapse-item');
+	  }
+	}
+	$(document).ready(collapseList);
+	$(window).resize(collapseList);
+
+
+
+
 });
