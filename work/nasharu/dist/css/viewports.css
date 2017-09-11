@@ -87,9 +87,20 @@
   }
   .node-share-block {
     min-width: 360px;
+    min-height: 219px;
   }
   .node-tabs .tabs-header ul li {
     padding: 0 10px;
+  }
+  .node-descr {
+    padding: 10px 30px;
+  }
+  .node-descr .node-title {
+    font-size: 20px;
+    max-width: 100%;
+  }
+  .node-descr .apply-btn {
+    height: 41px;
   }
 }
 
