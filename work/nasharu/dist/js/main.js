@@ -25,6 +25,16 @@ $(document).ready(function() {
 		dots: true,
 		arrows: true
 	});
+	// node-slider
+	$('.node-slider').slick({
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+		dots: true,
+		variableWidth: true,
+		centerMode: true,
+		arrows: true
+	});
 
 	// menu btn init
 	$('.menu-btn').click(function(){
@@ -91,7 +101,60 @@ $(document).ready(function() {
 	$(document).ready(collapseList);
 	$(window).resize(collapseList);
 
+	// node
+	$('.to-favor-btn').click(function(event) {
+		event.preventDefault()
+		$(this).toggleClass('added');
+	});
 
+	// node tabs init
+	(function($) {
+	  jQuery.fn.lightTabs = function(options) {
+	    var createTabs = function() {
+	      tabs = this;
+	      i = 0;
+	      showPage = function(i) {
+	        $(tabs).children("div").children("div").hide();
+	        $(tabs).children("div").children("div").eq(i).show();
+	        $(tabs).children('.tabs-header').children("ul").children("li").removeClass("active");
+	        $(tabs).children('.tabs-header').children("ul").children("li").eq(i).addClass("active");
+	      }
+	      showPage(0);
+	      $(tabs).children('.tabs-header').children("ul").children("li").each(function(index, element) {
+	        $(element).attr("data-page", i);
+	        i++;
+	      });
+	      $(tabs).children('.tabs-header').children("ul").children("li").click(function() {
+	        showPage(parseInt($(this).attr("data-page")));
+	      });
+	    };
+	    return this.each(createTabs);
+	  };
+	})(jQuery);
+	$('.node-tabs').lightTabs();
 
+	// scroll btn down
+	$('.scroll-btn').click(function(event) {
+		var scrollDown = $(this).parent().find('.nav-scroll').scrollTop();
+		var scrollDown2 = scrollDown + 30
+		$(this).parent().find('.nav-scroll').scrollTop(scrollDown2);
+	});
+
+	// reg and autoruzr btns
+	$('.pop-up-block .close-btn').click(function(event) {
+		event.preventDefault();
+		$('body').removeClass('no-scroll');
+		$('.pop-up-block-wrap').removeClass('active');
+	});
+	$('.temp-btns-wrap .reg-btn').click(function(event) {
+		event.preventDefault();
+		$('body').toggleClass('no-scroll');
+		$('.register-block-popup').toggleClass('active');
+	});
+	$('.temp-btns-wrap .autorize-btn').click(function(event) {
+		event.preventDefault();
+		$('body').toggleClass('no-scroll');
+		$('.autorize-block-popup').toggleClass('active');
+	});
 
 });
