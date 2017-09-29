@@ -1,4 +1,284 @@
+@-webkit-keyframes NAME {
+  0% {
+  }
+  50% {
+  }
+  100% {
+  }
+}
+
+@keyframes NAME {
+  0% {
+  }
+  50% {
+  }
+  100% {
+  }
+}
+
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1240px) {
+  .our-production-slider .slider-item {
+    margin: 60px 10px;
+  }
+}
+
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .header-nav ul a {
+    font-size: 12px;
+  }
+  .about-us-slider {
+    max-height: 500px;
+  }
+  .about-us-section .content-wrap h3 {
+    text-align: center;
+  }
+  .about-us-section .content-wrap h3:first-of-type {
+    margin-top: 30px;
+  }
+  .about-us-section .success-ul {
+    max-width: 300px;
+    margin: auto;
+  }
+  .about-us-section .content-wrap > .flex-wrap {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .about-us-section .clients {
+    margin: 0 15px;
+  }
+  .news-item h3 {
+    font-size: 14px;
+  }
+  .news-item p {
+    font-size: 12px;
+  }
+}
+
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .hero-slider-wrap {
+    margin-top: -webkit-calc(74px + 56px);
+    margin-top: calc(74px + 56px);
+  }
+  .search-nav-wrap {
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 40;
+  }
+  .search-nav-wrap input[type="text"]:focus {
+    width: 200px;
+  }
+  .search-nav-wrap:hover input[type="text"] {
+    width: 200px;
+  }
+  .header-nav-wrap .col-xs-12 {
+    padding: 0;
+  }
+  .header-nav {
+    position: absolute;
+    top: -280px;
+    left: 0;
+    z-index: 30;
+    display: block;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .header-nav ul {
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  .header-nav li {
+    margin: 0 60px;
+  }
+  .header-nav a {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-nav.active {
+    top: 0;
+  }
+  .header-nav.active ul {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .header-top {
+    height: 74px;
+    padding: 0;
+  }
+  .header-top .flex-item {
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-top .svg-ico.small {
+    width: auto;
+    opacity: 1;
+  }
+  .header-top .svg-ico.big {
+    width: 0;
+    opacity: 0;
+  }
+  .header-nav-wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    padding: 74px 0 0 0;
+  }
+  .hero-slider .slick-dots {
+    bottom: 0;
+  }
+  .hero-slider .slider-item {
+    min-height: 400px;
+  }
+  .our-production-slider-wrap {
+    margin-top: 0;
+  }
+  .block-header {
+    height: 60px;
+  }
+  .block-header h2 {
+    font-size: 22px;
+  }
+  .our-production-slider {
+    padding: 0 0px 30px;
+  }
+  .our-production-slider .slider-item .item-inner h3 {
+    font-size: 18px;
+  }
+  .our-production-section {
+    margin: 0 auto 30px;
+  }
+  .about-us-section {
+    position: relative;
+    z-index: 10;
+  }
+  .collections-slider {
+    padding: 0;
+  }
+  .news-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-bottom {
+    text-align: center;
+  }
+  .socials {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .socials a {
+    margin: 0 10px;
+  }
+  .footer-bottom {
+    padding: 30px 15px 0;
+  }
+  .footer-nav {
+    height: auto;
+  }
+  .footer-nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0;
+  }
+  .footer-nav a {
+    margin: 10px 0;
+    display: block;
+  }
+  .m-menu-btn {
+    display: block;
+  }
+  .hero-slider .slick-next, .hero-slider .slick-prev,
+  .our-production-slider .slick-next, .our-production-slider .slick-prev {
+    top: 90%;
+  }
+  .hero-slider .slick-next {
+    right: 15px;
+  }
+  .hero-slider .slick-prev {
+    left: 15px;
+  }
+  .collections-slider .slick-next, .collections-slider .slick-prev {
+    top: 2%;
+  }
+  .collections-slider .slick-next {
+    right: 0;
+  }
+  .collections-slider .slick-prev {
+    left: 0;
+  }
+  .slide-block-wrap .slide-inner-wrap {
+    width: 100%;
+  }
+  .slide-inner .slide-header {
+    height: 74px;
+  }
+}
+
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 540px) {
+  .about-us-section .content-wrap > .flex-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .about-us-section .clients {
+    margin: 0;
+  }
+  .collections-slider-nav ul a {
+    margin: 0 20px;
+  }
+  .collections-slider-nav ul a::after {
+    right: -30px;
+    width: 20px;
+  }
+  .catalog-btn p, .collections-btn p {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+  .catalog-btn .svg-ico, .collections-btn .svg-ico {
+    margin: 0;
+    z-index: 10;
+    background-color: #fff;
+  }
+}
