@@ -60,10 +60,10 @@
     font-size: 24px;
   }
   .card.in .face.front {
-    background-color: rgba(255,255,255, 0.4);
+    background-color: rgba(255,255,255, 0.7);
   }
   .card.in .face.back {
-    background-color: rgba(255,255,255, 0.4);
+    background-color: rgba(255,255,255, 0.7);
   }
 }
 
