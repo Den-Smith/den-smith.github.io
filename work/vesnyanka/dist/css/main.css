@@ -649,11 +649,6 @@ html.mobile .header-top .svg-ico.big {
   opacity: 0;
 }
 
-header.fixed .header-nav-wrap,
-html.mobile .header-nav-wrap {
-  padding: 74px 0 0 0;
-}
-
 .header-nav-wrap {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -662,6 +657,8 @@ html.mobile .header-nav-wrap {
 }
 
 .hero-slider .slider-item {
+  cursor: move;
+  cursor: -webkit-grab;
   min-height: 600px;
   background-position: center;
   background-size: cover;
@@ -1144,6 +1141,8 @@ html.mobile .header-nav-wrap {
 .about-us-slider {
   overflow: hidden;
   margin: 0 !important;
+  cursor: move;
+  cursor: -webkit-grab;
 }
 
 .about-us-slider .slick-dots {

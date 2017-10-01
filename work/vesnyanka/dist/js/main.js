@@ -97,7 +97,7 @@ $(document).ready(function(){
 		} else if($('html').hasClass('mobile')){
 
 		} else {
-
+			$('header').removeClass('fixed');
 		};
 	}
 	headerResize();
