@@ -6,6 +6,8 @@ $(window).on('load', function(){
 	// start animation
 	setTimeout(function() {
 		$('.card').addClass('in');
+		$('.modals-wrap').addClass('in');
+		$('.portfolio-block-wrap').addClass('in');
 	}, 300);
 });
 
