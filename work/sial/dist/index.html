@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Main page</title>
+
+	<link rel="stylesheet" href="css/lib.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/viewports.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#ff2130">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#ff2130">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ff2130">
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<div class="preloader"></div>
+
+<header>
+	<div class="header-top flex-wrap">
+		<div class="flex-item header-tel-wrap">
+			<i class="fa fa-phone" aria-hidden="true"></i>
+			<ul class="header-tel">
+				<li><a href="tel:">+375(29) 154-45-50 (Velcom);</a></li>
+				<li><a href="tel:">+375 29 259 17 48 (офис)</a></li>
+			</ul>
+		</div>
+		<div class="flex-item flex-wrap">
+			<div class="header-search-block">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</div>
+			<div class="login_reg-block flex-wrap">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<ul>
+					<li><a href="">Вход</a></li>
+					<li><a href="">Регистрация</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom flex-wrap">
+		<a href="" class="flex-item logo">
+			<img src="img/logo.png"></img>
+		</a>
+		<div class="flex-item header-nav-wrap">
+			<nav>
+				<div class="close-btn"><i class="fa fa-times"></i></div>
+				<ul>
+					<li><a href="">магазин</a></li>
+					<li><a href="">каталог</a></li>
+					<li><a href="">стиль</a></li>
+					<li><a href="">новости</a></li>
+					<li><a href="">контакты</a></li>
+					<li><a href="">оплата и доставка</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="flex-item header-bottom-btns">
+			<div class="cart-btn">
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				<p>корзина</p>
+				<span>3</span>
+			</div>
+			<div class="menu-btn">
+				<svg x="0px" y="0px"
+					 viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;" xml:space="preserve">
+				<g>
+					<g>
+						<path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z"/>
+						<path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z"/>
+						<path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z"/>
+					</g>
+				</g>
+				</svg>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- section hero -->
+<div class="section-hero container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="flex-wrap">
+				<div class="side-page-nav">
+					<ul>
+						<li><a href="">TIERRA CAST NEW</a></li>
+						<li><a href="">КРИСТАЛЛЫ КРУГЛОЙ ФОРМЫ</a></li>
+						<li><a href="">КРИСТАЛЛЫ FANCY</a></li>
+						<li><a href="">СТРАЗЫ</a></li>
+						<li><a href="">ПОДВЕСКИ</a></li>
+						<li><a href="">ЖЕМЧУГ</a></li>
+						<li><a href="">ШАРМЫ</a></li>
+						<li><a href="">НАШИВНЫЕ ЭЛЕМЕНТЫ</a></li>
+						<li><a href="">БУСИНЫ</a></li>
+						<li><a href="">ПУГОВИЦЫ, ЗАКЛЕПКИ, МОЛНИИ </a></li>
+						<li><a href="">КРИСТАЛЬНАЯ ТКАНЬ</a></li>
+						<li><a href="">АППЛИКАЦИИ</a></li>
+						<li><a href="">МЕБЕЛЬНАЯ ФУРНИТУРА</a></li>
+						<li><a href="">CRYSTAL PIXIE</a></li>
+					</ul>
+					<i class="btn">Каталог</i>
+				</div>
+				<div class="banners-block">
+					<div class="banners-top">
+						<div class="big-banner">
+							<div class="banners-gradient"></div>
+							<div class="item-content">
+								<h3>новая коллекция</h3>
+								<h4>весна/лето 2018</h4>
+								<i class="divide"></i>
+								<p>Коллецция <b>swarowski</b></p>
+								<a href="">подробнее <i class="right-arr-ico">
+									<svg width="14px" height="14px">
+									<path fill-rule="evenodd"
+									 d="M5.754,2.169 L9.932,6.347 L0.604,6.347 L0.604,8.293 L9.932,8.293 L5.754,12.471 L7.130,13.847 L13.657,7.320 L7.130,0.793 L5.754,2.169 Z"/>
+									</svg>
+								</i></a>
+							</div>
+						</div>
+						<div class="small-banners-wrap">
+							<div class="small-banner s-banner-1">
+								<div class="banners-gradient"></div>
+								<div class="item-content">
+									<h3>SWAROWSKI</h3>
+									<h4>AUTHORIZED <br> RETAILER</h4>
+								</div>
+							</div>
+							<div class="small-banner s-banner-2">
+								<div class="banners-gradient"></div>
+								<div class="item-content">
+									<h3>create</h3>
+									<h4>YOUR <br> STYLE</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="banner-bottom">
+						<div class="item-content">
+							<h3>АКЦИЯ ДНЯ</h3>
+							<h4>Успейте приобрести Crystal Pixie, White</h4>
+						</div>
+						<span class="discount-value">скидка 20%</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END section hero -->
+
+<!-- Sliders section -->
+<section class="common-section random-tovar-section">
+	<h2>случайный товар</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 slider-wrap">
+				<div class="slider-random-tovar">
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="common-section sliders-tabs-section">
+	<div class="sliders-tabs-wrap">
+		<div class="sliders-tabs">
+			<a href="">Хит продаж</a>
+			<a href="" class="active">Новинки</a>
+			<a href="">Распродажа</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 slider-wrap">
+				<div class="slider-new-tovar">
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="preview-slide-item">
+						<div class="favor-btn">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</div>
+						<div class="label-wrap">
+							<div class="item-label label-new">новинка</div>
+							<div class="item-label label-discount">акция</div>
+							<div class="item-label label-dayhit">хит дня</div>
+						</div>
+						<div class="img-wrap">
+							<img src="img/preview-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h2><a href="">Стразы Swarovski 2058, Crystal  ss5</a></h2>
+							<div class="price">от 0,99 руб.</div>
+							<div class="item-controls">
+								<div class="counter">
+									<span class="counter-btn btn-minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+									<input type="text" name="" value="0">
+									<span class="counter-btn btn-plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+								</div>
+								<a href="">В корзину <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END Sliders section -->
+
+<!-- news-section -->
+<section class="common-section news-section">
+	<h2>новости</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 news-wrap">
+				<div class="items-row">
+					<div class="news-item item-big">
+						<div class="item-img">
+							<img src="img/news-item-img-1.png" alt="">
+						</div>
+						<div class="item-content">
+							<h3>ПСИХОЛОГИЯ ЦВЕТА ОТ <span>SWAROVSKI</span></h3>
+							<p>Никогда не следует пренебрегать психологическим воздействием цвета. Цвет стимулирует эмоции, оказывает влияние на наши мысли и даже снижает уровень стресса. Эксперты считают, что воздействие того или иного цвета ...</p>
+						</div>
+					</div>
+					<div class="news-item item-small">
+						<div class="item-img">
+							<img src="img/news-item-img-2.png" alt="">
+						</div>
+						<div class="item-content">
+							<h3>САМЫЕ ДОРОГИЕ ВЕЩИ С КРИСТАЛЛАМИ <span>SWAROVSKI</span></h3>
+							<p>Давайте посмотрим на несколько самых дорогих изделий, созданных  с кристаллами Swarovski ...</p>
+						</div>
+					</div>
+				</div>
+				<div class="items-row">
+					<div class="news-item item-small">
+						<div class="item-img">
+							<img src="img/news-item-img-3.png" alt="">
+						</div>
+						<div class="item-content">
+							<h3>САМЫЕ ДОРОГИЕ ВЕЩИ С КРИСТАЛЛАМИ <span>SWAROVSKI</span></h3>
+							<p>Давайте посмотрим на несколько самых дорогих изделий, созданных  с кристаллами Swarovski ...</p>
+						</div>
+					</div>
+					<div class="news-item item-big">
+						<div class="item-img">
+							<img src="img/news-item-img-4.png" alt="">
+						</div>
+						<div class="item-content">
+							<h3>ПСИХОЛОГИЯ ЦВЕТА ОТ <span>SWAROVSKI</span></h3>
+							<p>Никогда не следует пренебрегать психологическим воздействием цвета. Цвет стимулирует эмоции, оказывает влияние на наши мысли и даже снижает уровень стресса. Эксперты считают, что воздействие того или иного цвета ...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="" class="see-more-btn">больше новостей</a>
+</section>
+<!-- END news-section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footer-descr">
+					<a href="" class="logo">
+						<img src="img/logo-footer.png"></img>
+					</a>
+					<p>Частное предприятие "СИАЛ ТРЭЙД" Зарегистрированно Минским горисполкомом УНП 192200013</p>
+					<p>Режим работы пн-пт с 10-00 до 17-00</p>
+					<p>Интернет магазин зарегистрирован в торговом реестре № 360295 от 30.11.2016г.</p>
+				</div>
+			</div>
+			<div class="col-md-5 footer-center-block">
+				<div class="wrap">
+					<ul class=" flex-item footer-nav">
+						<li><a href="">о магазине</a></li>
+						<li><a href="">оплата и доставка</a></li>
+						<li><a href="">торговые точки</a></li>
+						<li><a href="">информация для покупателей</a></li>
+					</ul>
+					<ul class=" flex-item footer-contacts">
+						<li><a href="">КОНТАКТЫ</a></li>
+						<li><a href="">аДРЕС: РБ, г.Минск ул.Скрыганова 6 - 206</a></li>
+						<li><a href="tel:">+375 29 154 45 50</a><a href="tel:"> +375 17 259 17 48</a></li>
+						<li><a href="mailto:"> sialtrade@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 footer-last-block">
+				<div class="wrap">
+					<h3>присоединяйтесь к нам</h3>
+					<div class="socials">
+						<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-vk" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+					<h3>ПРИНИМАЕМ К ОПЛАТЕ</h3>
+					<img src="img/pay-cards.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+<script src="js/lib.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
