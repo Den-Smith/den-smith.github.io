@@ -1,0 +1,106 @@
+$font-ubuntu: 'Ubuntu', sans-serif
+
+$font-fira: 'Fira Sans', sans-serif
+$font-playfair: 'Playfair Display', serif
+
+
+$text-main: #181F1C
+$accent-color: #A3AF2B
+
+=placeholder($color, $font-weight)
+	&::-webkit-input-placeholder
+		color: $color
+		font-weight: $font-weight
+	&::-moz-placeholder
+		color: $color
+		font-weight: $font-weight
+	&:-moz-placeholder
+		color: $color
+		font-weight: $font-weight
+	&:-ms-input-placeholder
+		color: $color
+		font-weight: $font-weight
+	// on-focus
+	&:focus::-webkit-input-placeholder
+		color: transparent
+	&:focus::-moz-placeholder
+		color: transparent
+	&:focus:-moz-placeholder
+		color: transparent
+	&:focus:-ms-input-placeholder
+		color: transparent
+
+
+=trans($time)
+	transition: all $time
+
+=btn($btn-color, $btn-accent-color, $btn-text-color, $btn-accent-text-color, $btn-border-color, $btn-border-color-accent)
+	font-family: $font-fira
+	cursor: pointer
+	position: relative
+	text-transform: uppercase
+	font-size: 12px
+	letter-spacing: 1px
+	white-space: nowrap
+	padding: 0 10px
+	transition: all 0.2s
+	line-height: 1
+	display: flex
+	height: 40px
+	width: max-content
+	justify-content: center
+	align-items: center
+	border: 2px solid $btn-border-color
+	background-color: $btn-color
+	color: $btn-text-color
+	.svg-ico
+		margin-right: 10px
+		fill: $btn-text-color
+	&:hover
+		background-color: $btn-accent-color
+		color: $btn-accent-text-color
+		border-color: $btn-border-color-accent
+	&:active
+		transform: scale(0.95)
+
+// =common-block()
+
+=shadow()
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2)
+
+=hover-shadow()
+	box-shadow: inset 0px 0px 20px 1px rgba(0,0,0,0.3)
+	&:active
+		text-shadow: 0px 3px 7px rgba(0,0,0,0.6)
+		box-shadow: inset 0px 3px 20px 1px rgba(0,0,0,0.5)
+
+@keyframes NAME
+	0%
+
+	50%
+
+	100%
+
+
+=dots()
+	transition: all 0.2s
+	li
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 8px
+		height: 8px
+	.slick-active
+			width: 10px
+			height: 10px
+	.slick-active button
+			background-color: #fff
+	li button:before
+		display: none
+	li button
+		display: block
+		padding: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(255,255,255,0.4)
+		border-radius: 50%
