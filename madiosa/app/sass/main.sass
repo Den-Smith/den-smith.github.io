@@ -122,7 +122,7 @@ body
 .btn
 	+btn(transparent, $accent-color, #fff, #fff, rgba(255,255,255, 0.1), $accent-color)
 .btn-accent
-	+btn($accent-color, transparent, #fff, $accent-color, rgba(255,255,255, 0.1), $accent-color)
+	+btn($accent-color, lighten($accent-color, 15%), #fff, #fff, rgba(255,255,255, 0.1), $accent-color)
 .btn-dark
 	+btn(transparent, $accent-color, $text-main, #fff, #e5e5e5, $accent-color)
 
@@ -147,6 +147,11 @@ body
 			position: absolute
 			display: block
 			background-color: $text-main
+	a
+		border-color: #DADADA
+		color: $text-main
+		font-weight: 500
+		min-width: 150px
 
 /* header */
 header
@@ -404,3 +409,296 @@ nav
 	.flex-item
 		display: flex
 		margin-bottom: 10px
+
+
+
+.advantages-section
+	background-image: url('../img/advantages-secrion-bg.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	.inner
+		min-height: 300px
+		display: -webkit-flex
+		display: -ms-flex
+		display: flex
+		align-items: center
+	.bg-wrap
+		+bg-wrap(rgba(0,0,0,0.8))
+	.left-col
+		z-index: 1
+		.inner
+			flex-direction: column
+			align-items: flex-start
+			justify-content: center
+		h2
+			font-size: 30px
+			margin-bottom: 20px
+			font-weight: 400
+		p
+			font-size: 14px
+			font-family: $font-fira
+			line-height: 1.2
+	.right-col
+		z-index: 1
+		.inner
+			display: flex
+		.adv-item
+			width: calc(100% / 4)
+			margin: 20px 0
+			.item-ico
+				width: 50px
+				margin: 0 auto
+				min-height: 50px
+			.item-descr
+				font-family: $font-fira
+				color: #fff
+				max-width: 90px
+				min-height: 38px
+				text-align: center
+				padding: 5px 0 0 0
+				margin: 0 auto
+				position: relative
+				line-height: 1.2
+				// font-size: 12px
+				// &::after
+				// 	content: ''
+				// 	position: absolute
+				// 	top: 0
+				// 	width: 30px
+				// 	height: 2px
+				// 	left: calc(50% - 15px)
+				// 	background: $accent-color
+
+.about-section
+	position: relative
+	background-image: url('../img/about-section-bg.jpg')
+	background-position: center
+	background-size: cover
+	&::after, &::before
+		content: ''
+		position: absolute
+		left: 0
+		width: 100%
+		z-index: 0
+	&::after
+		height: 250px
+		bottom: 0
+		background: $text-main
+	&::before
+		height: calc(100% - 250px)
+		top: 0
+		background: rgba(255,255,255,0.8)
+	.section-content
+		min-height: 600px
+		z-index: 1
+		padding-top: 90px
+		&.text-content
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			h2
+				font-size: 30px
+				font-weight: 400
+				margin-bottom: 20px
+			p
+				font-family: $font-fira
+				font-size: 14px
+				color: #777
+				max-width: 70%
+	.top-content, .bot-content
+		margin-bottom: 15%
+.frontpage-about-slider
+	margin-bottom: 0 !important
+	+dots()
+	.slick-dots
+		display: flex
+		align-items: center
+		bottom: 70px
+		left: calc(100% + 10px)
+		z-index: 110
+	.slider-item
+		min-height: 450px
+		position: relative
+		.inner
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+		img
+			max-width: 268px
+			width: 100%
+			display: inline-block
+			margin: 0 5px
+
+
+
+.cta-section
+	min-height: 270px
+	background-image: url('../img/cta-bg.png')
+	+bg
+	.inner
+		max-width: 400px
+		height: 150px
+		margin: 0 auto
+		border: 1px solid #fff
+		padding: 30px 15px
+		text-align: center
+		h2
+			font-size: 36px
+			font-weight: bold
+			margin-bottom: 5px
+		p
+			font-size: 24px
+			font-style: italic
+			text-transform: lowercase
+		a
+			margin: 14px auto 0
+
+
+.latest-actions-section,
+.our-work-section
+	margin: 30px 0 0
+
+.latest-actions-section
+	.item
+		transition: all 0.3s
+		transition-delay: 0.2s
+		overflow: hidden
+		height: 288px
+		width: 288px
+		background-color: #2a2a2a
+		position: relative
+		background-position: center
+		background-size: cover
+		.hover-bg
+			transition: all 0.5s
+			position: absolute
+			opacity: 1
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,0.2)
+			z-index: 0
+		.item-title
+			font-size: 30px
+			font-weight: bold
+			line-height: 1.1
+		.item-hover-content
+			transition: all 0.4s
+			visibility: hidden
+			opacity: 0
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			position: absolute
+			z-index: 2
+			bottom: -100%
+			left: 20px
+			width: calc(100% - 40px)
+			height: calc(100% - 40px)
+			background-color: #fff
+			padding: 10px 15px
+			text-align: center
+			p
+				font-size: 12px
+				font-family: $font-fira
+				color: #777
+				line-height: 1.2
+				font-style: italic
+			h3
+				position: relative
+				padding-bottom: 18px
+				margin: 0 auto 0px
+				&::after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: calc(50% - 130px / 2)
+					height: 1px
+					width: 130px
+					background-color: $text-main
+		.item-inner
+			padding: 25px 30px
+			height: 100%
+			position: relative
+			z-index: 1
+			display: -webkit-flex
+			display: -ms-flex
+			display: flex
+			align-items: flex-end
+			.item-title
+				transition: all 0.3s
+				color: #fff
+				position: relative
+				display: inline-block
+				max-width: 320px
+		.btns
+			display: flex
+			justify-content: center
+		a
+			color: $accent-color
+			font-size: 12px
+			letter-spacing: 1px
+			text-transform: uppercase
+			font-family: $font-fira
+			font-weight: 500
+		&:hover
+			box-shadow: inset 0 0 14px rgba(0,0,0,0.2)
+			.hover-bg
+				opacity: 0
+			.item-hover-content
+				visibility: visible
+				opacity: 1
+				bottom: 20px
+				box-shadow: 0 0 14px rgba(0,0,0,0.5)
+			.item-inner
+				.item-title
+					transform: translateY(-300px)
+	.item-1
+		background-image: url('../img/latest-actions-slider-img-1.jpg')
+	.item-2
+		background-image: url('../img/latest-actions-slider-img-2.jpg')
+	.item-3
+		background-image: url('../img/latest-actions-slider-img-3.jpg')
+	.item-4
+		background-image: url('../img/latest-actions-slider-img-4.jpg')
+	.item-5
+		background-image: url('../img/latest-actions-slider-img-5.jpg')
+
+
+.our-work-section
+	background-image: url('../img/our-work-bg.png')
+	margin: 0
+	padding: 50px 0 30px
+	+bg
+	.item
+		margin: 20px 0px
+		width: 220px
+		height: 220px
+		img
+			transition: all 0.2s
+			box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+			transform: scale(0.9)
+		&.slick-current
+			img
+				box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+				transform: scale(1)
+
+
+
+
+
+
+.footer-copyright
+	background-color: #404040
+	.inner
+		padding: 13px 15px
+	a
+		font-size: 12px
+		color: #fff
+		font-weight: 500
+		font-family: $font-fira
+		&:hover
+			color: $accent-color

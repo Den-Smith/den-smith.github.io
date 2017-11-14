@@ -31,6 +31,17 @@ $accent-color: #A3AF2B
 		color: transparent
 
 
+=bg-wrap($wrap-color)
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 0
+	background-color: $wrap-color
+
+
+
 =trans($time)
 	transition: all $time
 
@@ -81,6 +92,11 @@ $accent-color: #A3AF2B
 
 	100%
 
+
+=bg()
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
 
 =dots()
 	transition: all 0.2s

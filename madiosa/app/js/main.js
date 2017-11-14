@@ -46,13 +46,31 @@ $(document).ready(function(){
 	// 	dots: true,
 	// 	arrows: true
 	// });
-	$('.front-page-slider').slick({
+	$('.front-page-slider, .frontpage-about-slider').slick({
 	  infinite: true,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 		dots: true,
-		arrows: true,
+		arrows: false,
 		fade: true,
+	});
+	$('.latest-actions-slider').slick({
+	  infinite: true,
+	  slidesToShow: 5,
+	  slidesToScroll: 1,
+		dots: false,
+		arrows: false,
+  	variableWidth: true
+	});
+	$('.our-work-slider').slick({
+	  infinite: true,
+	  slidesToShow: 5,
+	  slidesToScroll: 1,
+		dots: false,
+		arrows: false,
+  	variableWidth: true,
+		centerMode: true,
+		focusOnSelect: true
 	});
 
 
