@@ -415,7 +415,7 @@ html.mobile .menu-btn
 			font-weight: 500
 			margin: 0 10px
 			+btn(transparent, $accent-color, #181F1C, #fff, #E5E5E5, $accent-color)
-		&:hover
+		&:hover, &.hovered
 			box-shadow: inset 0 0 14px rgba(0,0,0,0.2)
 			.hover-bg
 				opacity: 0
@@ -427,7 +427,9 @@ html.mobile .menu-btn
 			.item-inner
 				.item-title
 					transform: translateX(300%)
-
+		&.hovered
+			.item-hover-content
+				background-color: #ffffffd4
 	.item-1
 		background-image: url('../img/frontpage-catalog-img-1.jpg')
 	.item-2
@@ -740,7 +742,7 @@ html.mobile .menu-btn
 			font-weight: 500
 			&:hover
 				text-decoration: underline
-		&:hover
+		&:hover, &.hovered
 			box-shadow: inset 0 0 14px rgba(0,0,0,0.2)
 			.hover-bg
 				opacity: 0
@@ -752,6 +754,10 @@ html.mobile .menu-btn
 			.item-inner
 				.item-title
 					transform: translateY(-300px)
+		&.hovered
+			.item-hover-content
+				background-color: #ffffffd4
+
 	.item-1
 		background-image: url('../img/latest-actions-slider-img-1.jpg')
 	.item-2

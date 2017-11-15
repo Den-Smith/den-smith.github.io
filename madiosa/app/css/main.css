@@ -819,16 +819,16 @@ html.mobile .menu-btn {
           transform: scale(0.95);
 }
 
-.frontpage-catalog-section .item:hover {
+.frontpage-catalog-section .item:hover, .frontpage-catalog-section .item.hovered {
   -webkit-box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.2);
 }
 
-.frontpage-catalog-section .item:hover .hover-bg {
+.frontpage-catalog-section .item:hover .hover-bg, .frontpage-catalog-section .item.hovered .hover-bg {
   opacity: 0;
 }
 
-.frontpage-catalog-section .item:hover .item-hover-content {
+.frontpage-catalog-section .item:hover .item-hover-content, .frontpage-catalog-section .item.hovered .item-hover-content {
   visibility: visible;
   opacity: 1;
   left: 20px;
@@ -836,10 +836,14 @@ html.mobile .menu-btn {
           box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
 }
 
-.frontpage-catalog-section .item:hover .item-inner .item-title {
+.frontpage-catalog-section .item:hover .item-inner .item-title, .frontpage-catalog-section .item.hovered .item-inner .item-title {
   -webkit-transform: translateX(300%);
       -ms-transform: translateX(300%);
           transform: translateX(300%);
+}
+
+.frontpage-catalog-section .item.hovered .item-hover-content {
+  background-color: #ffffffd4;
 }
 
 .frontpage-catalog-section .item-1 {
@@ -1376,16 +1380,16 @@ html.mobile .menu-btn {
   text-decoration: underline;
 }
 
-.latest-actions-section .item:hover {
+.latest-actions-section .item:hover, .latest-actions-section .item.hovered {
   -webkit-box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.2);
 }
 
-.latest-actions-section .item:hover .hover-bg {
+.latest-actions-section .item:hover .hover-bg, .latest-actions-section .item.hovered .hover-bg {
   opacity: 0;
 }
 
-.latest-actions-section .item:hover .item-hover-content {
+.latest-actions-section .item:hover .item-hover-content, .latest-actions-section .item.hovered .item-hover-content {
   visibility: visible;
   opacity: 1;
   bottom: 20px;
@@ -1393,10 +1397,14 @@ html.mobile .menu-btn {
           box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
 }
 
-.latest-actions-section .item:hover .item-inner .item-title {
+.latest-actions-section .item:hover .item-inner .item-title, .latest-actions-section .item.hovered .item-inner .item-title {
   -webkit-transform: translateY(-300px);
       -ms-transform: translateY(-300px);
           transform: translateY(-300px);
+}
+
+.latest-actions-section .item.hovered .item-hover-content {
+  background-color: #ffffffd4;
 }
 
 .latest-actions-section .item-1 {

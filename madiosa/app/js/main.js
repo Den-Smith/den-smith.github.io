@@ -91,6 +91,9 @@ $(document).ready(function(){
 			$('.header-phone-block .call-btn').detach().prependTo('.mobile-menu .menu-header');
 			$('.sign-block .btn').detach().prependTo('.mobile-menu .menu-header');
 
+      // hovered
+			$('.frontpage-catalog-section .item, .latest-actions-section .item').addClass('hovered');
+
 		} else {
 
 			$('.mobile-menu .menu-content nav').detach().prependTo('.header-nav .nav-wrap');
