@@ -29,6 +29,23 @@
   .frontpage-about-slider .slider-item img
     max-width: 217px
 
+
+  .personal-card-preview .item-title
+    font-size: 20px
+  .personal-card-preview .item-hover-content .additional-part
+    padding: 0 10px 0 0
+  .personal-card-preview .item-hover-content.on-show .main-part
+    padding: 0 0 0 10px
+  .personal-card-preview .item-hover-content
+    padding: 10px 20px
+  .personal-card-preview .item-hover-content .persona-position
+    margin-bottom: 3px
+  .personal-card-preview .item-hover-content .main-part
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+
 /* Medium Devices, Desktops */
 @include mq($max-width: 992px)
   .front-page-slider .item-content .item-title
@@ -79,6 +96,14 @@
 
 
 
+
+  .personal-card-preview
+    width: 100%
+  .personal-card-preview .item-hover-content.on-show .additional-part
+    justify-content: flex-start
+
+
+
 /* Small Devices, Tablets */
 @include mq($max-width: 768px)
   .menu-btn
@@ -100,6 +125,44 @@
     justify-content: center
     a
       margin: 0 10px !important
+
+  .personal-card-preview
+    height: auto
+    background-color: #f3f3f3
+    &:hover
+      box-shadow: none
+      .item-hover-content
+        box-shadow: none
+  .personal-card-preview .item-hover-content
+    position: static
+    margin: 0
+    width: 100%
+    height: auto
+    background: #f3f3f3
+    &.on-show
+      width: 100%
+      padding: 15px
+      flex-direction: column-reverse
+      > div
+        width: 100% !important
+  .personal-card-preview .hover-bg
+    display: none
+  .personal-card-preview .item-hover-content .additional-part
+    padding: 0
+    border: 0
+  .personal-card-preview .btns
+    max-width: 200px
+    margin: 0 auto
+  .personal-card-preview .item-hover-content .show-more-btn
+    display: none
+  .personal-card-preview .item-hover-content .additional-part
+    display: flex
+    width: 100%
+  .personal-card-preview .item-hover-content
+    flex-direction: column-reverse
+
+
+
 
 
 /* Extra Small Devices, Phones */

@@ -9,6 +9,7 @@
 $(document).ready(function(){
 
 
+// init collapsing list of a pricelits-tabs
 	$('.pricelits-tabs > li').addClass('collapse-item');
 		$('.collapse-item a').not('.active').next('ul').css('display', 'none');
 		$('.collapse-item > a').click(function(e) {
@@ -37,15 +38,7 @@ $(document).ready(function(){
 	// });
 
 
-
-	// slick sliders init
-	// $('.slick-slider').slick({
-	//   infinite: true,
-	//   slidesToShow: 1,
-	//   slidesToScroll: 1,
-	// 	dots: true,
-	// 	arrows: true
-	// });
+// init sick
 	$('.front-page-slider, .frontpage-about-slider').slick({
 	  infinite: true,
 	  slidesToShow: 1,
@@ -83,8 +76,8 @@ $(document).ready(function(){
 		$('body').removeClass('no-scroll');
 	});
 
-	// resize func mobile menu
-	var moveToMmenuF = function() {
+	// if Mobile
+	var globalIfMobile = function() {
 		if (window.innerWidth < 768 || $('html').hasClass('mobile')) {
 
 			$('.header-nav nav').detach().prependTo('.mobile-menu .menu-content');
@@ -93,6 +86,8 @@ $(document).ready(function(){
 
       // hovered
 			$('.frontpage-catalog-section .item, .latest-actions-section .item').addClass('hovered');
+			$('.personal-card-preview .item-hover-content').removeClass('on-show');
+			$('.personal-card-preview .show-more-btn').text('Подробнее');
 
 		} else {
 
@@ -100,16 +95,76 @@ $(document).ready(function(){
 			$('.mobile-menu .menu-header .call-btn').detach().prependTo('.header-phone-block');
 			$('.mobile-menu .menu-header .btn').detach().prependTo('.sign-block');
 
-
 			if ($('.mobile-menu').hasClass('active')) {
 				$('.mobile-menu').removeClass('active');
 				$('body').removeClass('no-scroll');
 			}
 
+
+      // remove hovers
+			$('.frontpage-catalog-section .item, .latest-actions-section .item').removeClass('hovered');
+
 		}
 	};
-	$(window).resize(moveToMmenuF);
-	$(document).ready(moveToMmenuF);
+	$(window).resize(globalIfMobile);
+	$(document).ready(globalIfMobile);
+
+
+// init shoh/hide more info about masters
+	$('.personal-card-preview .show-more-btn').click(function(event) {
+		event.preventDefault();
+		var cont = $(this).parents('.item-hover-content');
+		cont.toggleClass('on-show');
+		if (cont.hasClass('on-show')) {
+			$(this).text('X');
+		} else {
+			$(this).text('Подробнее');
+		}
+
+	});
+
+//  init checkout steps line
+var currentStep = 1;
+
+$(document).ready( function () {
+  $(".next-step").click( function () {
+    $(".step-container .step-separator[data-step='" + currentStep + "']").addClass('active');
+
+    currentStep++;
+
+    $(".step-container .step[data-step='" + currentStep + "']").addClass('active');
+		console.log(currentStep);
+  });
+	$('.clear-btn').click(function(event) {
+		currentStep - 1;
+		$(".step-container .step[data-step='" + currentStep + "']").removeClass('active');
+		currentStep--;
+		$(".step-container .step-separator[data-step='" + currentStep + "']").removeClass('active');
+
+
+
+		console.log(currentStep);
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

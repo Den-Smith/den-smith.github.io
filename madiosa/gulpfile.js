@@ -24,7 +24,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
 			baseDir: './app', // Директория для сервера - app
-			index: 'index.html'
+			index: 'temp.html'
 		},
 		notify: false, // Отключаем уведомления
 		browser: ['chrome']
