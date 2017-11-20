@@ -139,7 +139,7 @@ body
 	h2
 		color: $text-main
 		font-size: 30px
-		font-weight: 500
+		font-weight: 600
 		position: relative
 		padding-right: 15px
 		&::after
@@ -944,13 +944,13 @@ body.page-inner
 	white-space: nowrap
 	position: relative
 
+	// li
+	// 	&:first-of-type
+	// 		padding: 0 20px 0 0
+	// 	&:last-of-type
+	// 		padding: 0 0 0 20px
 	li
-		margin: 0 5px
-		&:first-of-type
-			margin: 0 5px 0 0
-		&:last-of-type
-			margin: 0 0 0 5px
-	a
+		cursor: pointer
 		padding: 0 20px
 		font-size: 12px
 		font-weight: 900
@@ -962,9 +962,16 @@ body.page-inner
 		align-items: center
 		height: 40px
 		line-height: 1
-		&.active
-			+btn($accent-color, lighten($accent-color, 15%), #fff, #fff, rgba(255,255,255, 0.1), $accent-color)
+		border: 2px solid transparent
+	li.active
+		+btn($accent-color, lighten($accent-color, 15%), #fff, #fff, rgba(255,255,255, 0.1), $accent-color)
+		padding: 0 20px
 
+.tab-content
+	display: none
+	min-height: 100px
+	&.active
+		display: inherit
 
 
 .our-masters-section .section-content
@@ -1081,13 +1088,49 @@ body.page-inner
 
 
 // form
+input
+	font-family: $font-fira
+	font-size: 14px
+	&[type="text"],
+	&[type="email"],
+	&[type="number"],
+	&[type="search"]
+		position: relative
+		border: 1px solid #E0E0E0
+		padding: 5px 20px
+		height: 40px
+		width: 100%
+		z-index: 0
+		+placeholder(#a2a1a1, 400)
+		&:hover, &:focus
+			border-color: $accent-color
+		&:focus
+			z-index: 1
+			box-shadow: 0 0 3px 1px $accent-color
+textarea
+	position: relative
+	border: 1px solid #E0E0E0
+	padding: 5px 20px
+	height: 40px
+	width: 100%
+	z-index: 0
+	+placeholder(#a2a1a1, 400)
+	&:hover, &:focus
+		border-color: $accent-color
+	&:focus
+		z-index: 1
+		box-shadow: 0 0 3px 1px $accent-color
+
+
+
+
 
 
 .control
 	display: block
 	position: relative
 	padding-left: 20px
-	margin-bottom: 15px
+	margin-bottom: 5px
 	cursor: pointer
 	font-size: 16px
 	font-weight: bold
@@ -1162,28 +1205,10 @@ body.page-inner
 
 
 // checkout steps line
-
-
-.next-step, .clear-btn
-	background: #ccc
-	color: #555
-	padding: 5px
-	font-size: 16px
-	font-weight: 300
-	display: block
-	margin: 20px auto
-	border-radius: 4px
-	width: 150px
-	cursor: pointer
-	&:hover
-		background: #bbb
-
 .step-container
-	margin: 3% auto
+	margin: 80px 0 30px
 	text-align: center
 	.inner
-		display: -webkit-flex
-		display: -ms-flex
 		display: flex
 		justify-content: center
 		align-items: center
@@ -1196,31 +1221,142 @@ body.page-inner
 		align-items: center
 		text-align: center
 		background: #eee
-		width: 20px
-		height: 20px
+		width: 16px
+		height: 16px
 		font-weight: bold
 		border-radius: 50%
-		transition: background 500ms ease, color 500ms ease
-		transition-delay: 700ms
-		background: linear-gradient(to right, #79A529 50%, #eee 50%)
+		transition: background 100ms ease, color 100ms ease
+		transition-delay: 200ms
+		background: linear-gradient(to right, $accent-color 50%, #eee 50%)
 		background-size: 200% 100%
 		background-position: right bottom
+		p
+			white-space: nowrap
+			margin: -60px 0 0 0
+			color: #000
+			font-size: 16px
+			font-family: $font-fira
+			font-weight: 400
 		&.active
 			background-position: left bottom
 			color: #fff
+			p
+				color: $accent-color
 	.step-separator
 		position: relative
 		z-index: 1
 		background: #eee
-		height: 4px
+		height: 3px
 		width: 200px
 		margin: 0 -10px 0px -10px
 		display: inline-block
-		background: linear-gradient(to right, #79A529 50%, rgba(#eee, 1) 50%)
+		background: linear-gradient(to right, $accent-color 50%, rgba(#eee, 1) 50%)
 		background-size: 200% 100%
 		background-position: right bottom
-		transition: background 1000ms ease
-		transition-delay: 980ms
+		transition: background 300ms ease
+		transition-delay: 300ms
 		&.active
 			transition-delay: 0ms
 			background-position: left bottom
+
+.step-inner-wrap
+	margin: 0 0 30px 0
+	.step-inner
+		display: none
+		&.active
+			display: block
+
+// checkout form
+.step-inner
+	margin: 20px 0
+	.title-string
+		font-size: 24px
+		font-weight: bold
+	.tab-content
+		display: none
+		&.active
+			display: flex
+			flex-wrap: wrap
+	.flex-col
+		margin: 0 20px 20px 0
+
+
+.checkout-form-controls
+	margin: 30px 0 0
+	justify-content: flex-start
+	.next-step, .prev-step
+		min-width: 120px
+		font-weight: bold
+		cursor: pointer
+		margin: 0 20px 0 0
+
+
+.selected-item
+	font-family: $font-fira
+	padding: 25px 40px
+	background-color: rgba(238, 238, 238, 0.5)
+	margin-bottom: 30px
+	p
+		font-size: 16px
+		color: #4f4f4f
+	.block-title
+		font-weight: bold
+
+
+.calendar
+	min-height: 470px
+	width: 100%
+	background-color: #eee
+	display: flex
+	justify-content: center
+	align-items: center
+
+.master-preview-wrap
+	display: flex
+	flex-wrap: wrap
+.master-preview
+	cursor: pointer
+	width: auto
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin: 10px 30px 10px 0
+	.item-img
+		margin-bottom: 10px
+	img
+		display: block
+		border-radius: 100px
+		max-width: 80px
+	.item-title
+		+trans(0.2s)
+		color: #333
+		font-weight: bold
+		font-size: 16px
+	.item-descr
+		font-size: 12px
+		font-weight: 300
+		font-family: $font-fira
+		color: $accent-color
+	&:hover, &.checked
+		.item-title
+			color: $accent-color
+
+
+.input-personal-data
+	.flex-row
+		max-width: 440px
+	.input-wrap
+		display: flex
+		justify-content: space-between
+		margin: 0 0 20px 0
+		input
+			max-width: calc(50% - 10px)
+	.control
+		font-size: 12px
+		font-weight: 300
+		color: #bdbdbd
+	.control__indicator
+		top: 6px
+	.control--radio .control__indicator:after
+		background: #bdbdbd
