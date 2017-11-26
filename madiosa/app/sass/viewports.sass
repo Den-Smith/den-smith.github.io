@@ -94,7 +94,24 @@
   .frontpage-about-slider .slick-active button
     background-color: rgba(0,0,0,1)
 
+  html:not(.mobile) .section-sidebar
+    transition: all 0.3s
+    width: 40px
+    overflow: hidden
+    .sidebar-list
+      visibility: hidden
+      opacity: 0
+      margin: 0 40px 0 0
+    &:hover
+      width: 225px
+      padding: 60px 214px 20px 0
+      .sidebar-list
+        visibility: visible
+        opacity: 1
+        white-space: nowrap
 
+  .personal-account-section .section-content-wrap
+    width: 100%
 
 
   .personal-card-preview
@@ -110,11 +127,13 @@
   	display: block
   .cta-section .inner h2
     font-size: 28px
-  .section-title h2
-    font-size: 24px
-  .section-title h2::after
-    left: 0
-    top: 105%
+  .section-title h2,
+  .title-string
+    font-size: 24px !important
+  .section-title h2::after,
+  .title-string::after
+    left: 0 !important
+    top: 105% !important
   .contacts-list a
     justify-content: center
   footer .logo
@@ -161,9 +180,59 @@
   .personal-card-preview .item-hover-content
     flex-direction: column-reverse
 
+  .step-container .step p
+    font-size: 12px
+  .step-container .step[data-step="1"] p
+    margin: -60px 0 0 30px
+  .step-container .step[data-step="2"] p
+    margin: 60px 0 0 0
+  .step-container .step[data-step="4"] p
+    margin: 60px 0 0 -87px
 
+  .step-inner .tab-content,
+  .master-preview-wrap,
+  .checkout-form-controls
+    justify-content: center
+  .step-inner .flex-col,
+  .master-preview
+    margin: 0 5px
 
+  .checkout-form-controls .next-step,
+  .checkout-form-controls .prev-step
+    margin: 0 10px
 
+  .input-personal-data
+    .flex-row
+      max-width: 100%
+    .input-wrap
+      display: block
+      input
+        max-width: 100%
+        margin-bottom: 10px
+
+  .step-container
+    margin: 80px 0 60px
+
+  html.mobile .section-sidebar
+    transition: all 0.3s
+    width: 40px
+    overflow: hidden
+    .sidebar-list
+      visibility: hidden
+      opacity: 0
+      margin: 0 40px 0 0
+    &.active
+      width: 225px
+      padding: 60px 214px 20px 0
+      .sidebar-list
+        visibility: visible
+        opacity: 1
+        white-space: nowrap
+
+  .acc-data-container
+    padding: 15px
+  .acc-data-block:not(:last-of-type)
+    margin-bottom: 15px
 
 /* Extra Small Devices, Phones */
 @include mq($max-width: 480px)

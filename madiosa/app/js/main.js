@@ -188,8 +188,10 @@ checkBoxClick();
 
 
 
-
-
+// .section-sidebar click init
+$('html.mobile .section-sidebar').click(function(event) {
+	$(this).toggleClass('active');
+});
 
 
 

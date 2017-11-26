@@ -944,28 +944,26 @@ body.page-inner
 	white-space: nowrap
 	position: relative
 
-	// li
-	// 	&:first-of-type
-	// 		padding: 0 20px 0 0
-	// 	&:last-of-type
-	// 		padding: 0 0 0 20px
-	li
-		cursor: pointer
-		padding: 0 20px
-		font-size: 12px
-		font-weight: 900
-		text-transform: uppercase
-		font-family: $font-fira
-		letter-spacing: 1px
-		display: flex
-		justify-content: center
-		align-items: center
-		height: 40px
-		line-height: 1
-		border: 2px solid transparent
-	li.active
-		+btn($accent-color, lighten($accent-color, 15%), #fff, #fff, rgba(255,255,255, 0.1), $accent-color)
-		padding: 0 20px
+html.mobile
+	.tabs-block::after
+		display: none
+		li
+			cursor: pointer
+			padding: 0 20px
+			font-size: 12px
+			font-weight: 900
+			text-transform: uppercase
+			font-family: $font-fira
+			letter-spacing: 1px
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 40px
+			line-height: 1
+			border: 2px solid transparent
+		li.active
+			+btn($accent-color, lighten($accent-color, 15%), #fff, #fff, rgba(255,255,255, 0.1), $accent-color)
+			padding: 0 20px
 
 .tab-content
 	display: none
@@ -1360,3 +1358,136 @@ textarea
 		top: 6px
 	.control--radio .control__indicator:after
 		background: #bdbdbd
+
+
+
+
+
+
+// personal acc section
+.personal-account-section
+	display: flex
+	min-height: 300px
+	max-width: 1400px
+	margin: 0 auto 30px
+	.section-content-wrap
+		width: calc(100% - 225px)
+		display: flex
+		flex-direction: column
+
+.section-sidebar
+	width: 225px
+	background: $text-main
+	padding: 60px 0 20px
+.sidebar-list
+	font-family: $font-fira
+	margin-bottom: 30px
+	.list-title
+		font-weight: 400
+		font-size: 10px
+		letter-spacing: 2px
+		color: $accent-color
+		text-transform: uppercase
+		padding: 0 0 0 40px
+	a
+		transition: all 0.2s
+		position: relative
+		font-size: 14px
+		font-weight: 400
+		height: 40px
+		display: flex
+		align-items: center
+		padding: 0 0 0 40px
+		&::after
+			transition: all 0.1s
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 0px
+			height: 100%
+			background-color: $accent-color
+		&:hover, &.active
+			background: linear-gradient(90deg, rgba(#7e8eda,.13) 0%, rgba(255, 255, 255, 0.0001) 91.48%)
+			&::after
+				width: 3px
+
+
+.acc-header
+	background: $accent-color
+	display: flex
+	align-items: center
+	padding: 24px 40px
+	min-height: 127px
+	.acc-photo
+		margin: 0 20px 0 0
+		img
+			width: 80px
+			height: 80px
+			border-radius: 100px
+	.acc-descr
+		h2
+			font-size: 21px
+			font-weight: bold
+			color: #fff
+			margin: 0 0 5px 0
+		p
+			font-family: $font-fira
+			font-size: 12px
+			font-weight: 400
+			color: #fff
+
+
+.acc-data-container
+	background: rgba(#dadada,.3)
+	padding: 40px
+	height: 100%
+.acc-data-block
+	background: #fff
+	padding: 15px 0 30px
+	&:not(:last-of-type)
+		margin-bottom: 30px
+	.data-header
+		padding: 0px 30px 15px
+		h3
+			font-weight: bold
+			font-size: 18px
+			color: #797979
+	.data-block-content
+		font-family: $font-fira
+
+.data-table
+	.flex-row
+		position: relative
+		display: flex
+		min-height: 40px
+		align-items: center
+		&::after
+			transition: all 0.1s
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 0px
+			height: 100%
+			background-color: $accent-color
+		&:first-of-type
+			.flex-col
+				color: #6A6A6A
+				font-weight: 500
+		&:not(:first-of-type):hover
+			background: rgba(194, 194, 194, 0.0896)
+			&::after
+				width: 3px
+		.flex-col
+			width: calc(100% / 5)
+			font-weight: 400
+			&:nth-of-type(1)
+				width: 70px
+	.svg-ico
+		svg
+			fill: #7d7d7d
+			opacity: 0.5
+			width: 25px
+			height: 25px
+			margin: 0 auto
