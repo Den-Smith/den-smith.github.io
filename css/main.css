@@ -472,8 +472,8 @@ nav ul.active {
   color: #52000a;
 }
 
-.hvr-icon-sink-away.vk::before, .hvr-icon-sink-away.vk::after {
-  content: "\f189";
+.hvr-icon-sink-away.linkedin::before, .hvr-icon-sink-away.linkedin::after {
+  content: "\f08c";
 }
 
 .hvr-icon-sink-away.mail::before, .hvr-icon-sink-away.mail::after {
